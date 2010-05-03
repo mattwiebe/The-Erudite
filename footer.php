@@ -12,7 +12,7 @@
 </div><!-- #wrapper .hfeed -->
 
 <?php wp_footer() ?>
-<?php echo stripslashes(get_the_theme_option('erdt_analytics')); ?>
+<?php the_theme_option( 'erdt_analytics' ); ?>
 
 </body>
 </html>

@@ -61,9 +61,9 @@ function get_the_theme_option( $id, $format = false ) {
 			$$value['id'] = get_option( $value['id'] ); 
 		}
 	}
-	$return = $$id;
+	$return = stripslashes($$id);
 	if ($format) {
-		$return = wptexturize(wpautop(stripslashes($return)));
+		$return = wptexturize( wpautop( $return ) );
 	}
 	return $return;
 }
