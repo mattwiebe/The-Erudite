@@ -1,0 +1,17 @@
+/* Oh, IE6. They shoot browsers, don't they? '*/
+* html body {font-size:62.5%;} /* make IE play nice with font resizing */
+* html textarea, * html select, * html input {font-size:1em;}
+
+div#primary {margin-left:3em;}
+
+#nav-below {overflow:hidden;}
+#nav-below a {width:12em; display:block;}
+/*#nav-below div {width:1.2em; display:inline;}*/
+.says {display:none;}
+li.comment {height:6em; /*min-height hack*/}
+
+body #header-wrap {background-image:none;}
+.hr {width:50%; margin-left:25%;}
+
+.paged #content {padding-bottom:9.6em;}
+div#menu {margin-bottom:0;}

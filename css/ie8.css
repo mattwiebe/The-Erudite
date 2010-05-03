@@ -1,0 +1,5 @@
+/* Even IE8 doesn't play well with others */
+
+body.single .entry-content > p:first-child:first-letter, .first-post .entry-content > p:first-child:first-letter {line-height:.8em; padding:.05em .5em;}
+.entry-content > p:first-child:first-letter {line-height:.6em; padding:.3em .3em 0; margin:.25em .5em 0 0;}
+body.single #menu-toggle {display:block;}

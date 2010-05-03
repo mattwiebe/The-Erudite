@@ -1,0 +1,19 @@
+/* IE7 Fixes. IE6 is along for the ride */
+
+.entry-content > p:first-child:first-letter {line-height:1em !important;}
+
+body hr {color:#ccc; height:.1em !important; margin:1.2em 0 1.1em;}
+
+body.home #container {width:96em; overflow:hidden !important;}
+
+body.home div.home-post {padding-bottom:4.8em; margin-bottom:0;}
+.home-post .entry-meta span.author {bottom:3.6em;}
+
+#foot-toggle {margin-top:0em;}
+.home #foot-toggle {margin-top:-3.5em;}
+
+.home #nav-below {bottom:0;}
+
+/* apparently a position:relative will extend an element outside of its parent overflow:hidden container. stupid. */
+.post .hidden blockquote {position:static;}
+.post .hidden blockquote .quote {display:none;}

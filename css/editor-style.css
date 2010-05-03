@@ -1,0 +1,48 @@
+/* Typography Base */
+html, body {background-color:#fafafa !important;}
+body, body.mceContentBody {font: normal normal normal 16px/1.5 constantia,'hoefler text','palatino linotype',serif; color:#333; margin:0 auto; width:540px;}
+textarea, select, input {font-size:12px;}
+h1,h2,h3,h4,h5,h6 {font-family:'gill sans','gill sans mt','gill sans mt pro','century gothic',corbel,sans-serif; font-weight:normal; text-transform:uppercase; letter-spacing:.05em;}
+h1 {font-size:36px; line-height:1.333; margin-top:1.333em;}
+h2 {font-size:24px; line-height:1; margin-top:1em;}
+h3 {font-size:21px; line-height:1.143; margin-top:1.143em;}
+h4 {font-size:18px; line-height:1.333; margin-top:1.333em;}
+h5 {font-size:16px; margin-top:1.5em;}
+h4, h5 {letter-spacing:.1em;}
+.amp {font-size:1.1em; font-style:italic; line-height:1.363;}
+pre, code {font-family:consolas,'deja vu sans mono','lucida sans typewriter',monaco,monospace;}
+
+p, li, dt, dd {margin-bottom:.75em;}
+table {margin:1em 0;}
+table p {font-size:1em; text-indent:0;}
+td, th {padding:.125em .5em; text-align:left;}
+pre {font-size:14px;}
+legend {font-size:14px; text-align:center; text-indent:0;}
+p {text-indent:1em; text-align:justify;}
+blockquote {padding-left:3em; position:relative;}
+blockquote::before {content:"\201C"; position:absolute; font-size:48px; line-height:1; left:.1em; top:0; color:#999;}
+blockquote::after {content:"\201D"; position:absolute; font-size:48px; line-height:1; right:-.5em; bottom:-.55em; color:#999;}
+blockquote p {font-size:15px; text-indent:0;}
+ul li, ol li {text-indent:-.5em; padding-left:.5em;}
+ul li {list-style: disc outside;}
+ol li {list-style: decimal outside;}
+li ol, li ul {margin:.5em 0 0 .5em;}
+p:first-child {text-indent:0;}
+body > p:first-child:first-letter {font-size:45px; float:left; background:#555 url(../images/stripes.png) repeat; color:#fff; margin:.05em .1em 0 0; padding:.1em; line-height:.65em;}
+
+/* Links */
+a {text-decoration:none !important; border-bottom:1px solid #AAAAAA;}
+a:link {color:#000 !important;}
+a:visited {color:#311;}
+a:hover {color:#223; text-decoration:underline;}
+a:active {color:#55f;}
+
+/* Image Layout */
+img {border:1px solid #aaa; padding:4px; margin-bottom:6px;}
+.centered, .aligncenter {display:block; margin:16px auto;}
+.alignright {float:right; margin: 6px 0 3px 15px;}
+.alignleft {float:left; margin:6px 15px 3px 0;}
+.wp-caption {border:1px solid #aaa; text-align:center; padding-top:5px; margin-bottom:6px; background:#fff; -moz-border-radius:0; -webkit-border-radius:0; border-radius:0;}
+.wp-caption a, .wp-caption img {border:0 none; padding:0;}
+.wp-caption p.wp-caption-text {text-align:center; margin:5px; text-indent:0; font-size:13px;}
+dt.wp-caption-dt {margin-bottom:0;}
