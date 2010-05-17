@@ -190,7 +190,7 @@ div.reveal span {font-size:1.1em;}
 img.avatar {position:absolute; left:-4.6em; top:0;}
 .children img.avatar {width:16px; height:16px; border:1px solid #999; left:-2.55em;}
 #comments {padding:3.6em 0 2.4em;}
-li.comment, li.pingback {position:relative; border-left:1px solid #aaa; margin:1.2em 0 2.4em 12em; padding-left:2em; min-height:6em;}
+li.comment, li.pingback, li.trackback {position:relative; border-left:1px solid #aaa; margin:1.2em 0 2.4em 12em; padding-left:2em; min-height:6em;}
 li.comment.bypostauthor {border-color:#000;}
 .comment-author a, .comment-meta a {text-decoration:none;}
 .reply, #cancel-comment-reply {text-align:right;}
