@@ -25,9 +25,9 @@ $erdt_options = array (
 	array(	"name" => __('Footer &lsquo;About&lsquo; Blurb','erudite'),
 			"desc" => __('The following text will appear in the footer for &lsquo;About&lsquo;. <br /><em>Note:</em> This will only appear if you have not enabled a widget for <strong>Erudite Widget 1</strong>','erudite'),
 			"id" => $shortname."footer_about",
-			"std" => "This is an example of an \"About\" blurb. I'm sure that the author of <a href='/' title='Home page'>this blog</a> is highly intelligent, witty and even <em>possibly</em> socially competent.
+			"std" => __("This is an example of an \"About\" blurb. I'm sure that the author of <a href='/' title='Home page'>this blog</a> is highly intelligent, witty and even <em>possibly</em> socially competent.
 
-It can be modified from this theme's <strong>options panel</strong> in the admin area (Appearance &rarr; $themename Options)",
+It can be modified from this theme's <strong>options panel</strong> in the admin area (Appearance &rarr; $themename Options)", 'erudite'),
 			"type" => "textarea",
 			"options" => array(	"rows" => "6",
 								"cols" => "70") ),
@@ -107,7 +107,7 @@ function mytheme_add_admin() {
         }
     }
 
-    add_theme_page($themename." Options", $themename." Options", 'edit_themes', basename(__FILE__), 'mytheme_admin');
+    add_theme_page($themename.' '.__('Options', 'erudite'), $themename.' '.__('Options', 'erudite'), 'edit_themes', basename(__FILE__), 'mytheme_admin');
 
 }
 
@@ -122,7 +122,7 @@ function mytheme_admin() {
 ?>
 <div class="wrap">
 <?php if ( function_exists('screen_icon') ) screen_icon(); ?>
-<h2><?php echo $themename; ?> Options</h2>
+<h2><?php echo $themename . ' '; _e('Options', 'erudite'); ?></h2>
 
 <form method="post">
 
