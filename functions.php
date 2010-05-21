@@ -40,7 +40,7 @@ function erudite_body_class($classes) {
 	}
 	// show/hide functionality
 	if( get_the_theme_option("erdt_hide_disable") == "false" ) {
-		$classes[] = " hiding";
+		$classes[] = "hiding";
 	}
 	return $classes;
 }
@@ -112,11 +112,15 @@ if ( function_exists('add_theme_support') ) {
 	add_theme_support('nav-menus');
 }
 
+if ( function_exists('register_nav_menus') ) {
+	register_nav_menus( array('header-menu' => __('Header Menu') ) );
+}
+
 // call wp_nav_menu, but fallback to old_sandbox_globalnav otherwise
 function sandbox_globalnav() {
 	if ( function_exists('wp_nav_menu') ) {
 		$menu = wp_nav_menu(array(
-			'menu' => 'Header',
+			'theme_location' => 'header-menu',
 			'fallback_cb' => 'old_sandbox_globalnav',
 			'container' => 'ul',
 			'echo' => false
