@@ -21,9 +21,7 @@ msgid "Not Found"
 msgstr ""
 
 #: 404.php:9
-msgid ""
-"Apologies, but we were unable to find what you were looking for. Perhaps  "
-"searching will help."
+msgid "Apologies, but we were unable to find what you were looking for. Perhaps searching will help."
 msgstr ""
 
 #: 404.php:14 search.php:52 sidebar.php:57

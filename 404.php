@@ -6,7 +6,7 @@
 			<div id="post-0" class="post error404 not-found">
 				<h2 class="entry-title"><?php _e( 'Not Found', 'erudite' ) ?></h2>
 				<div class="entry-content">
-					<p><?php _e( 'Apologies, but we were unable to find what you were looking for. Perhaps  searching will help.', 'erudite' ) ?></p>
+					<p><?php _e( 'Apologies, but we were unable to find what you were looking for. Perhaps searching will help.', 'erudite' ) ?></p>
 				</div>
 				<form id="searchform-404" class="blog-search" method="get" action="<?php bloginfo('home') ?>">
 					<div>
