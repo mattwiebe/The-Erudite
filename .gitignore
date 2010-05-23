@@ -1,4 +1,4 @@
-# packager
-package.sh
+# shell scripts
+*.sh
 # temp files
 temp
