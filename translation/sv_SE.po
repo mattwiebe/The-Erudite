@@ -1,0 +1,542 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Translate EN to NL\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-01-25 23:42-0600\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Fredrik Arvidsson <fredrikmedia@gmail.com>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: Dutch\n"
+"X-Poedit-Country: NETHERLANDS\n"
+"X-Poedit-SourceCharset: utf-8\n"
+
+#: /webdev/erudite/wp-content/themes/erudite/404.php:7
+msgid "Not Found"
+msgstr "Hittades ej"
+
+#: /webdev/erudite/wp-content/themes/erudite/404.php:9
+msgid "Apologies, but we were unable to find what you were looking for. Perhaps  searching will help."
+msgstr "Ledsen, men vi hittar inte det du letar efter. Prova att göra en sökning."
+
+#: /webdev/erudite/wp-content/themes/erudite/404.php:14
+msgid "Find"
+msgstr "Hitta"
+
+#: /webdev/erudite/wp-content/themes/erudite/archive.php:9
+#, php-format
+msgid "Daily Archives: <span>%s</span>"
+msgstr "Arkiv per dag: <span>%s</span>"
+
+#: /webdev/erudite/wp-content/themes/erudite/archive.php:11
+#, php-format
+msgid "Monthly Archives: <span>%s</span>"
+msgstr "Arkiv per månad: <span>%s</span>"
+
+#: /webdev/erudite/wp-content/themes/erudite/archive.php:13
+#, php-format
+msgid "Yearly Archives: <span>%s</span>"
+msgstr "Arkiv per år: <span>%s</span>"
+
+#: /webdev/erudite/wp-content/themes/erudite/archive.php:15
+msgid "Blog Archives"
+msgstr "Bloggarkiv"
+
+#: /webdev/erudite/wp-content/themes/erudite/archive.php:23
+#: /webdev/erudite/wp-content/themes/erudite/author.php:16
+#: /webdev/erudite/wp-content/themes/erudite/category.php:12
+#: /webdev/erudite/wp-content/themes/erudite/home.php:13
+#: /webdev/erudite/wp-content/themes/erudite/home.php:21
+#: /webdev/erudite/wp-content/themes/erudite/index.php:9
+#, php-format
+msgid "Permalink to %s"
+msgstr "Direktlänk till %s"
+
+#: /webdev/erudite/wp-content/themes/erudite/archive.php:25
+#: /webdev/erudite/wp-content/themes/erudite/author.php:18
+#: /webdev/erudite/wp-content/themes/erudite/category.php:14
+#: /webdev/erudite/wp-content/themes/erudite/home.php:16
+#: /webdev/erudite/wp-content/themes/erudite/home.php:24
+#: /webdev/erudite/wp-content/themes/erudite/index.php:12
+msgid "Read More <span class=\"meta-nav\">&rarr;</span>"
+msgstr "Läs vidare <span class=\"meta-nav\">&rarr;</span>"
+
+#: /webdev/erudite/wp-content/themes/erudite/archive.php:29
+#: /webdev/erudite/wp-content/themes/erudite/author.php:22
+#: /webdev/erudite/wp-content/themes/erudite/category.php:18
+#: /webdev/erudite/wp-content/themes/erudite/home.php:30
+#: /webdev/erudite/wp-content/themes/erudite/index.php:17
+#, php-format
+msgid "%1$s &#8211; %2$s"
+msgstr "%1$s &#8211; %2$s"
+
+#: /webdev/erudite/wp-content/themes/erudite/archive.php:31
+#: /webdev/erudite/wp-content/themes/erudite/author.php:24
+#: /webdev/erudite/wp-content/themes/erudite/category.php:20
+#: /webdev/erudite/wp-content/themes/erudite/home.php:32
+#: /webdev/erudite/wp-content/themes/erudite/index.php:19
+#, php-format
+msgid "By %s"
+msgstr "Av %s"
+
+#: /webdev/erudite/wp-content/themes/erudite/archive.php:31
+#: /webdev/erudite/wp-content/themes/erudite/attachment.php:20
+#: /webdev/erudite/wp-content/themes/erudite/author.php:24
+#: /webdev/erudite/wp-content/themes/erudite/category.php:20
+#: /webdev/erudite/wp-content/themes/erudite/home.php:32
+#: /webdev/erudite/wp-content/themes/erudite/image.php:21
+#: /webdev/erudite/wp-content/themes/erudite/index.php:19
+#, php-format
+msgid "View all posts by %s"
+msgstr "Visa alla inlägg %s"
+
+#: /webdev/erudite/wp-content/themes/erudite/archive.php:33
+#: /webdev/erudite/wp-content/themes/erudite/author.php:26
+#: /webdev/erudite/wp-content/themes/erudite/category.php:22
+#: /webdev/erudite/wp-content/themes/erudite/home.php:34
+#: /webdev/erudite/wp-content/themes/erudite/index.php:21
+#, php-format
+msgid "Posted in %s"
+msgstr "Publicerad i %s"
+
+#: /webdev/erudite/wp-content/themes/erudite/archive.php:35
+#: /webdev/erudite/wp-content/themes/erudite/author.php:28
+#: /webdev/erudite/wp-content/themes/erudite/category.php:24
+#: /webdev/erudite/wp-content/themes/erudite/home.php:36
+#: /webdev/erudite/wp-content/themes/erudite/index.php:23
+msgid "<span class=\"tag-links\">Tagged "
+msgstr "<span class=\"tag-links\">Taggad "
+
+#: /webdev/erudite/wp-content/themes/erudite/archive.php:36
+#: /webdev/erudite/wp-content/themes/erudite/archives.php:32
+#: /webdev/erudite/wp-content/themes/erudite/attachment.php:38
+#: /webdev/erudite/wp-content/themes/erudite/author.php:29
+#: /webdev/erudite/wp-content/themes/erudite/category.php:25
+#: /webdev/erudite/wp-content/themes/erudite/home.php:37
+#: /webdev/erudite/wp-content/themes/erudite/image.php:39
+#: /webdev/erudite/wp-content/themes/erudite/index.php:24
+#: /webdev/erudite/wp-content/themes/erudite/links.php:22
+#: /webdev/erudite/wp-content/themes/erudite/page.php:15
+msgid "Edit"
+msgstr "Redigera"
+
+#: /webdev/erudite/wp-content/themes/erudite/archive.php:37
+#: /webdev/erudite/wp-content/themes/erudite/author.php:30
+#: /webdev/erudite/wp-content/themes/erudite/category.php:26
+#: /webdev/erudite/wp-content/themes/erudite/home.php:38
+#: /webdev/erudite/wp-content/themes/erudite/index.php:25
+msgid "Comments (0)"
+msgstr "Kommentarer (0)"
+
+#: /webdev/erudite/wp-content/themes/erudite/archive.php:37
+#: /webdev/erudite/wp-content/themes/erudite/author.php:30
+#: /webdev/erudite/wp-content/themes/erudite/category.php:26
+#: /webdev/erudite/wp-content/themes/erudite/home.php:38
+#: /webdev/erudite/wp-content/themes/erudite/index.php:25
+msgid "Comments (1)"
+msgstr "Kommentarer (1)"
+
+#: /webdev/erudite/wp-content/themes/erudite/archive.php:37
+#: /webdev/erudite/wp-content/themes/erudite/author.php:30
+#: /webdev/erudite/wp-content/themes/erudite/category.php:26
+#: /webdev/erudite/wp-content/themes/erudite/home.php:38
+#: /webdev/erudite/wp-content/themes/erudite/index.php:25
+msgid "Comments (%)"
+msgstr "Kommentarer (%)"
+
+#: /webdev/erudite/wp-content/themes/erudite/archive.php:44
+#: /webdev/erudite/wp-content/themes/erudite/author.php:37
+#: /webdev/erudite/wp-content/themes/erudite/category.php:33
+#: /webdev/erudite/wp-content/themes/erudite/home.php:47
+#: /webdev/erudite/wp-content/themes/erudite/index.php:34
+msgid "<span class=\"meta-nav\">&larr;</span> Older posts"
+msgstr "<span class=\"meta-nav\">&larr;</span> Äldre inlägg"
+
+#: /webdev/erudite/wp-content/themes/erudite/archive.php:45
+#: /webdev/erudite/wp-content/themes/erudite/author.php:38
+#: /webdev/erudite/wp-content/themes/erudite/category.php:34
+#: /webdev/erudite/wp-content/themes/erudite/home.php:48
+#: /webdev/erudite/wp-content/themes/erudite/index.php:35
+msgid "Newer posts <span class=\"meta-nav\">&rarr;</span>"
+msgstr "Nyare inlägg <span class=\"meta-nav\">&rarr;</span>"
+
+#: /webdev/erudite/wp-content/themes/erudite/archives.php:20
+msgid "Archives by Category"
+msgstr "Akriv per kategori"
+
+#: /webdev/erudite/wp-content/themes/erudite/archives.php:26
+msgid "Archives by Month"
+msgstr "Arkiv per månad"
+
+#: /webdev/erudite/wp-content/themes/erudite/attachment.php:8
+#: /webdev/erudite/wp-content/themes/erudite/image.php:8
+#, php-format
+msgid "Return to %s"
+msgstr "Återgå till %s"
+
+#: /webdev/erudite/wp-content/themes/erudite/attachment.php:19
+#: /webdev/erudite/wp-content/themes/erudite/image.php:20
+#, php-format
+msgid "Posted by %1$s on <abbr class=\"published\" title=\"%2$sT%3$s\">%4$s at %5$s</abbr>. Bookmark the <a href=\"%6$s\" title=\"Permalink to %7$s\" rel=\"bookmark\">permalink</a>. Follow any comments here with the <a href=\"%8$s\" title=\"Comments RSS to %7$s\" rel=\"alternate\" type=\"application/rss+xml\">RSS feed for this post</a>."
+msgstr "Publicerad av %1$s den <abbr class=\"published\" title=\"%2$sT%3$s\">%4$s kl. %5$s</abbr>. Bokmärk <a href=\"%6$s\" title=\"Permalink to %7$s\" rel=\"bookmark\">permalink</a>. Följ kommentarerna till detta inlägg via<a href=\"%8$s\" title=\"Comments RSS to %7$s\" rel=\"alternate\" type=\"application/rss+xml\">RSS-flödet</a>."
+
+#: /webdev/erudite/wp-content/themes/erudite/attachment.php:30
+#: /webdev/erudite/wp-content/themes/erudite/image.php:31
+#, php-format
+msgid "<a class=\"comment-link\" href=\"#respond\" title=\"Post a comment\">Post a comment</a> or leave a trackback: <a class=\"trackback-link\" href=\"%s\" title=\"Trackback URL for your post\" rel=\"trackback\">Trackback URL</a>."
+msgstr "<a class=\"comment-link\" href=\"#respond\" title=\"Post a comment\">Plaats een opmerking</a> of een terugkoppeling: <a class=\"trackback-link\" href=\"%s\" title=\"Trackback URL voor uw bericht\" rel=\"trackback\">Trackback URL</a>."
+
+#: /webdev/erudite/wp-content/themes/erudite/attachment.php:32
+#: /webdev/erudite/wp-content/themes/erudite/image.php:33
+#, php-format
+msgid "Comments are closed, but you can leave a trackback: <a class=\"trackback-link\" href=\"%s\" title=\"Trackback URL for your post\" rel=\"trackback\">Trackback URL</a>."
+msgstr "Kommentarsfunktionen är avstängd, men du kan lämna en trackback: <a class=\"trackback-link\" href=\"%s\" title=\"Trackback URL for your post\" rel=\"trackback\">Trackback URL</a>."
+
+#: /webdev/erudite/wp-content/themes/erudite/attachment.php:34
+#: /webdev/erudite/wp-content/themes/erudite/image.php:35
+msgid "Trackbacks are closed, but you can <a class=\"comment-link\" href=\"#respond\" title=\"Post a comment\">post a comment</a>."
+msgstr "Trackbacksfunktionen är avstängd, men du kan <a class=\"comment-link\" href=\"#respond\" title=\"Post a comment\">skriva en kommentar</a>."
+
+#: /webdev/erudite/wp-content/themes/erudite/attachment.php:36
+#: /webdev/erudite/wp-content/themes/erudite/image.php:37
+msgid "Both comments and trackbacks are currently closed."
+msgstr "Både kommentars- och trackbackfunktionen är avstängd."
+
+#: /webdev/erudite/wp-content/themes/erudite/author.php:8
+#, php-format
+msgid "Author Archives: <span class=\"vcard\">%s</span>"
+msgstr "Arkiv per författare:  <span class=\"vcard\">%s</span>"
+
+#: /webdev/erudite/wp-content/themes/erudite/category.php:6
+msgid "Category Archives:"
+msgstr "Arkiv per kategori:"
+
+#: /webdev/erudite/wp-content/themes/erudite/comments.php:10
+msgid "This post is protected. Enter the password to view any comments."
+msgstr "Det här inlägget är skyddat. Fyll i lösenordet för att se kommentarerna."
+
+#: /webdev/erudite/wp-content/themes/erudite/comments.php:17
+msgid "No Comments"
+msgstr "Inga kommentarer"
+
+#: /webdev/erudite/wp-content/themes/erudite/comments.php:17
+msgid "One Comment"
+msgstr "En kommentar"
+
+#: /webdev/erudite/wp-content/themes/erudite/comments.php:17
+msgid "% Comments"
+msgstr "% kommentarer"
+
+#: /webdev/erudite/wp-content/themes/erudite/comments.php:22
+msgid "Respond to this"
+msgstr "Besvara detta"
+
+#: /webdev/erudite/wp-content/themes/erudite/comments.php:34
+msgid "Post a Comment"
+msgstr "Posta en kommentar"
+
+#: /webdev/erudite/wp-content/themes/erudite/comments.php:34
+#, php-format
+msgid "Respond to %s"
+msgstr "Besvara %s"
+
+#: /webdev/erudite/wp-content/themes/erudite/comments.php:36
+msgid "Cancel this response"
+msgstr "Avbryt svaret"
+
+#: /webdev/erudite/wp-content/themes/erudite/comments.php:39
+#, php-format
+msgid "You must be <a href=\"%s\" title=\"Log in\">logged in</a> to post a comment."
+msgstr "Du måste vara <a href=\"%s\" title=\"Log in\">inloggad</a> för att kommentera."
+
+#: /webdev/erudite/wp-content/themes/erudite/comments.php:48
+#, php-format
+msgid "<span class=\"loggedin\">Logged in as <a href=\"%1$s\" title=\"Logged in as %2$s\">%2$s</a>.</span> <span class=\"logout\"><a href=\"%3$s\" title=\"Log out of this account\">Log out?</a></span>"
+msgstr "<span class=\"loggedin\">Inloggad som <a href=\"%1$s\" title=\"Logged in as %2$s\">%2$s</a>.</span> <span class=\"logout\"><a href=\"%3$s\" title=\"Log out of this account\">Logga ut?</a></span>"
+
+#: /webdev/erudite/wp-content/themes/erudite/comments.php:56
+msgid "Your email is <em>never</em> shared."
+msgstr "Din e-postadress publiceras inte."
+
+#: /webdev/erudite/wp-content/themes/erudite/comments.php:56
+msgid "Required fields are marked <span class=\"required\">*</span>"
+msgstr "Obligatoriska fält är markerade med <span class=\"required\">*</span>"
+
+#: /webdev/erudite/wp-content/themes/erudite/comments.php:59
+msgid "Name"
+msgstr "Namn"
+
+#: /webdev/erudite/wp-content/themes/erudite/comments.php:59
+#: /webdev/erudite/wp-content/themes/erudite/comments.php:62
+msgid "<span class=\"required\">*</span>"
+msgstr "<span class=\"verplicht\">*</span>"
+
+#: /webdev/erudite/wp-content/themes/erudite/comments.php:62
+msgid "Email"
+msgstr "E-post"
+
+#: /webdev/erudite/wp-content/themes/erudite/comments.php:65
+msgid "Website"
+msgstr "Hemsida"
+
+#: /webdev/erudite/wp-content/themes/erudite/comments.php:72
+msgid "Comment"
+msgstr "Kommentar"
+
+#: /webdev/erudite/wp-content/themes/erudite/comments.php:75
+msgid "Post Comment"
+msgstr "Skicka kommentar"
+
+#: /webdev/erudite/wp-content/themes/erudite/comments_custom.php:9
+#, php-format
+msgid "<cite class=\"fn\">%s</cite> <span class=\"says\">wrote:</span>"
+msgstr "<cite class=\"fn\">%s</cite> <span class=\"says\">skrev:</span>"
+
+#: /webdev/erudite/wp-content/themes/erudite/comments_custom.php:12
+msgid "Your comment is awaiting moderation."
+msgstr "Din kommentar inväntar moderation."
+
+#: /webdev/erudite/wp-content/themes/erudite/comments_custom.php:15
+#, php-format
+msgid "%1$s at %2$s"
+msgstr "%1$s kl. %2$s"
+
+#: /webdev/erudite/wp-content/themes/erudite/comments_custom.php:15
+msgid "(Edit)"
+msgstr "(redigera)"
+
+#: /webdev/erudite/wp-content/themes/erudite/footer.php:3
+msgid "WordPress"
+msgstr "WordPress"
+
+#: /webdev/erudite/wp-content/themes/erudite/footer.php:6
+msgid "The Erudite theme for WordPress"
+msgstr "\"The Edudite\"- themat för WordPress"
+
+#: /webdev/erudite/wp-content/themes/erudite/footer.php:6
+msgid "The Erudite"
+msgstr "The Erudite"
+
+#: /webdev/erudite/wp-content/themes/erudite/header.php:18
+msgid "<span>↓</span> Keep Reading"
+msgstr "<span>↓</span> Fortsätt läsa."
+
+#: /webdev/erudite/wp-content/themes/erudite/header.php:19
+msgid "<span>↑</span> Put Away"
+msgstr "<span>↑</span> Dölj"
+
+#: /webdev/erudite/wp-content/themes/erudite/header.php:20
+msgid "&#x2193; Further Information"
+msgstr "&#x2193; Mer information"
+
+#: /webdev/erudite/wp-content/themes/erudite/header.php:21
+msgid "<span>↓</span> Show Menu"
+msgstr "<span>↓</span> Visa meny"
+
+#: /webdev/erudite/wp-content/themes/erudite/header.php:22
+msgid "<span>↑</span> Hide Menu"
+msgstr "<span>↑</span> Dölj meny"
+
+#: /webdev/erudite/wp-content/themes/erudite/header.php:30
+#, php-format
+msgid "%s latest posts"
+msgstr "%s senaste inläggen"
+
+#: /webdev/erudite/wp-content/themes/erudite/header.php:31
+#, php-format
+msgid "%s latest comments"
+msgstr "%s senaste kommentarerna"
+
+#: /webdev/erudite/wp-content/themes/erudite/header.php:45
+msgid "Skip to content"
+msgstr "Forstätt till innehållet"
+
+#: /webdev/erudite/wp-content/themes/erudite/home.php:24
+#, php-format
+msgid "Keep reading &lsquo;%s&rsquo;"
+msgstr "Fortsätt läsa &lsquo;%s&rsquo;"
+
+#: /webdev/erudite/wp-content/themes/erudite/home.php:27
+#: /webdev/erudite/wp-content/themes/erudite/index.php:14
+#: /webdev/erudite/wp-content/themes/erudite/page.php:13
+msgid "Pages:"
+msgstr "Sidor:"
+
+#: /webdev/erudite/wp-content/themes/erudite/search.php:8
+msgid "Search Results for:"
+msgstr "Sökresultat för:"
+
+#: /webdev/erudite/wp-content/themes/erudite/search.php:38
+msgid "<span class=\"meta-nav\">&larr;</span> Older results"
+msgstr "<span class=\"meta-nav\">&larr;</span> Äldre resultat"
+
+#: /webdev/erudite/wp-content/themes/erudite/search.php:39
+msgid "Newer results <span class=\"meta-nav\">&rarr;</span>"
+msgstr "Nyare resultat <span class=\"meta-nav\">&rarr;</span>"
+
+#: /webdev/erudite/wp-content/themes/erudite/search.php:45
+msgid "Nothing Found"
+msgstr "Ingenting hittades"
+
+#: /webdev/erudite/wp-content/themes/erudite/search.php:47
+msgid "Sorry, but nothing matched your search criteria. Please try again with some different keywords."
+msgstr "Ledsen, men ingenting matchade dina sökkriterier. Vänligen försök igen med andra nyckelord."
+
+#: /webdev/erudite/wp-content/themes/erudite/sidebar.php:9
+msgid "About"
+msgstr "Om"
+
+#: /webdev/erudite/wp-content/themes/erudite/sidebar.php:16
+msgid "Pages"
+msgstr "Sidor"
+
+#: /webdev/erudite/wp-content/themes/erudite/sidebar.php:31
+msgid "Categories"
+msgstr "Kategorier"
+
+#: /webdev/erudite/wp-content/themes/erudite/sidebar.php:39
+msgid "Archives"
+msgstr "Arkiv"
+
+#: /webdev/erudite/wp-content/themes/erudite/sidebar.php:53
+msgid "Search"
+msgstr "Sök"
+
+#: /webdev/erudite/wp-content/themes/erudite/sidebar.php:65
+msgid "RSS Feeds"
+msgstr "RSS-flöde"
+
+#: /webdev/erudite/wp-content/themes/erudite/sidebar.php:67
+msgid "All posts"
+msgstr "Alla inlägg"
+
+#: /webdev/erudite/wp-content/themes/erudite/sidebar.php:68
+msgid "All comments"
+msgstr "Alla kommentarer"
+
+#: /webdev/erudite/wp-content/themes/erudite/sidebar.php:73
+msgid "Meta"
+msgstr "Meta"
+
+#: /webdev/erudite/wp-content/themes/erudite/tag.php:6
+msgid "Tag Archives:"
+msgstr "Arkiv för nyckelord:"
+
+#: /webdev/erudite/wp-content/themes/erudite/library/epigraph.php:34
+#: /webdev/erudite/wp-content/themes/erudite/library/epigraph.php:39
+msgid "Epigraph"
+msgstr "Epigraph"
+
+#: /webdev/erudite/wp-content/themes/erudite/library/epigraph.php:41
+msgid "Citation (optional)"
+msgstr "Citat (frivilligt)"
+
+#: /webdev/erudite/wp-content/themes/erudite/library/theme-options.php:13
+msgid "Dark Colour Scheme"
+msgstr "Mörkt thema"
+
+#: /webdev/erudite/wp-content/themes/erudite/library/theme-options.php:14
+msgid "For all the dark colour lovers out there"
+msgstr "För alla älskare av mörka theman"
+
+#: /webdev/erudite/wp-content/themes/erudite/library/theme-options.php:19
+msgid "Use Categories in Menu"
+msgstr "Använd kategori i menyn"
+
+#: /webdev/erudite/wp-content/themes/erudite/library/theme-options.php:20
+msgid "Use categories rather than pages for your top menu. Caution: this only works with a small number of categories"
+msgstr "Använd kategorier istället för sidor i toppmenyn. Obeservera: detta fungerar bara med ett litet antal kategorier"
+
+#: /webdev/erudite/wp-content/themes/erudite/library/theme-options.php:25
+msgid "Footer &lsquo;About&lsquo; Blurb"
+msgstr "Footern &lsquo;Om&lsquo; Info"
+
+#: /webdev/erudite/wp-content/themes/erudite/library/theme-options.php:26
+msgid "The following text will appear in the footer for &lsquo;About&lsquo;. <br /><em>Note:</em> This will only appear if you have not enabled a widget for <strong>Erudite Widget 1</strong>"
+msgstr "Följande text visas i footern &lsquo;Om&lsquo;. <br /><em>Notera:</em> Detta visas endast om du inte aktiverat <strong>Erudite Widget 1</strong>"
+
+#: /webdev/erudite/wp-content/themes/erudite/library/theme-options.php:35
+msgid "Disable &lsquo;Keep Reading&rsquo;"
+msgstr "Stäng av &lsquo;Fortsätt läsa&rsquo;"
+
+#: /webdev/erudite/wp-content/themes/erudite/library/theme-options.php:36
+msgid "Turns off the dynamic <em>Keep Reading</em> / <em>Put Away</em> functionality on the homepage if it doesn't suit your fancy"
+msgstr "Stänger av den dynamiska <em>Fortsätt läsa</em> / <em>Dölj</em>- funktionaliteten på din hemsida, om du inte skulle gilla att ha det så."
+
+#: /webdev/erudite/wp-content/themes/erudite/library/theme-options.php:41
+msgid "Disable Header/Footer Hiding"
+msgstr "Avaktivera Header/Footer Hiding"
+
+#: /webdev/erudite/wp-content/themes/erudite/library/theme-options.php:42
+msgid "Turns off the dynamic show/hide functionality of the header and footer"
+msgstr "Stänger av visa/dölj funktionaliteten i headern och footern"
+
+#: /webdev/erudite/wp-content/themes/erudite/library/theme-options.php:47
+msgid "Disable footer credit"
+msgstr "Avaktivera credits i footern"
+
+#: /webdev/erudite/wp-content/themes/erudite/library/theme-options.php:48
+msgid "Removes the link to the theme's author in the footer. Leave it in to say &ldquo;thanks for the hard work.&rdquo;"
+msgstr "Tar bort länken till themats upphovsman i footern. Lämna det kvar för att säga &ldquo;tack för ditt slit.&rdquo;"
+
+#: /webdev/erudite/wp-content/themes/erudite/library/theme-options.php:53
+msgid "Enable comment threading"
+msgstr "aktivera nästlade kommentarer"
+
+#: /webdev/erudite/wp-content/themes/erudite/library/theme-options.php:54
+msgid "Allow comment threading. (Global <a href='options-discussion.php' title='Discussion settings'>discussion settings</a> have no effect unless this is checked first)<br /> This is <strong>off</strong> by default because threaded comments are rubbish. Turn on at your peril, and don't go more than 2 levels deep."
+msgstr "Tilllåt nästlade kommentarer. (Global <a href='options-discussion.php' title='Discussion settings'>diskussionsinställningar</a> har ingen effekt om inte detta är ikryssat)<br /> Den är <strong>avstängd</strong> per automatik eftersom nästlade kommentarer ser så sjavigt ut. Aktivera på egen risk, men gå inte djupare än två nivåer."
+
+#: /webdev/erudite/wp-content/themes/erudite/library/theme-options.php:58
+msgid "Google Analytics code"
+msgstr "Google Analytics kod"
+
+#: /webdev/erudite/wp-content/themes/erudite/library/theme-options.php:59
+msgid "Enter your <a href=\"http://www.google.com/analytics\">Google Analytics</a> (or other service) tracking code here, and it will automatically be placed just before the <code>&lt;body&gt;</code> tag."
+msgstr "Ange din <a href=\"http://www.google.com/analytics\">Google Analytics</a> (eller annan service) kod här, och det kommer automatiskt placeras innan<code>&lt;body&gt;</code> taggen."
+
+#: /webdev/erudite/wp-content/themes/erudite/library/theme-options.php:109
+msgid "settings saved."
+msgstr "inställningar sparade."
+
+#: /webdev/erudite/wp-content/themes/erudite/library/theme-options.php:110
+msgid "settings reset."
+msgstr "inställningar återställda."
+
+#: /webdev/erudite/wp-content/themes/erudite/library/theme-options.php:111
+msgid "widgets reset."
+msgstr "återställ widgets."
+
+#: /webdev/erudite/wp-content/themes/erudite/library/theme-options.php:227
+msgid "Save changes"
+msgstr "Spara ändringarna."
+
+#: /webdev/erudite/wp-content/themes/erudite/library/theme-options.php:233
+msgid "Reset"
+msgstr "Återställ"
+
+#~ msgid "Title:"
+#~ msgstr "Titel:"
+
+#~ msgid "Button Text:"
+#~ msgstr "Knop Tekst:"
+
+#~ msgid "RSS Links"
+#~ msgstr "RSS koppelingen"
+
+#~ msgid "Posts RSS feed"
+#~ msgstr "RSS koppeling van dit bericht"
+
+#~ msgid "Comments RSS feed"
+#~ msgstr "RSS koppeling voor opmerkingen"
+
+#~ msgid "A search form for your blog (The Erudite)"
+#~ msgstr "Een zoekformulier voor uw blog (The Erudite)."
+
+#~ msgid "Log in/out and administration links (The Erudite)"
+#~ msgstr "Aan/afmelding en administratieve koppelingen (The Erudite)"
+
+#~ msgid "RSS links for both posts and comments (The Erudite)"
+#~ msgstr "RSS koppelingen voor berichten en opmerkingen (The Erudite)"
