@@ -17,7 +17,7 @@
 				</div>
 				<div class="entry-meta">
 					<?php printf( __( 'Posted by %1$s on <abbr class="published" title="%2$sT%3$s">%4$s at %5$s</abbr>. Bookmark the <a href="%6$s" title="Permalink to %7$s" rel="bookmark">permalink</a>. Follow any comments here with the <a href="%8$s" title="Comments RSS to %7$s" rel="alternate" type="application/rss+xml">RSS feed for this post</a>.', 'erudite' ),
-						'<span class="author vcard"><a class="url fn n" href="' . get_author_link( false, $authordata->ID, $authordata->user_nicename ) . '" title="' . sprintf( __( 'View all posts by %s', 'erudite' ), $authordata->display_name ) . '">' . get_the_modified_author() . '</a></span>',
+						'<span class="author vcard"><a class="url fn n" href="' . get_author_link( false, $authordata->ID, $authordata->user_nicename ) . '" title="' . sprintf( __( 'View all posts by %s', 'erudite' ), $authordata->display_name ) . '">' . get_the_author() . '</a></span>',
 						get_the_time('Y-m-d'),
 						get_the_time('H:i:sO'),
 						the_date( '', '', '', false ),

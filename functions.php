@@ -72,11 +72,6 @@ function the_theme_option( $id, $format = false ) {
 	echo get_the_theme_option( $id, $format );
 }
 
-// the_modified_author (WP 2.8) compatibility
-if (!function_exists("the_modified_author") ) {
-	function the_modified_author() { return the_author(); }
-	function get_the_modified_author() { return get_the_author(); }
-}
 
 // body_class future compatibility for WP 2.8
 if (!function_exists("body_class") ) {

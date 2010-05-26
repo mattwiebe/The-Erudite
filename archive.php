@@ -28,7 +28,7 @@
 				<div class="entry-meta">
 					<span class="entry-date"><abbr class="published" title="<?php the_time('Y-m-d\TH:i:sO') ?>"><?php unset($previousday); printf( __( '%1$s &#8211; %2$s', 'erudite' ), the_date( '', '', '', false ), get_the_time() ) ?></abbr></span>
 					<span class="meta-sep">|</span>
-					<span class="author vcard"><?php printf( __( 'By %s', 'erudite' ), '<a class="url fn n" href="' . get_author_link( false, $authordata->ID, $authordata->user_nicename ) . '" title="' . sprintf( __( 'View all posts by %s', 'erudite' ), $authordata->display_name ) . '">' . get_the_modified_author() . '</a>' ) ?></span>
+					<span class="author vcard"><?php printf( __( 'By %s', 'erudite' ), '<a class="url fn n" href="' . get_author_link( false, $authordata->ID, $authordata->user_nicename ) . '" title="' . sprintf( __( 'View all posts by %s', 'erudite' ), $authordata->display_name ) . '">' . get_the_author() . '</a>' ) ?></span>
 					<span class="meta-sep">|</span>
 					<span class="cat-links"><?php printf( __( 'Posted in %s', 'erudite' ), get_the_category_list(', ') ) ?></span>
 					<span class="meta-sep">|</span>
