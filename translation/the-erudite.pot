@@ -1,4 +1,4 @@
-# Translation of the WordPress theme The Erudite 2.6.1 by Matt Wiebe.
+# Translation of the WordPress theme The Erudite 2.6.2 by Matt Wiebe.
 # Copyright (C) 2010 Matt Wiebe
 # This file is distributed under the same license as the The Erudite package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2010.
@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: The Erudite 2.6.1\n"
+"Project-Id-Version: The Erudite 2.6.2\n"
 "Report-Msgid-Bugs-To: http://wordpress.org/tag/the-erudite\n"
-"POT-Creation-Date: 2010-05-22 13:45-0500\n"
+"POT-Creation-Date: 2010-05-31 11:27-0500\n"
 "PO-Revision-Date: 2010-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -21,7 +21,9 @@ msgid "Not Found"
 msgstr ""
 
 #: 404.php:9
-msgid "Apologies, but we were unable to find what you were looking for. Perhaps searching will help."
+msgid ""
+"Apologies, but we were unable to find what you were looking for. Perhaps "
+"searching will help."
 msgstr ""
 
 #: 404.php:14 search.php:52 sidebar.php:57
@@ -281,13 +283,13 @@ msgstr ""
 msgid "The Erudite theme for WordPress"
 msgstr ""
 
-#. #-#-#-#-#  the-erudite.pot (The Erudite 2.6.1)  #-#-#-#-#
+#. #-#-#-#-#  the-erudite.pot (The Erudite 2.6.2)  #-#-#-#-#
 #. Theme Name of the plugin/theme
 #: footer.php:6
 msgid "The Erudite"
 msgstr ""
 
-#: functions.php:116
+#: functions.php:111
 msgid "Header Menu"
 msgstr ""
 
@@ -371,39 +373,50 @@ msgid ""
 "<strong>Erudite Widget 1</strong>"
 msgstr ""
 
-#: library/theme-options.php:35
+#: library/theme-options.php:28
+#, php-format
+msgid ""
+"This is an example of an &lsquo;About&lsquo; blurb. I'm sure that the author "
+"of this blog is highly intelligent, witty and even <em>possibly</em> "
+"socially competent.\n"
+"\n"
+"It can be modified from this theme's <strong>options panel</strong> in the "
+"admin area (Appearance &rarr; %s Options)"
+msgstr ""
+
+#: library/theme-options.php:33
 msgid "Disable &lsquo;Keep Reading&rsquo;"
 msgstr ""
 
-#: library/theme-options.php:36
+#: library/theme-options.php:34
 msgid ""
 "Turns off the dynamic <em>Keep Reading</em> / <em>Put Away</em> "
 "functionality on the homepage if it doesn't suit your fancy"
 msgstr ""
 
-#: library/theme-options.php:41
+#: library/theme-options.php:39
 msgid "Disable Header/Footer Hiding"
 msgstr ""
 
-#: library/theme-options.php:42
+#: library/theme-options.php:40
 msgid "Turns off the dynamic show/hide functionality of the header and footer"
 msgstr ""
 
-#: library/theme-options.php:47
+#: library/theme-options.php:45
 msgid "Disable footer credit"
 msgstr ""
 
-#: library/theme-options.php:48
+#: library/theme-options.php:46
 msgid ""
 "Removes the link to the theme's author in the footer. Leave it in to say "
 "&ldquo;thanks for the hard work.&rdquo;"
 msgstr ""
 
-#: library/theme-options.php:53
+#: library/theme-options.php:51
 msgid "Enable comment threading"
 msgstr ""
 
-#: library/theme-options.php:54
+#: library/theme-options.php:52
 msgid ""
 "Allow comment threading. (Global <a href='options-discussion.php' "
 "title='Discussion settings'>discussion settings</a> have no effect unless "
@@ -412,46 +425,46 @@ msgid ""
 "2 levels deep."
 msgstr ""
 
-#: library/theme-options.php:59
+#: library/theme-options.php:57
 msgid "Disable editor style"
 msgstr ""
 
-#: library/theme-options.php:60
+#: library/theme-options.php:58
 msgid "Turn off the Visual editor styling"
 msgstr ""
 
-#: library/theme-options.php:65
+#: library/theme-options.php:63
 msgid "Google Analytics code"
 msgstr ""
 
-#: library/theme-options.php:66
+#: library/theme-options.php:64
 msgid ""
 "Enter your <a href=\"http://www.google.com/analytics\">Google Analytics</a> "
 "(or other service) tracking code here, and it will automatically be placed "
 "just before the <code>&lt;body&gt;</code> tag."
 msgstr ""
 
-#: library/theme-options.php:110 library/theme-options.php:125
+#: library/theme-options.php:108 library/theme-options.php:123
 msgid "Options"
 msgstr ""
 
-#: library/theme-options.php:118
+#: library/theme-options.php:116
 msgid "settings saved."
 msgstr ""
 
-#: library/theme-options.php:119
+#: library/theme-options.php:117
 msgid "settings reset."
 msgstr ""
 
-#: library/theme-options.php:120
+#: library/theme-options.php:118
 msgid "widgets reset."
 msgstr ""
 
-#: library/theme-options.php:236
+#: library/theme-options.php:234
 msgid "Save changes"
 msgstr ""
 
-#: library/theme-options.php:242
+#: library/theme-options.php:240
 msgid "Reset"
 msgstr ""
 

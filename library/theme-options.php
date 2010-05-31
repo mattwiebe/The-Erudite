@@ -25,9 +25,7 @@ $erdt_options = array (
 	array(	"name" => __('Footer &lsquo;About&lsquo; Blurb','erudite'),
 			"desc" => __('The following text will appear in the footer for &lsquo;About&lsquo;. <br /><em>Note:</em> This will only appear if you have not enabled a widget for <strong>Erudite Widget 1</strong>','erudite'),
 			"id" => $shortname."footer_about",
-			"std" => __("This is an example of an \"About\" blurb. I'm sure that the author of <a href='/' title='Home page'>this blog</a> is highly intelligent, witty and even <em>possibly</em> socially competent.
-
-It can be modified from this theme's <strong>options panel</strong> in the admin area (Appearance &rarr; $themename Options)", 'erudite'),
+			"std" => sprintf(__("This is an example of an &ldquo;About&rdquo; blurb. I&rsquo;m sure that the author of this blog is highly intelligent, witty and even <em>possibly</em> socially competent.\n\nIt can be modified from this theme&rsquo;s <strong>options panel</strong> in the admin area (Appearance &rarr; %s Options)", 'erudite'), $themename),
 			"type" => "textarea",
 			"options" => array(	"rows" => "6",
 								"cols" => "70") ),
