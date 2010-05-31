@@ -144,6 +144,11 @@ function old_sandbox_globalnav() {
 
 }
 
+add_filter('the_content', 'erdt_hr_helper', 0);
+function erdt_hr_helper($content) {
+	return str_replace('<hr />', "<hr />\n\n", $content);
+}
+
 // Generates semantic classes for BODY element
 function sandbox_body_class( $print = true ) {
 	global $wp_query, $current_user;
