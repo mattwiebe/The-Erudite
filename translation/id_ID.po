@@ -1,0 +1,596 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: The Erudite 2.6.1\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/tag/the-erudite\n"
+"POT-Creation-Date: 2010-05-22 13:45-0500\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Cahya Legawa <haridiva@gmail.com>\n"
+"Language-Team: Cahya Legawa <haridiva@gmail.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: Indonesian\n"
+"X-Poedit-Country: INDONESIA\n"
+"X-Poedit-SourceCharset: utf-8\n"
+
+#: 404.php:7
+msgid "Not Found"
+msgstr "Tidak Ditemukan"
+
+#: 404.php:9
+msgid "Apologies, but we were unable to find what you were looking for. Perhaps searching will help."
+msgstr "Maaf, namun kami tidak dapat menemukan apa yang Anda tuju. Mungkin menelusuri akan membantu"
+
+#: 404.php:14
+#: search.php:52
+#: sidebar.php:57
+msgid "Find"
+msgstr "Temukan"
+
+#: archive.php:9
+#, php-format
+msgid "Daily Archives: <span>%s</span>"
+msgstr "Arsip Harian: <span>%s</span>"
+
+#: archive.php:11
+#, php-format
+msgid "Monthly Archives: <span>%s</span>"
+msgstr "Arsip Bulanan: <span>%s</span>"
+
+#: archive.php:13
+#, php-format
+msgid "Yearly Archives: <span>%s</span>"
+msgstr "Arsip Tahunan: <span>%s</span>"
+
+#: archive.php:15
+msgid "Blog Archives"
+msgstr "Arsip Blog"
+
+#: archive.php:23
+#: author.php:16
+#: category.php:12
+#: home.php:13
+#: home.php:21
+#: index.php:9
+#: search.php:13
+#: tag.php:11
+#, php-format
+msgid "Permalink to %s"
+msgstr "Pranala tetap ke %s"
+
+#: archive.php:25
+#: author.php:18
+#: category.php:14
+#: home.php:16
+#: home.php:24
+#: index.php:12
+#: search.php:15
+#: tag.php:13
+msgid "Read More <span class=\"meta-nav\">&rarr;</span>"
+msgstr "Selanjutnya <span class=\"meta-nav\">&rarr;</span>"
+
+#: archive.php:29
+#: author.php:22
+#: category.php:18
+#: home.php:30
+#: index.php:17
+#: search.php:21
+#: single.php:16
+#: tag.php:17
+#, php-format
+msgid "%1$s &#8211; %2$s"
+msgstr "%1$s &#8211; %2$s"
+
+#: archive.php:31
+#: author.php:24
+#: category.php:20
+#: home.php:32
+#: index.php:19
+#: search.php:23
+#: single.php:18
+#: tag.php:19
+#, php-format
+msgid "By %s"
+msgstr "Oleh %s"
+
+#: archive.php:31
+#: attachment.php:20
+#: author.php:24
+#: category.php:20
+#: home.php:32
+#: image.php:21
+#: index.php:19
+#: search.php:23
+#: single.php:18
+#: tag.php:19
+#, php-format
+msgid "View all posts by %s"
+msgstr "Lihat semua artikel oleh %s"
+
+#: archive.php:33
+#: author.php:26
+#: category.php:22
+#: home.php:34
+#: index.php:21
+#: search.php:25
+#: single.php:20
+#: tag.php:21
+#, php-format
+msgid "Posted in %s"
+msgstr "Ditulis dalam %s"
+
+#: archive.php:35
+#: author.php:28
+#: category.php:24
+#: home.php:36
+#: index.php:23
+#: search.php:27
+#: single.php:22
+#: tag.php:23
+msgid "<span class=\"tag-links\">Tagged "
+msgstr "<span class=\"tag-links\">Penanda "
+
+#: archive.php:36
+#: archives.php:32
+#: attachment.php:38
+#: author.php:29
+#: category.php:25
+#: home.php:37
+#: image.php:39
+#: index.php:24
+#: links.php:22
+#: page.php:15
+#: search.php:28
+#: single.php:23
+#: tag.php:24
+msgid "Edit"
+msgstr "Sunting"
+
+#: archive.php:37
+#: author.php:30
+#: category.php:26
+#: home.php:38
+#: index.php:25
+#: search.php:29
+#: single.php:24
+#: tag.php:25
+msgid "Comments (0)"
+msgstr "Tanggapan (0)"
+
+#: archive.php:37
+#: author.php:30
+#: category.php:26
+#: home.php:38
+#: index.php:25
+#: search.php:29
+#: single.php:24
+#: tag.php:25
+msgid "Comments (1)"
+msgstr "Tanggapan (1)"
+
+#: archive.php:37
+#: author.php:30
+#: category.php:26
+#: home.php:38
+#: index.php:25
+#: search.php:29
+#: single.php:24
+#: tag.php:25
+msgid "Comments (%)"
+msgstr "Tanggapan (%)"
+
+#: archive.php:44
+#: author.php:37
+#: category.php:33
+#: home.php:47
+#: index.php:34
+#: tag.php:32
+msgid "<span class=\"meta-nav\">&larr;</span> Older posts"
+msgstr "<span class=\"meta-nav\">&larr;</span> Tulisan sebelumnya"
+
+#: archive.php:45
+#: author.php:38
+#: category.php:34
+#: home.php:48
+#: index.php:35
+#: tag.php:33
+msgid "Newer posts <span class=\"meta-nav\">&rarr;</span>"
+msgstr "Tulisan selanjutnya <span class=\"meta-nav\">&rarr;</span>"
+
+#: archives.php:20
+msgid "Archives by Category"
+msgstr "Arsip berdasarkan Kategori"
+
+#: archives.php:26
+msgid "Archives by Month"
+msgstr "Arsip berdasarkan Bulan"
+
+#: attachment.php:8
+#: image.php:8
+#, php-format
+msgid "Return to %s"
+msgstr "Kembali ke %s"
+
+#: attachment.php:19
+#: image.php:20
+#, php-format
+msgid "Posted by %1$s on <abbr class=\"published\" title=\"%2$sT%3$s\">%4$s at %5$s</abbr>. Bookmark the <a href=\"%6$s\" title=\"Permalink to %7$s\" rel=\"bookmark\">permalink</a>. Follow any comments here with the <a href=\"%8$s\" title=\"Comments RSS to %7$s\" rel=\"alternate\" type=\"application/rss+xml\">RSS feed for this post</a>."
+msgstr "Ditulis oleh %1$s pada <abbr class=\"published\" title=\"%2$sT%3$s\">%4$s at %5$s</abbr>. Bookmark <a href=\"%6$s\" title=\"Permalink to %7$s\" rel=\"bookmark\">permalink</a>. Ikuti tanggapan selanjutnya dengan <a href=\"%8$s\" title=\"Comments RSS to %7$s\" rel=\"alternate\" type=\"application/rss+xml\">Pemasok RSS untuk tulisan ini</a>."
+
+#: attachment.php:30
+#: image.php:31
+#, php-format
+msgid "<a class=\"comment-link\" href=\"#respond\" title=\"Post a comment\">Post a comment</a> or leave a trackback: <a class=\"trackback-link\" href=\"%s\" title=\"Trackback URL for your post\" rel=\"trackback\">Trackback URL</a>."
+msgstr "<a class=\"comment-link\" href=\"#respond\" title=\"Post a comment\">Tinggalkan sebuah tanggapan</a> atau tinggalkan lacak balik: <a class=\"trackback-link\" href=\"%s\" title=\"Trackback URL for your post\" rel=\"trackback\">URL lacak balik</a>."
+
+#: attachment.php:32
+#: image.php:33
+#, php-format
+msgid "Comments are closed, but you can leave a trackback: <a class=\"trackback-link\" href=\"%s\" title=\"Trackback URL for your post\" rel=\"trackback\">Trackback URL</a>."
+msgstr "Tanggapan ditutup, namun Anda bisa meninggalkan lacak balik: <a class=\"trackback-link\" href=\"%s\" title=\"Trackback URL for your post\" rel=\"trackback\">URL lacak balik</a>."
+
+#: attachment.php:34
+#: image.php:35
+msgid "Trackbacks are closed, but you can <a class=\"comment-link\" href=\"#respond\" title=\"Post a comment\">post a comment</a>."
+msgstr "Lacak balik ditutup, namun Anda bisa <a class=\"comment-link\" href=\"#respond\" title=\"Post a comment\">meninggalkan sebuah tanggapan</a>."
+
+#: attachment.php:36
+#: image.php:37
+msgid "Both comments and trackbacks are currently closed."
+msgstr "Baik tanggapan dan lacak balik saat ini ditutup."
+
+#: author.php:8
+#, php-format
+msgid "Author Archives: <span class=\"vcard\">%s</span>"
+msgstr "Arsip Penulis: <span class=\"vcard\">%s</span>"
+
+#: category.php:6
+msgid "Category Archives:"
+msgstr "Arsip Kategori:"
+
+#: comments.php:10
+msgid "This post is protected. Enter the password to view any comments."
+msgstr "Tulisan ini dilindungi. Masukkan kata kunci untuk melihat tanggapan."
+
+#: comments.php:17
+msgid "No Comments"
+msgstr "Tidak Ada Tanggapan"
+
+#: comments.php:17
+msgid "One Comment"
+msgstr "Satu Tanggapan"
+
+#: comments.php:17
+msgid "% Comments"
+msgstr "% Tanggapan"
+
+#: comments.php:22
+msgid "Respond to this"
+msgstr "Tanggapi ini"
+
+#: comments.php:34
+msgid "Post a Comment"
+msgstr "Kirimkan sebuah Tanggapan"
+
+#: comments.php:34
+#, php-format
+msgid "Respond to %s"
+msgstr "Tanggapi %s"
+
+#: comments.php:36
+msgid "Cancel this response"
+msgstr "Batalkan tanggapan ini"
+
+#: comments.php:39
+#, php-format
+msgid "You must be <a href=\"%s\" title=\"Log in\">logged in</a> to post a comment."
+msgstr "Anda harus <a href=\"%s\" title=\"Log in\">masuk</a> untuk memberi tanggapan."
+
+#: comments.php:48
+#, php-format
+msgid "<span class=\"loggedin\">Logged in as <a href=\"%1$s\" title=\"Logged in as %2$s\">%2$s</a>.</span> <span class=\"logout\"><a href=\"%3$s\" title=\"Log out of this account\">Log out?</a></span>"
+msgstr "<span class=\"loggedin\">Masuk sebagai <a href=\"%1$s\" title=\"Logged in as %2$s\">%2$s</a>.</span> <span class=\"logout\"><a href=\"%3$s\" title=\"Log out of this account\">Keluar?</a></span>"
+
+#: comments.php:56
+msgid "Your email is <em>never</em> shared."
+msgstr "Surat elektronik anda <em>tidak akan pernah</em> dibagikan."
+
+#: comments.php:56
+msgid "Required fields are marked <span class=\"required\">*</span>"
+msgstr "Unsur yang wajib diisi ditandai <span class=\"required\">*</span>"
+
+#: comments.php:59
+msgid "Name"
+msgstr "Nama"
+
+#: comments.php:59
+#: comments.php:62
+msgid "<span class=\"required\">*</span>"
+msgstr "<span class=\"required\">*</span>"
+
+#: comments.php:62
+msgid "Email"
+msgstr "Surat Elektronik"
+
+#: comments.php:65
+msgid "Website"
+msgstr "Situs Web"
+
+#: comments.php:72
+msgid "Comment"
+msgstr "Tanggapan"
+
+#: comments.php:75
+msgid "Post Comment"
+msgstr "Kirim Tanggapan"
+
+#: comments_custom.php:9
+#, php-format
+msgid "<cite class=\"fn\">%s</cite> <span class=\"says\">wrote:</span>"
+msgstr "<cite class=\"fn\">%s</cite> <span class=\"says\">menulis:</span>"
+
+#: comments_custom.php:12
+msgid "Your comment is awaiting moderation."
+msgstr "Tanggapan anda sedang menunggu moderasi."
+
+#: comments_custom.php:15
+#, php-format
+msgid "%1$s at %2$s"
+msgstr "%1$s pada %2$s"
+
+#: comments_custom.php:15
+msgid "(Edit)"
+msgstr "(Sunting)"
+
+#: footer.php:3
+msgid "WordPress"
+msgstr "WordPress"
+
+#: footer.php:6
+msgid "The Erudite theme for WordPress"
+msgstr "Tema The Erudite untuk Wordpress"
+
+#. #-#-#-#-#  the-erudite.pot (The Erudite 2.6.1)  #-#-#-#-#
+#. Theme Name of the plugin/theme
+#: footer.php:6
+msgid "The Erudite"
+msgstr "The Erudite"
+
+#: functions.php:116
+msgid "Header Menu"
+msgstr "Menu Header"
+
+#: header.php:18
+msgid "<span>↓</span> Keep Reading"
+msgstr "<span>↓</span> Baca Selanjutnya"
+
+#: header.php:19
+msgid "<span>↑</span> Put Away"
+msgstr "<span>↑</span> Tutup kembali"
+
+#: header.php:20
+msgid "&#x2193; Further Information"
+msgstr "&#x2193; Informasi Selebihnya"
+
+#: header.php:21
+msgid "<span>↓</span> Show Menu"
+msgstr "<span>↓</span> Tampilkan Menu"
+
+#: header.php:22
+msgid "<span>↑</span> Hide Menu"
+msgstr "<span>↑</span> Sembunyikan Menu"
+
+#: header.php:31
+#: sidebar.php:67
+#, php-format
+msgid "%s latest posts"
+msgstr "%s tulisan terakhir"
+
+#: header.php:32
+#: sidebar.php:68
+#, php-format
+msgid "%s latest comments"
+msgstr "%s tanggapan terakhir"
+
+#: header.php:46
+msgid "Skip to content"
+msgstr "Lompat ke konten"
+
+#: home.php:24
+#, php-format
+msgid "Keep reading &lsquo;%s&rsquo;"
+msgstr "baca  &lsquo;%s&rsquo; selengkapnya"
+
+#: home.php:27
+#: index.php:14
+#: page.php:13
+#: single.php:13
+msgid "Pages:"
+msgstr "Halaman:"
+
+#: library/epigraph.php:34
+#: library/epigraph.php:39
+msgid "Epigraph"
+msgstr "Epigraf"
+
+#: library/epigraph.php:41
+msgid "Citation (optional)"
+msgstr "Kutipan (pilihan)"
+
+#: library/theme-options.php:13
+msgid "Dark Colour Scheme"
+msgstr "Skema Warna Gelap"
+
+#: library/theme-options.php:14
+msgid "For all the dark colour lovers out there"
+msgstr "Untuk semua pecinta warna gelap di luar sana"
+
+#: library/theme-options.php:19
+msgid "Use Categories in Menu"
+msgstr "Gunakan Kategori pada Menu"
+
+#: library/theme-options.php:20
+msgid "Use categories rather than pages for your top menu. Caution: this only works with a small number of categories"
+msgstr "Gunakan kategori daripada halaman untuk menu atas anda. Peringatan: ini hanya akan berfungsi jika jumlah kategori tidak terlalu banyak."
+
+#: library/theme-options.php:25
+msgid "Footer &lsquo;About&lsquo; Blurb"
+msgstr "Footer &lsquo;About&lsquo; Blurb"
+
+#: library/theme-options.php:26
+msgid "The following text will appear in the footer for &lsquo;About&lsquo;. <br /><em>Note:</em> This will only appear if you have not enabled a widget for <strong>Erudite Widget 1</strong>"
+msgstr "Teks berikut akan tampil di bagian <em>footer</em> runtuk &lsquo;About&lsquo;. <br /><em>Catatan:</em> Ini hanya akan muncul jika Anda tidak menggukan <em>widget</em> untuk <strong>Erudite Widget 1</strong>"
+
+#: library/theme-options.php:35
+msgid "Disable &lsquo;Keep Reading&rsquo;"
+msgstr "Matikan fungsi &lsquo;Terus Membaca&rsquo;"
+
+#: library/theme-options.php:36
+msgid "Turns off the dynamic <em>Keep Reading</em> / <em>Put Away</em> functionality on the homepage if it doesn't suit your fancy"
+msgstr "Mematikan fungsi <em>Baca Selanjutnya</em> / <em>Tutup Kembali</em> dinamis pada beranda jika itu tidak sesuai dengan seleramu"
+
+#: library/theme-options.php:41
+msgid "Disable Header/Footer Hiding"
+msgstr "Matikan fungsi penyembunyian Header/Footer"
+
+#: library/theme-options.php:42
+msgid "Turns off the dynamic show/hide functionality of the header and footer"
+msgstr "Matikan fungsi tampil/sembunyikan dinamis untuk <em>header</em> dan <em>footer</em>"
+
+#: library/theme-options.php:47
+msgid "Disable footer credit"
+msgstr "Hilangkan kredit <em>footer</em>"
+
+#: library/theme-options.php:48
+msgid "Removes the link to the theme's author in the footer. Leave it in to say &ldquo;thanks for the hard work.&rdquo;"
+msgstr "Hilangkan pranala menuju pembuat tema pada <em>footer</em>. Tinggalkan untuk mengatakan &ldquo;terima kasih untuk kerja kerasnya.&rdquo;"
+
+#: library/theme-options.php:53
+msgid "Enable comment threading"
+msgstr "Fungsikan galur tanggapan"
+
+#: library/theme-options.php:54
+msgid "Allow comment threading. (Global <a href='options-discussion.php' title='Discussion settings'>discussion settings</a> have no effect unless this is checked first)<br /> This is <strong>off</strong> by default because threaded comments are rubbish. Turn on at your peril, and don't go more than 2 levels deep."
+msgstr "Izinkan galur tanggapan (<em>threaded comment</em>). (<a href='options-discussion.php' title='Discussion settings'>Setelan diskusi</a> global tidak akan berefek terkecuali ini dicentang terlebih dahulu)<br /> Ini <strong>mati</strong> dalam setelan aslinya karena tanggapan bergalur hanyalah sampah. Nyalakan lagi penderitaan anda, dan sebaiknya jangan melampaui galur ke dalaman tingkat 2."
+
+#: library/theme-options.php:59
+msgid "Disable editor style"
+msgstr "Matikan fungsi gaya penyuntingan"
+
+#: library/theme-options.php:60
+msgid "Turn off the Visual editor styling"
+msgstr "Mematikan gaya tampilan saat mengedit secara visual (visual editor styling)"
+
+#: library/theme-options.php:65
+msgid "Google Analytics code"
+msgstr "Kode Google Analytics"
+
+#: library/theme-options.php:66
+msgid "Enter your <a href=\"http://www.google.com/analytics\">Google Analytics</a> (or other service) tracking code here, and it will automatically be placed just before the <code>&lt;body&gt;</code> tag."
+msgstr "Masukkan kode pelacakan <a href=\"http://www.google.com/analytics\">Google Analytics</a> (atau penyedia jasa lainnya) di sini, dan akan otomatis diletakkan tepat sebelum <code>&lt;body&gt;</code> tag."
+
+#: library/theme-options.php:110
+#: library/theme-options.php:125
+msgid "Options"
+msgstr "Pilihan"
+
+#: library/theme-options.php:118
+msgid "settings saved."
+msgstr "Setelan disimpan"
+
+#: library/theme-options.php:119
+msgid "settings reset."
+msgstr "Reset setelan."
+
+#: library/theme-options.php:120
+msgid "widgets reset."
+msgstr "Reset widget"
+
+#: library/theme-options.php:236
+msgid "Save changes"
+msgstr "Simpan ubahan"
+
+#: library/theme-options.php:242
+msgid "Reset"
+msgstr "Reset"
+
+#: search.php:8
+msgid "Search Results for:"
+msgstr "Hasil Penelusuran untuk:"
+
+#: search.php:38
+msgid "<span class=\"meta-nav\">&larr;</span> Older results"
+msgstr "<span class=\"meta-nav\">&larr;</span> Hasil sebelumnya"
+
+#: search.php:39
+msgid "Newer results <span class=\"meta-nav\">&rarr;</span>"
+msgstr "Hasil selanjutnya <span class=\"meta-nav\">&rarr;</span>"
+
+#: search.php:45
+msgid "Nothing Found"
+msgstr "Tidak Ditemukan Apapun"
+
+#: search.php:47
+msgid "Sorry, but nothing matched your search criteria. Please try again with some different keywords."
+msgstr "Maaf, namun tidak ada yang sesuai dengan kriteria pencarian anda. Silakan mencari kembali dengan beberapa kata kunci yang berbeda."
+
+#: sidebar.php:9
+msgid "About"
+msgstr "Perihal"
+
+#: sidebar.php:16
+msgid "Pages"
+msgstr "Halaman"
+
+#: sidebar.php:31
+msgid "Categories"
+msgstr "Kategori"
+
+#: sidebar.php:39
+msgid "Archives"
+msgstr "Arsip"
+
+#: sidebar.php:53
+msgid "Search"
+msgstr "Cari"
+
+#: sidebar.php:65
+msgid "RSS Feeds"
+msgstr "Pemasok RSS"
+
+#: sidebar.php:67
+msgid "All posts"
+msgstr "Semua tulisan"
+
+#: sidebar.php:68
+msgid "All comments"
+msgstr "Semua tanggapan"
+
+#: sidebar.php:73
+msgid "Meta"
+msgstr "Meta"
+
+#: tag.php:6
+msgid "Tag Archives:"
+msgstr "Arsip Penanda:"
+
+#. Theme URI of the plugin/theme
+msgid "http://somadesign.ca/projects/the-erudite"
+msgstr "http://somadesign.ca/projects/the-erudite"
+
+#. Description of the plugin/theme
+msgid "A theme for writers who want readers, not visitors, traffic, click-throughs, CPMs or what-have-you. Carefully crafted typography and generous use of whitespace lets your writing shine. Version 2 includes a dark theme option."
+msgstr "Sebuah tema bagi penulis yang menghendaki pembaca, bukan pengunjung, trafik, klik selanjutnya, CPM (bayaran iklan), atau apapun itu. Tipografi yang diolah seksama dan penggunaan ruang putih yang leluasa membuat tulisan anda bersinar. Versi 2 menyediakan pilihan sebuah tema gelap."
+
+#. Author of the plugin/theme
+msgid "Matt Wiebe"
+msgstr "Matt Wiebe"
+
+#. Author URI of the plugin/theme
+msgid "http://somadesign.ca/"
+msgstr "http://somadesign.ca/"
+
+#. Tags of the plugin/theme
+msgid "white, dark, one-column, theme-options"
+msgstr "white, dark, one-column, theme-options"
+

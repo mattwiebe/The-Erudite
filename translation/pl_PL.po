@@ -1,0 +1,703 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Translate EN to NL\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-01-25 23:42-0600\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Paweł Dworniak <pdworniak@gmail.com>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Poedit-Language: Dutch\n"
+"X-Poedit-Country: NETHERLANDS\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;\n"
+"X-Poedit-Basepath: \n"
+"X-Poedit-Bookmarks: \n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Textdomain-Support: yes"
+
+#: 404.php:7
+#@ erudite
+msgid "Not Found"
+msgstr "Nie znaleziono"
+
+#: 404.php:14
+#: search.php:52
+#: sidebar.php:57
+#@ erudite
+msgid "Find"
+msgstr "Znajdź"
+
+#: archive.php:9
+#, php-format
+#@ erudite
+msgid "Daily Archives: <span>%s</span>"
+msgstr "Archiwum dzienne: <span>%s</span>"
+
+#: archive.php:11
+#, php-format
+#@ erudite
+msgid "Monthly Archives: <span>%s</span>"
+msgstr "Archiwum miesięczne: <span>%s</span>"
+
+#: archive.php:13
+#, php-format
+#@ erudite
+msgid "Yearly Archives: <span>%s</span>"
+msgstr "Archiwum roczne: <span>%s</span>"
+
+#: archive.php:15
+#@ erudite
+msgid "Blog Archives"
+msgstr "Archiwum bloga"
+
+#: archive.php:23
+#: author.php:16
+#: category.php:12
+#: home.php:13
+#: home.php:21
+#: index.php:9
+#: search.php:13
+#: tag.php:11
+#, php-format
+#@ erudite
+msgid "Permalink to %s"
+msgstr "Stały link do %s"
+
+#: archive.php:25
+#: author.php:18
+#: category.php:14
+#: home.php:16
+#: home.php:24
+#: index.php:12
+#: search.php:15
+#: tag.php:13
+#@ erudite
+msgid "Read More <span class=\"meta-nav\">&rarr;</span>"
+msgstr "Czytaj dalej <span class=\"meta-nav\">&rarr;</span>"
+
+#: archive.php:29
+#: author.php:22
+#: category.php:18
+#: home.php:30
+#: index.php:17
+#: search.php:21
+#: single.php:16
+#: tag.php:17
+#, php-format
+#@ erudite
+msgid "%1$s &#8211; %2$s"
+msgstr "%1$s &#8211; %2$s"
+
+#: archive.php:31
+#: author.php:24
+#: category.php:20
+#: home.php:32
+#: index.php:19
+#: search.php:23
+#: single.php:18
+#: tag.php:19
+#, php-format
+#@ erudite
+msgid "By %s"
+msgstr "Autor %s"
+
+#: archive.php:31
+#: attachment.php:20
+#: author.php:24
+#: category.php:20
+#: home.php:32
+#: image.php:21
+#: index.php:19
+#: search.php:23
+#: single.php:18
+#: tag.php:19
+#, php-format
+#@ erudite
+msgid "View all posts by %s"
+msgstr "Zobacz wszystkie wpisy podpisane %s"
+
+#: archive.php:33
+#: author.php:26
+#: category.php:22
+#: home.php:34
+#: index.php:21
+#: search.php:25
+#: single.php:20
+#: tag.php:21
+#, php-format
+#@ erudite
+msgid "Posted in %s"
+msgstr "Przypisane kategorie %s"
+
+#: archive.php:35
+#: author.php:28
+#: category.php:24
+#: home.php:36
+#: index.php:23
+#: search.php:27
+#: single.php:22
+#: tag.php:23
+#@ erudite
+msgid "<span class=\"tag-links\">Tagged "
+msgstr "<span class=\"tag-links\">Otagowane "
+
+#: archive.php:36
+#: archives.php:32
+#: attachment.php:38
+#: author.php:29
+#: category.php:25
+#: home.php:37
+#: image.php:39
+#: index.php:24
+#: links.php:22
+#: page.php:15
+#: search.php:28
+#: single.php:23
+#: tag.php:24
+#@ erudite
+msgid "Edit"
+msgstr "Edytuj"
+
+#: archive.php:37
+#: author.php:30
+#: category.php:26
+#: home.php:38
+#: index.php:25
+#: search.php:29
+#: single.php:24
+#: tag.php:25
+#@ erudite
+msgid "Comments (0)"
+msgstr "Nie ma jeszcze komentarzy"
+
+#: archive.php:37
+#: author.php:30
+#: category.php:26
+#: home.php:38
+#: index.php:25
+#: search.php:29
+#: single.php:24
+#: tag.php:25
+#@ erudite
+msgid "Comments (1)"
+msgstr "Komentarz (1)"
+
+#: archive.php:37
+#: author.php:30
+#: category.php:26
+#: home.php:38
+#: index.php:25
+#: search.php:29
+#: single.php:24
+#: tag.php:25
+#@ erudite
+msgid "Comments (%)"
+msgstr "Komentarze (3)"
+
+#: archive.php:44
+#: author.php:37
+#: category.php:33
+#: home.php:47
+#: index.php:34
+#: tag.php:32
+#@ erudite
+msgid "<span class=\"meta-nav\">&larr;</span> Older posts"
+msgstr "<span class=\"meta-nav\">&larr;</span> Starsze wpisy"
+
+#: archive.php:45
+#: author.php:38
+#: category.php:34
+#: home.php:48
+#: index.php:35
+#: tag.php:33
+#@ erudite
+msgid "Newer posts <span class=\"meta-nav\">&rarr;</span>"
+msgstr "Nowsze wpisy <span class=\"meta-nav\">&rarr;</span>"
+
+#: archives.php:20
+#@ erudite
+msgid "Archives by Category"
+msgstr "Archiwum według kategorii"
+
+#: archives.php:26
+#@ erudite
+msgid "Archives by Month"
+msgstr "Archiwum wg miesięcy"
+
+#: attachment.php:8
+#: image.php:8
+#, php-format
+#@ erudite
+msgid "Return to %s"
+msgstr "Powrót do %s"
+
+#: attachment.php:19
+#: image.php:20
+#, php-format
+#@ erudite
+msgid "Posted by %1$s on <abbr class=\"published\" title=\"%2$sT%3$s\">%4$s at %5$s</abbr>. Bookmark the <a href=\"%6$s\" title=\"Permalink to %7$s\" rel=\"bookmark\">permalink</a>. Follow any comments here with the <a href=\"%8$s\" title=\"Comments RSS to %7$s\" rel=\"alternate\" type=\"application/rss+xml\">RSS feed for this post</a>."
+msgstr "Opublikowany przez %1$s dnia <abbr class=\"published\" title=\"%2$sT%3$s\">%4$s o %5$s</abbr>. Dodaj do zakładek <a href=\"%6$s\" title=\"Link do %7$s\" rel=\"bookmark\">ten link</a>. Możesz śledzić komentarze dodawane do tego wpisu prenumerując  <a href=\"%8$s\" title=\"Kanał RSS komentarzy do %7$s\" rel=\"alternate\" type=\"application/rss+xml\">specjalny kanał RSS</a>."
+
+#: attachment.php:30
+#: image.php:31
+#, php-format
+#@ erudite
+msgid "<a class=\"comment-link\" href=\"#respond\" title=\"Post a comment\">Post a comment</a> or leave a trackback: <a class=\"trackback-link\" href=\"%s\" title=\"Trackback URL for your post\" rel=\"trackback\">Trackback URL</a>."
+msgstr "<a class=\"comment-link\" href=\"#respond\" title=\"Dodaj komentarz\">Dodaj komentarz</a> albo zostaw trackback: <a class=\"trackback-link\" href=\"%s\" title=\"Trackback URL\" rel=\"trackback\">Trackback URL</a>."
+
+#: attachment.php:32
+#: image.php:33
+#, php-format
+#@ erudite
+msgid "Comments are closed, but you can leave a trackback: <a class=\"trackback-link\" href=\"%s\" title=\"Trackback URL for your post\" rel=\"trackback\">Trackback URL</a>."
+msgstr "Komentowanie jest wyłaczone ale możesz zostawić trackback: <a class=\"trackback-link\" href=\"%s\" title=\"Trackback URL do twojego wpisu\" rel=\"trackback\">Trackback URL</a>."
+
+#: attachment.php:34
+#: image.php:35
+#@ erudite
+msgid "Trackbacks are closed, but you can <a class=\"comment-link\" href=\"#respond\" title=\"Post a comment\">post a comment</a>."
+msgstr "Trackbacki są zamknięte ale możesz <a class=\"comment-link\" href=\"#respond\" title=\"Dodaj komentarz\">dodać komentarz</a>."
+
+#: attachment.php:36
+#: image.php:37
+#@ erudite
+msgid "Both comments and trackbacks are currently closed."
+msgstr "Zarówno komentowanie jak i trackbacki są zamknięte."
+
+#: author.php:8
+#, php-format
+#@ erudite
+msgid "Author Archives: <span class=\"vcard\">%s</span>"
+msgstr "Archiwum Autora: <span class=\"vcard\">%s</span>"
+
+#: category.php:6
+#@ erudite
+msgid "Category Archives:"
+msgstr "Archiwum kategorii:"
+
+#: comments.php:10
+#@ erudite
+msgid "This post is protected. Enter the password to view any comments."
+msgstr "Ten wpis jest zabezpieczony hasłem. Podaj je aby zobaczyć komentarze."
+
+#: comments.php:17
+#@ erudite
+msgid "No Comments"
+msgstr "Brak komentarzy"
+
+#: comments.php:17
+#@ erudite
+msgid "One Comment"
+msgstr "Jeden komentarz"
+
+#: comments.php:17
+#@ erudite
+msgid "% Comments"
+msgstr "Komentarzy %"
+
+#: comments.php:22
+#@ erudite
+msgid "Respond to this"
+msgstr "Odpowiedz"
+
+#: comments.php:34
+#@ erudite
+msgid "Post a Comment"
+msgstr "Wpisz komentarz"
+
+#: comments.php:34
+#, php-format
+#@ erudite
+msgid "Respond to %s"
+msgstr "Odpowiedz na %s"
+
+#: comments.php:36
+#@ erudite
+msgid "Cancel this response"
+msgstr "Anuluj odpowiedź"
+
+#: comments.php:39
+#, php-format
+#@ erudite
+msgid "You must be <a href=\"%s\" title=\"Log in\">logged in</a> to post a comment."
+msgstr "Musisz być <a href=\"%s\" title=\"Zaloguj\">zalogowany</a> aby publikować komentarze."
+
+#: comments.php:48
+#, php-format
+#@ erudite
+msgid "<span class=\"loggedin\">Logged in as <a href=\"%1$s\" title=\"Logged in as %2$s\">%2$s</a>.</span> <span class=\"logout\"><a href=\"%3$s\" title=\"Log out of this account\">Log out?</a></span>"
+msgstr "<span class=\"loggedin\">Zalogowany jako <a href=\"%1$s\" title=\"Zalogowany jako %2$s\">%2$s</a>.</span> <span class=\"logout\"><a href=\"%3$s\" title=\"Wyloguj się\">Wylogować?</a></span>"
+
+#: comments.php:56
+#@ erudite
+msgid "Your email is <em>never</em> shared."
+msgstr "Twój adres pozostanie <em>ukryty</em>."
+
+#: comments.php:56
+#@ erudite
+msgid "Required fields are marked <span class=\"required\">*</span>"
+msgstr "Pola wymagane zostały oznaczone <span class=\"required\">*</span>"
+
+#: comments.php:59
+#@ erudite
+msgid "Name"
+msgstr "Imię"
+
+#: comments.php:59
+#: comments.php:62
+#@ erudite
+msgid "<span class=\"required\">*</span>"
+msgstr "<span class=\"wymagane\">*</span>"
+
+#: comments.php:62
+#@ erudite
+msgid "Email"
+msgstr "Email"
+
+#: comments.php:65
+#@ erudite
+msgid "Website"
+msgstr "Strona WWW"
+
+#: comments.php:72
+#@ erudite
+msgid "Comment"
+msgstr "Komentarz"
+
+#: comments.php:75
+#@ erudite
+msgid "Post Comment"
+msgstr "Opublikuj komentarz"
+
+#: comments_custom.php:9
+#, php-format
+msgid "<cite class=\"fn\">%s</cite> <span class=\"says\">wrote:</span>"
+msgstr "<cite class=\"fn\">%s</cite> <span class=\"says\">pisze:</span>"
+
+#: comments_custom.php:12
+msgid "Your comment is awaiting moderation."
+msgstr "Twój komentarz czeka na moderację."
+
+#: comments_custom.php:15
+#, php-format
+msgid "%1$s at %2$s"
+msgstr "%1$s o %2$s"
+
+#: comments_custom.php:15
+msgid "(Edit)"
+msgstr "(Edytuj)"
+
+#: footer.php:3
+#@ erudite
+msgid "WordPress"
+msgstr "WordPress"
+
+#: footer.php:6
+#@ erudite
+msgid "The Erudite theme for WordPress"
+msgstr "Skórka The Erudite dla WordPress"
+
+#: footer.php:6
+#@ erudite
+msgid "The Erudite"
+msgstr "The Erudite"
+
+#: header.php:18
+#@ erudite
+msgid "<span>↓</span> Keep Reading"
+msgstr "<span>↓</span> Czytaj dalej"
+
+#: header.php:19
+#@ erudite
+msgid "<span>↑</span> Put Away"
+msgstr "<span>↑</span> Zwiń"
+
+#: header.php:20
+#@ erudite
+msgid "&#x2193; Further Information"
+msgstr "&#x2193; Więcej informacji"
+
+#: header.php:21
+#@ erudite
+msgid "<span>↓</span> Show Menu"
+msgstr "<span>↓</span> Pokaż menu"
+
+#: header.php:22
+#@ erudite
+msgid "<span>↑</span> Hide Menu"
+msgstr "<span>↑</span> Ukryj menu"
+
+#: header.php:31
+#: sidebar.php:67
+#, php-format
+#@ erudite
+msgid "%s latest posts"
+msgstr "%s najnowsze wpisy"
+
+#: header.php:32
+#: sidebar.php:68
+#, php-format
+#@ erudite
+msgid "%s latest comments"
+msgstr "%s najnowszych komentarzy"
+
+#: header.php:46
+#@ erudite
+msgid "Skip to content"
+msgstr "Przejdź do zawartości"
+
+#: home.php:24
+#, php-format
+#@ erudite
+msgid "Keep reading &lsquo;%s&rsquo;"
+msgstr "Czytaj dalej &lsquo;%s&rsquo;"
+
+#: home.php:27
+#: index.php:14
+#: page.php:13
+#: single.php:13
+#@ erudite
+msgid "Pages:"
+msgstr "Artykuły:"
+
+#: search.php:8
+#@ erudite
+msgid "Search Results for:"
+msgstr "Wyniki wyszukiwania:"
+
+#: search.php:38
+#@ erudite
+msgid "<span class=\"meta-nav\">&larr;</span> Older results"
+msgstr "<span class=\"meta-nav\">&larr;</span> Starsze wyniki"
+
+#: search.php:39
+#@ erudite
+msgid "Newer results <span class=\"meta-nav\">&rarr;</span>"
+msgstr "Nowsze wyniki <span class=\"meta-nav\">&rarr;</span>"
+
+#: search.php:45
+#@ erudite
+msgid "Nothing Found"
+msgstr "Nic nie znaleziono"
+
+#: search.php:47
+#@ erudite
+msgid "Sorry, but nothing matched your search criteria. Please try again with some different keywords."
+msgstr "Niestety, nie znaleziono nic co odpowiadałoby tym kryteriom. Zmień nieco zakres poszukiwań i spróbuj jeszcze raz."
+
+#: sidebar.php:9
+#@ erudite
+msgid "About"
+msgstr "O Autorze"
+
+#: sidebar.php:16
+#@ erudite
+msgid "Pages"
+msgstr "Artykuły"
+
+#: sidebar.php:31
+#@ erudite
+msgid "Categories"
+msgstr "Kategorie"
+
+#: sidebar.php:39
+#@ erudite
+msgid "Archives"
+msgstr "Archiwa"
+
+#: sidebar.php:53
+#@ erudite
+msgid "Search"
+msgstr "Szukanie"
+
+#: sidebar.php:65
+#@ erudite
+msgid "RSS Feeds"
+msgstr "Kanały RSS"
+
+#: sidebar.php:67
+#@ erudite
+msgid "All posts"
+msgstr "Wszystkie wpisy"
+
+#: sidebar.php:68
+#@ erudite
+msgid "All comments"
+msgstr "Wszystkie komentarze"
+
+#: sidebar.php:73
+#@ erudite
+msgid "Meta"
+msgstr "Meta"
+
+#: tag.php:6
+#@ erudite
+msgid "Tag Archives:"
+msgstr "Archiwum tagów:"
+
+#: library/epigraph.php:34
+#: library/epigraph.php:39
+#@ erudite
+msgid "Epigraph"
+msgstr "Epigraf"
+
+#: library/epigraph.php:41
+#@ erudite
+msgid "Citation (optional)"
+msgstr "Cytowanie (opcja)"
+
+#: library/theme-options.php:13
+#@ erudite
+msgid "Dark Colour Scheme"
+msgstr "Ciemny schemat kolorów"
+
+#: library/theme-options.php:14
+#@ erudite
+msgid "For all the dark colour lovers out there"
+msgstr "Dla wszystkich wielbicieli ciemnych barw"
+
+#: library/theme-options.php:19
+#@ erudite
+msgid "Use Categories in Menu"
+msgstr "Użyj kategorii w menu"
+
+#: library/theme-options.php:20
+#@ erudite
+msgid "Use categories rather than pages for your top menu. Caution: this only works with a small number of categories"
+msgstr "Użyj kategorii zamiast stron do stworzenia menu. Uważaj: zadziała to jedynie gdy nie ma zbyt wielu kategorii"
+
+#: library/theme-options.php:25
+#@ erudite
+msgid "Footer &lsquo;About&lsquo; Blurb"
+msgstr "Informacja w stopce &lsquo;O Autorze&lsquo; "
+
+#: library/theme-options.php:26
+#@ erudite
+msgid "The following text will appear in the footer for &lsquo;About&lsquo;. <br /><em>Note:</em> This will only appear if you have not enabled a widget for <strong>Erudite Widget 1</strong>"
+msgstr "Ten tekst pojawi się w stopce we fragmencie &lsquo;O Autorze&lsquo;. <br /><em>Uwaga:</em> Pojawi się tylko wtedy, gdy nie dodasz widgetów do części <strong>Erudite Widget 1</strong> w stopce"
+
+#: library/theme-options.php:35
+#@ erudite
+msgid "Disable &lsquo;Keep Reading&rsquo;"
+msgstr "Wyłącz &lsquo;Czytaj dalej&rsquo;"
+
+#: library/theme-options.php:36
+#@ erudite
+msgid "Turns off the dynamic <em>Keep Reading</em> / <em>Put Away</em> functionality on the homepage if it doesn't suit your fancy"
+msgstr "Wyłącz funkcję <em>Czytaj dalej</em> / <em>Zwiń</em> na stronie głównej, jeśli nie odpowiada ona twoim potrzebom"
+
+#: library/theme-options.php:41
+#@ erudite
+msgid "Disable Header/Footer Hiding"
+msgstr "Wyłącz ukrywanie nagłówka/stopki"
+
+#: library/theme-options.php:42
+#@ erudite
+msgid "Turns off the dynamic show/hide functionality of the header and footer"
+msgstr "Wyłącza dynamiczne funkcje pokazywania i chowania nagłówka i stopki"
+
+#: library/theme-options.php:47
+#@ erudite
+msgid "Disable footer credit"
+msgstr "Wyłącz informację w stopce"
+
+#: library/theme-options.php:48
+#@ erudite
+msgid "Removes the link to the theme's author in the footer. Leave it in to say &ldquo;thanks for the hard work.&rdquo;"
+msgstr "Usuwa link do strony autora skórki. Pozostaw go aby podziękować za ciężką pracę"
+
+#: library/theme-options.php:53
+#@ erudite
+msgid "Enable comment threading"
+msgstr "Włącz zagnieżdżanie komentarzy"
+
+#: library/theme-options.php:54
+#@ erudite
+msgid "Allow comment threading. (Global <a href='options-discussion.php' title='Discussion settings'>discussion settings</a> have no effect unless this is checked first)<br /> This is <strong>off</strong> by default because threaded comments are rubbish. Turn on at your peril, and don't go more than 2 levels deep."
+msgstr "Zezwól na zagnieżdżanie komentarzy. (Ogólne <a href='options-discussion.php' title='Ustawienia dyskusji'>ustawienia dyskusji</a>  nie przyniosą efektu dopóki nie zaznaczysz tej opcji)<br /> Funkcja ta jest  <strong>wyłączona</strong> w domyśle, ponieważ zagnieżdżanie komentarzy jest tandetne. Włączasz ją na własne ryzyko. Nie ustawiaj więcej niż dwóch poziomów zagnieżdżenia"
+
+#: library/theme-options.php:65
+#@ erudite
+msgid "Google Analytics code"
+msgstr "Kod Google Analytics"
+
+#: library/theme-options.php:66
+#@ erudite
+msgid "Enter your <a href=\"http://www.google.com/analytics\">Google Analytics</a> (or other service) tracking code here, and it will automatically be placed just before the <code>&lt;body&gt;</code> tag."
+msgstr "Podaj swój kod <a href=\"http://www.google.com/analytics\">Google Analytics</a> lub podobnej usługi, zostanie automatycznie dołączony do kodu strony"
+
+#: library/theme-options.php:118
+#@ erudite
+msgid "settings saved."
+msgstr "ustawienia zapisane."
+
+#: library/theme-options.php:119
+#@ erudite
+msgid "settings reset."
+msgstr "ustawienia zresetowane."
+
+#: library/theme-options.php:120
+#@ erudite
+msgid "widgets reset."
+msgstr "widgety zresetowane."
+
+#: library/theme-options.php:236
+#@ erudite
+msgid "Save changes"
+msgstr "Zapisz zmiany"
+
+#: library/theme-options.php:242
+#@ erudite
+msgid "Reset"
+msgstr "Reset"
+
+#: functions.php:111
+msgid "Header Menu"
+msgstr "Menu nagłówka"
+
+#: library/theme-options.php:59
+#@ erudite
+msgid "Disable editor style"
+msgstr "Wyłącza style w edytorze"
+
+#: library/theme-options.php:60
+#@ erudite
+msgid "Turn off the Visual editor styling"
+msgstr "Wyłącz style w edytorze"
+
+#: library/theme-options.php:110
+#: library/theme-options.php:125
+#@ erudite
+msgid "Options"
+msgstr "Opcje"
+
+#: library/theme-options.php:137
+#: library/theme-options.php:149
+#: library/theme-options.php:165
+#: library/theme-options.php:182
+#: library/theme-options.php:209
+#@ erudite
+msgid "name"
+msgstr ""
+
+#: library/theme-options.php:140
+#: library/theme-options.php:167
+#: library/theme-options.php:220
+#@ erudite
+msgid "desc"
+msgstr ""
+
+#: library/theme-options.php:172
+#@ erudite
+msgid "std"
+msgstr ""
+
+#: 404.php:9
+#@ erudite
+msgid "Apologies, but we were unable to find what you were looking for. Perhaps searching will help."
+msgstr "Nie ma tu poszukiwanej przez Ciebie rzeczy. Skorzystaj z funkcji szukania."
+
