@@ -149,6 +149,16 @@ function erdt_hr_helper($content) {
 	return str_replace('<hr />', "<hr />\n\n", $content);
 }
 
+function erdt_get_author_posts_link() {
+	global $authordata;
+	return sprintf(
+		'<a href="%1$s" title="%2$s">%3$s</a>',
+		get_author_posts_url( $authordata->ID, $authordata->user_nicename ),
+		esc_attr( sprintf( __( 'Posts by %s' ), get_the_author() ) ),
+		get_the_author()
+	);
+}
+
 // Generates semantic classes for BODY element
 function sandbox_body_class( $print = true ) {
 	global $wp_query, $current_user;
@@ -431,9 +441,6 @@ load_theme_textdomain('erudite', get_template_directory() . '/translation');
 
 // Runs our code at the end to check that everything needed has loaded
 add_action( 'init', 'sandbox_widgets_init' );
-
-// Registers our function to filter default gallery shortcode
-add_filter( 'post_gallery', 'sandbox_gallery', $attr );
 
 // Adds filters for the description/meta content in archives.php
 add_filter( 'archive_meta', 'wptexturize' );

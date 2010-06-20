@@ -16,7 +16,7 @@ if ($first == 1 && !is_paged() ) { //this is for the first post on the homepage 
 <?php the_content( __( 'Read More <span class="meta-nav">&rarr;</span>', 'erudite' ) );
 
 } else { //subsequent posts on the homepage, all is_paged() posts as well ?>
-	<?php if (!is_paged() ) { $home_pager = "home-post home-post-".$first; } //add home-post classes on front page only ?>
+	<?php $home_pager = ( ! is_paged() ) ? "home-post home-post-".$first : ''; //add home-post classes on front page only ?>
 	<div id="post-<?php the_ID() ?>" <?php post_class($home_pager); ?>>
 		<h3 class="entry-title"><a href="<?php the_permalink() ?>" title="<?php printf( __('Permalink to %s', 'erudite'), the_title_attribute('echo=0') ) ?>" rel="bookmark"><?php the_title() ?></a></h3>
 		<div class="entry-content">
@@ -29,7 +29,7 @@ if ($first == 1 && !is_paged() ) { //this is for the first post on the homepage 
 				<div class="entry-meta">
 					<span class="entry-date"><abbr class="published" title="<?php the_time('Y-m-d\TH:i:sO') ?>"><?php unset($previousday); printf( __( '%1$s &#8211; %2$s', 'erudite' ), the_date( '', '', '', false ), get_the_time() ) ?></abbr></span>
 					<span class="meta-sep">|</span>
-					<span class="author vcard"><?php printf( __( 'By %s', 'erudite' ), '<a class="url fn n" href="' . get_author_link( false, $authordata->ID, $authordata->user_nicename ) . '" title="' . sprintf( __( 'View all posts by %s', 'erudite' ), $authordata->display_name ) . '">' . get_the_author() . '</a>' ) ?></span>
+					<span class="author vcard"><?php printf( __( 'By %s', 'erudite' ), erdt_get_author_posts_link() ) ?></span>
 					<span class="meta-sep">|</span>
 					<span class="cat-links"><?php printf( __( 'Posted in %s', 'erudite' ), get_the_category_list(', ') ) ?></span>
 					<span class="meta-sep">|</span>
