@@ -120,9 +120,11 @@ function sandbox_globalnav() {
 			'container' => 'ul',
 			'echo' => false
 		));
-		$menu = str_replace( array( "\r", "\n", "\t" ), '', $menu );
-		$menu = '<div id="menu">' . $menu . "</div>\n";
-		echo $menu;
+		$menu = str_replace( array( "\r", "\n", "\t" ), '', trim($menu) );
+		
+		if ( ! empty( $menu) ) {
+			echo '<div id="menu">' . $menu . "</div>\n";
+		}
 	}
 	else {
 		old_sandbox_globalnav();
@@ -137,11 +139,9 @@ function old_sandbox_globalnav() {
 		$menu = wp_list_pages('title_li=&sort_column=menu_order&echo=0');
 	}
 	
-	$menu = str_replace( array( "\r", "\n", "\t" ), '', $menu );
+	$menu = str_replace( array( "\r", "\n", "\t" ), '', trim($menu) );
 	$menu = '<ul>' . $menu . '</ul>';
-	$menu = '<div id="menu">' . $menu . "</div>\n";
-	echo $menu;
-
+	echo '<div id="menu">' . $menu . "</div>\n";
 }
 
 add_filter('the_content', 'erdt_hr_helper', 0);
