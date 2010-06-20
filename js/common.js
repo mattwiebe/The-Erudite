@@ -9,7 +9,7 @@ jQuery(document).ready(function($) {
 	
 	// caching/defining
 	var entryHide = $('div.first-post .entry-content');
-	var entryHeight = entryHide.children().eq(0).height() + entryHide.children().eq(1).height() + 2*(parseInt( $('div.first-post p').css('marginBottom') ));
+	var entryHeight = entryHide.children().eq(0).height() + entryHide.children().eq(1).height() + 2*(parseInt( $('div.first-post p').css('marginBottom'),10 ));
 	var contentHeight = entryHide.height();
 	
 	//set .entry-content to height of first paragraph, add view more link
@@ -111,5 +111,38 @@ jQuery(document).ready(function($) {
 	
 	// click the header to turn typography grid on or off. uncomment the line below if you want to see it.
 	//$('#header-wrap').click(function() {$('body').toggleClass('baseline');});
+	
+	// cache body
+	var body = $("body");
+	// Font Stacks
+	body.fontunstack( "constantia,'hoefler text','palatino linotype',serif" );
+	
+	// Browsers, because
+	if ( $.browser.msie ) {
+		body.addClass("ie");
+	}
+	else if ( $.browser.webkit || $.browser.safari ) {
+		body.addClass("webkit");
+	}
+	else if ( $.browser.mozilla ) {
+		body.addClass("mozilla");
+	}
+	// opera doesn't play because nobody cares.
 
 });
+
+/*
+* Font UnStack 0.1
+*
+* Developed by Phil Oye
+* Copyright (c) 2009 Phil Oye, http://philoye.com/
+*
+* Licensed under the MIT license:
+* http://www.opensource.org/licenses/mit-license.php
+*
+*/
+
+(function($){$.fn.fontunstack=function(defaults,opts){$.fontunstack.init(defaults,opts,this);};$.fontunstack={options:{class_prefix:"set-in-"},init:function(stack,opts,elems){var elems=elems||"body";$.extend(this.options,opts);if(this.options.class_prefix==""){this.options.class_prefix="set-in-";}
+if(typeof stack=="string"){stack=stack.match(/[^'",;\s][^'",;]*/g)||[];}
+this.analyzeStack(stack,elems);},analyzeStack:function(stack,elems){var generics=["monospace","sans-serif","serif","cursive","fantasy"];var baseline=generics[0];var num_fonts=stack.length;var last_resort=stack[num_fonts-1];if($.inArray(last_resort,generics)){stack.push(baseline);num_fonts++;}
+if(last_resort==baseline){baseline=generics[1];};for(var i=0;i<num_fonts-1;i++){font=stack[i];if($.fontunstack.testFont(font,baseline)){var re=new RegExp("\\b"+this.options.class_prefix+".*?\\b","g");$(elems).get(0).className=$(elems).get(0).className.replace(re,"");safe_font_name=encodeURIComponent(font.replace(/[\s\-.!~*'()"]/g,"").toLowerCase());$(elems).addClass(this.options.class_prefix+safe_font_name);break;}}},testFont:function(requested_font,baseline_font){var span=$('<span id="font_tester" style="font-family:'+baseline_font+'; font-size:144px;position:absolute;left:-10000px;top:-10000px;visibility:hidden;">mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmml</span>');$("body").prepend(span);var baseline_width=span.width();span.css("font-family",requested_font+","+baseline_font);var requested_width=span.width();span.remove();return(requested_width!=baseline_width);}};})(jQuery);

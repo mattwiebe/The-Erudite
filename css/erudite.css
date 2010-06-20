@@ -8,10 +8,12 @@
  */
 
 /* CSS Reset based on http://meyerweb.com/eric/tools/css/reset/ */
-html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td { margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent; }
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,cite,code,del,dfn,em,font,img,ins,q,s,samp,small,strike,strong,sub,sup,tt,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td { margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent; }
 a:focus {overflow:hidden; outline:1px dotted;}
 table { border-collapse:collapse;border-spacing:0; }
 ol,ul {list-style:none;}
+sup { vertical-align:super; }
+sub { vertical-align:sub; }
 
 /* Typography Test */
 body.baseline {background-image:url(../images/body-bg.png); background-repeat:repeat; background-position:left 20px;}
@@ -139,6 +141,8 @@ blockquote .after {right:-.5em; bottom:-.55em;}
 .entry-content p:first-child {text-indent:0;}
 body.single .entry-content > p:first-child:first-letter, .first-post .entry-content > p:first-child:first-letter {font-size:4.5em; line-height:.65em;}
 .entry-content > p:first-child:first-letter {font-size:3em; float:left; background:#555 url(../images/stripes.png) repeat; color:#fff; margin:.05em .1em 0 0; padding:.1em; line-height:.7em;}
+/* Webkit + Hoefler = Odd leading. Or at least different. */
+body.webkit.set-in-hoeflertext .entry-content > p:first-child:first-letter {padding:.2em .1em 0;}
 
 .more-link, .entry-content p.more-link, .home-post .entry-content p.more-link {display:block; text-indent:0 !important; font-size:1.2em; line-height:2;}
 .more-link a {text-decoration:none; font-style:italic;}
