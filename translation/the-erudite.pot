@@ -1,4 +1,4 @@
-# Translation of the WordPress theme The Erudite 2.6.2 by Matt Wiebe.
+# Translation of the WordPress theme The Erudite 2.7 by Matt Wiebe.
 # Copyright (C) 2010 Matt Wiebe
 # This file is distributed under the same license as the The Erudite package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2010.
@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: The Erudite 2.6.2\n"
+"Project-Id-Version: The Erudite 2.7\n"
 "Report-Msgid-Bugs-To: http://wordpress.org/tag/the-erudite\n"
-"POT-Creation-Date: 2010-05-31 11:27-0500\n"
+"POT-Creation-Date: 2010-06-25 00:37-0500\n"
 "PO-Revision-Date: 2010-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -70,12 +70,6 @@ msgstr ""
 #: search.php:23 single.php:18 tag.php:19
 #, php-format
 msgid "By %s"
-msgstr ""
-
-#: archive.php:31 attachment.php:20 author.php:24 category.php:20 home.php:32
-#: image.php:21 index.php:19 search.php:23 single.php:18 tag.php:19
-#, php-format
-msgid "View all posts by %s"
 msgstr ""
 
 #: archive.php:33 author.php:26 category.php:22 home.php:34 index.php:21
@@ -141,6 +135,11 @@ msgid ""
 "\"bookmark\">permalink</a>. Follow any comments here with the <a href=\"%8$s"
 "\" title=\"Comments RSS to %7$s\" rel=\"alternate\" type=\"application/rss"
 "+xml\">RSS feed for this post</a>."
+msgstr ""
+
+#: attachment.php:20 image.php:21
+#, php-format
+msgid "View all posts by %s"
 msgstr ""
 
 #: attachment.php:30 image.php:31
@@ -283,7 +282,7 @@ msgstr ""
 msgid "The Erudite theme for WordPress"
 msgstr ""
 
-#. #-#-#-#-#  the-erudite.pot (The Erudite 2.6.2)  #-#-#-#-#
+#. #-#-#-#-#  the-erudite.pot (The Erudite 2.7)  #-#-#-#-#
 #. Theme Name of the plugin/theme
 #: footer.php:6
 msgid "The Erudite"
@@ -291,6 +290,11 @@ msgstr ""
 
 #: functions.php:111
 msgid "Header Menu"
+msgstr ""
+
+#: functions.php:157
+#, php-format
+msgid "Posts by %s"
 msgstr ""
 
 #: header.php:18
@@ -376,12 +380,12 @@ msgstr ""
 #: library/theme-options.php:28
 #, php-format
 msgid ""
-"This is an example of an &lsquo;About&lsquo; blurb. I'm sure that the author "
-"of this blog is highly intelligent, witty and even <em>possibly</em> "
+"This is an example of an &ldquo;About&rdquo; blurb. I&rsquo;m sure that the "
+"author of this blog is highly intelligent, witty and even <em>possibly</em> "
 "socially competent.\n"
 "\n"
-"It can be modified from this theme's <strong>options panel</strong> in the "
-"admin area (Appearance &rarr; %s Options)"
+"It can be modified from this theme&rsquo;s <strong>options panel</strong> in "
+"the admin area (Appearance &rarr; %s Options)"
 msgstr ""
 
 #: library/theme-options.php:33
@@ -550,5 +554,7 @@ msgid "http://somadesign.ca/"
 msgstr ""
 
 #. Tags of the plugin/theme
-msgid "white, dark, one-column, theme-options"
+msgid ""
+"white, dark, one-column, fixed-width, theme-options, editor-style, "
+"translation-ready"
 msgstr ""
