@@ -62,9 +62,9 @@ a:active {color:#55f;}
 #menu li li li {font-size:1em;}
 
 /* Enhanced Menu */
-.enhanced .hiding #access {display:none;}
-.enhanced #menu {padding-bottom:2.4em;}
-.enhanced #menu li ul {display:block;}
+.js .hiding #access {display:none;}
+.js #menu {padding-bottom:2.4em;}
+.js #menu li ul {display:block;}
 #menu-toggle {width:96em; margin:0 auto; position:relative;}
 #menu-toggle div {display:block; color:#fff; padding:0 .5em; background:#444; position:absolute; top:-1.7em; right:0; cursor:pointer; font-size:1.2em; height:1.5em; line-height:1.4; z-index:5;}
 #menu-toggle span {padding-right:.5em;}
@@ -87,7 +87,7 @@ a:active {color:#55f;}
 
 /* Footer */
 #footer-wrap {background:#333; clear:both; color:#fff; padding:2.4em 0;}
-.enhanced .hiding #footer-wrap {display:none;}
+.js .hiding #footer-wrap {display:none;}
 .footer {width:24em; float:left; margin-left:6em;}
 .footer h3, .footer h2 {border-bottom:1px solid #666; font-size:2.1em; line-height:1.143; margin:1.143em 0 .19em;}
 .footer ul li {margin:0 0 3.6em;}
@@ -129,8 +129,8 @@ h3.entry-title {margin-bottom:.857em;}
 .entry-content blockquote {padding-left:3em; position:relative;}
 .entry-content blockquote::before {content:"\201C"; position:absolute; font-size:4.8em; line-height:1; left:.1em; top:0; color:#999;}
 .entry-content blockquote::after {content:"\201D"; position:absolute; font-size:4.8em; line-height:1; right:-.5em; bottom:-.55em; color:#999;}
-.enhanced .entry-content blockquote::before, .enhanced .entry-content blockquote::after {content:"";}
-.enhanced .entry-content blockquote .quote {position:absolute; font-size:4.8em; line-height:1; color:#999; display:block;}
+.js .entry-content blockquote::before, .js .entry-content blockquote::after {content:"";}
+.js .entry-content blockquote .quote {position:absolute; font-size:4.8em; line-height:1; color:#999; display:block;}
 blockquote .before {left:.1em; top:0;}
 blockquote .after {right:-.5em; bottom:-.55em;}
 .entry-content blockquote p {font-size:1.5em; text-indent:0;}

@@ -1,4 +1,3 @@
-jQuery("html").addClass('enhanced');
 jQuery(document).ready(function($) {
 	
 	// wrap hr elements in a div -> ie6&7 compatability
