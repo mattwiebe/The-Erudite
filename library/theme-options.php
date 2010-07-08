@@ -5,6 +5,8 @@
 
 $themename = "The Erudite";
 $shortname = "erdt_";
+global $erdt_nonce;
+$erdt_nonce = 'erdt_nonce';
 
 // Create theme options
 global $erdt_options;
@@ -72,50 +74,45 @@ $erdt_options = array (
 		
 $erdt_options = apply_filters('erdt_options', $erdt_options);
 
-function mytheme_add_admin() {
+function erdt_add_admin() {
 
-    global $themename, $shortname, $erdt_options;
+    global $themename, $shortname, $erdt_options, $erdt_nonce;
 
-    if ( $_GET['page'] == basename(__FILE__) ) {
-    
-        if ( 'save' == $_REQUEST['action'] ) {
+	if ( $_GET['page'] == basename(__FILE__) && wp_verify_nonce($_POST[$erdt_nonce], $erdt_nonce ) ) {
 
-                foreach ($erdt_options as $value) {
-                    update_option( $value['id'], $_REQUEST[ $value['id'] ] ); }
+		if ( 'save' == $_REQUEST['action'] ) {
 
-                foreach ($erdt_options as $value) {
-                    if( isset( $_REQUEST[ $value['id'] ] ) ) { update_option( $value['id'], $_REQUEST[ $value['id'] ]  ); } else { delete_option( $value['id'] ); } }
+			foreach ( $erdt_options as $value ) {
+				update_option( $value['id'], $_REQUEST[ $value['id'] ] ); 
+			}
+			foreach ( $erdt_options as $value ) {
+				if ( isset( $_REQUEST[ $value['id'] ] ) ) { 
+					update_option( $value['id'], $_REQUEST[ $value['id'] ]  );
+				} 
+				else {
+					delete_option( $value['id'] );
+				}
+			}
+			$_REQUEST['saved'] = 1;
+		} 
+		else if ( 'reset' == $_REQUEST['action'] ) {
+			foreach ($erdt_options as $value) {
+				delete_option( $value['id'] );
+			}
+			$_REQUEST['reset'] = 1;
+		}
+	}
 
-                header("Location: themes.php?page=theme-options.php&saved=true");
-                die;
-
-        } else if( 'reset' == $_REQUEST['action'] ) {
-
-            foreach ($erdt_options as $value) {
-                delete_option( $value['id'] ); }
-
-            header("Location: themes.php?page=theme-options.php&reset=true");
-            die;
-
-        } else if ( 'reset_widgets' == $_REQUEST['action'] ) {
-            $null = null;
-            update_option('sidebars_widgets',$null);
-            header("Location: themes.php?page=theme-options.php&reset=true");
-            die;
-        }
-    }
-
-    add_theme_page($themename.' '.__('Options', 'erudite'), $themename.' '.__('Options', 'erudite'), 'edit_themes', basename(__FILE__), 'mytheme_admin');
+    add_theme_page($themename.' '.__('Options', 'erudite'), $themename.' '.__('Options', 'erudite'), 'edit_themes', basename(__FILE__), 'erdt_admin');
 
 }
 
-function mytheme_admin() {
+function erdt_admin() {
 
-    global $themename, $shortname, $erdt_options;
+    global $themename, $shortname, $erdt_options, $erdt_nonce;
 
     if ( $_REQUEST['saved'] ) echo '<div id="message" class="updated fade"><p><strong>'.$themename.' '.__('settings saved.','erudite').'</strong></p></div>';
     if ( $_REQUEST['reset'] ) echo '<div id="message" class="updated fade"><p><strong>'.$themename.' '.__('settings reset.','erudite').'</strong></p></div>';
-    if ( $_REQUEST['reset_widgets'] ) echo '<div id="message" class="updated fade"><p><strong>'.$themename.' '.__('widgets reset.','erudite').'</strong></p></div>';
     
 ?>
 <div class="wrap">
@@ -233,12 +230,14 @@ function mytheme_admin() {
 <p class="submit">
 <input name="save" type="submit" value="<?php _e('Save changes','erudite'); ?>" class="button-primary" />    
 <input type="hidden" name="action" value="save" />
+<?php wp_nonce_field($erdt_nonce, $erdt_nonce, false); ?>
 </p>
 </form>
 <form method="post">
 <p class="submit">
 <input name="reset" type="submit" value="<?php _e('Reset','erudite'); ?>" />
 <input type="hidden" name="action" value="reset" />
+<?php wp_nonce_field($erdt_nonce, $erdt_nonce, false); ?>
 </p>
 </form>
 </div>
@@ -246,7 +245,7 @@ function mytheme_admin() {
 <?php
 }
 
-add_action('admin_menu' , 'mytheme_add_admin'); 
+add_action('admin_menu' , 'erdt_add_admin'); 
 
 
 ?>
