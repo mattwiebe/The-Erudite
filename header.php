@@ -45,7 +45,7 @@
 
 		<div id="access" role="navigation">
 			<div class="skip-link"><a href="#content" title="<?php _e( 'Skip to content', 'erudite' ) ?>"><?php _e( 'Skip to content', 'erudite' ) ?></a></div>
-			<?php sandbox_globalnav() ?>
+			<?php erdt_globalnav() ?>
 		</div><!-- #access -->
 
 	</div><!--  #header-wrap -->

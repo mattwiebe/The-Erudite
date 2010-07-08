@@ -77,7 +77,7 @@ function the_theme_option( $id, $format = false ) {
 if (!function_exists("body_class") ) {
 	function body_class($extra_classes='') {
 		if ($extra_classes != '' ) { $extra_classes = " " . $extra_classes; } // add a preceding space for extra classes
-		echo "class='" . sandbox_body_class(false) . $extra_classes . "'";
+		echo "class='" . erdt_body_class(false) . $extra_classes . "'";
 	}
 }
 
@@ -111,12 +111,12 @@ if ( function_exists('register_nav_menus') ) {
 	register_nav_menus( array('header-menu' => __('Header Menu') ) );
 }
 
-// call wp_nav_menu, but fallback to old_sandbox_globalnav otherwise
-function sandbox_globalnav() {
+// call wp_nav_menu, but fallback to old_erdt_globalnav otherwise
+function erdt_globalnav() {
 	if ( function_exists('wp_nav_menu') ) {
 		$menu = wp_nav_menu(array(
 			'theme_location' => 'header-menu',
-			'fallback_cb' => 'old_sandbox_globalnav',
+			'fallback_cb' => 'old_erdt_globalnav',
 			'container' => 'ul',
 			'echo' => false
 		));
@@ -127,11 +127,11 @@ function sandbox_globalnav() {
 		}
 	}
 	else {
-		old_sandbox_globalnav();
+		old_erdt_globalnav();
 	}
 }
 // Produces a list of pages in the header without whitespace
-function old_sandbox_globalnav() {
+function old_erdt_globalnav() {
 	
 	if (get_the_theme_option('erdt_category_nav') === 'true') {
 		$menu = wp_list_categories('title_li=&echo=0');
@@ -160,11 +160,11 @@ function erdt_get_author_posts_link() {
 }
 
 // Generates semantic classes for BODY element
-function sandbox_body_class( $print = true ) {
+function erdt_body_class( $print = true ) {
 	global $wp_query, $current_user;
 
 	// Applies the time- and date-based classes (below) to BODY element
-	sandbox_date_classes( time(), $c );
+	erdt_date_classes( time(), $c );
 
 	// Generic semantic classes for what type of content is displayed
 	is_front_page()  ? $c[] = 'home'       : null; // For the front page, if set
@@ -186,7 +186,7 @@ function sandbox_body_class( $print = true ) {
 
 		// Adds classes for the month, day, and hour when the post was published
 		if ( isset( $wp_query->post->post_date ) )
-			sandbox_date_classes( mysql2date( 'U', $wp_query->post->post_date ), $c, 's-' );
+			erdt_date_classes( mysql2date( 'U', $wp_query->post->post_date ), $c, 's-' );
 
 		// Adds category classes for each category on single posts
 		if ( $cats = get_the_category() )
@@ -291,10 +291,10 @@ function sandbox_body_class( $print = true ) {
 }
 
 // Define the num val for 'alt' classes (in post DIV and comment LI)
-$sandbox_post_alt = 1;
+$erdt_post_alt = 1;
 
 // Generates time- and date-based classes for BODY, post DIVs, and comment LIs; relative to GMT (UTC)
-function sandbox_date_classes( $t, &$c, $p = '' ) {
+function erdt_date_classes( $t, &$c, $p = '' ) {
 	$t = $t + ( get_option('gmt_offset') * 3600 );
 	$c[] = $p . 'y' . gmdate( 'Y', $t ); // Year
 	$c[] = $p . 'm' . gmdate( 'm', $t ); // Month
@@ -303,7 +303,7 @@ function sandbox_date_classes( $t, &$c, $p = '' ) {
 }
 
 // For category lists on category archives: Returns other categories except the current one (redundant)
-function sandbox_cats_meow($glue) {
+function erdt_cats_meow($glue) {
 	$current_cat = single_cat_title( '', false );
 	$separator = "\n";
 	$cats = explode( $separator, get_the_category_list($separator) );
@@ -320,7 +320,7 @@ function sandbox_cats_meow($glue) {
 }
 
 // For tag lists on tag archives: Returns other tags except the current one (redundant)
-function sandbox_tag_ur_it($glue) {
+function erdt_tag_ur_it($glue) {
 	$current_tag = single_tag_title( '', '',  false );
 	$separator = "\n";
 	$tags = explode( $separator, get_the_tag_list( "", "$separator", "" ) );
@@ -337,7 +337,7 @@ function sandbox_tag_ur_it($glue) {
 }
 
 // Produces an avatar image with the hCard-compliant photo class
-function sandbox_commenter_link() {
+function erdt_commenter_link() {
 	$commenter = get_comment_author_link();
 	if ( ereg( '<a[^>]* class=[^>]+>', $commenter ) ) {
 		$commenter = ereg_replace( '(<a[^>]* class=[\'"]?)', '\\1url ' , $commenter );
@@ -351,7 +351,7 @@ function sandbox_commenter_link() {
 }
 
 // Function to filter the default gallery shortcode
-function sandbox_gallery($attr) {
+function erdt_gallery($attr) {
 	global $post;
 	if ( isset($attr['orderby']) ) {
 		$attr['orderby'] = sanitize_sql_orderby($attr['orderby']);
@@ -419,7 +419,7 @@ function sandbox_gallery($attr) {
 
 
 // Widgets plugin: intializes the plugin after the widgets above have passed snuff
-function sandbox_widgets_init() {
+function erdt_widgets_init() {
 	if ( !function_exists('register_sidebars') )
 		return;
 
@@ -440,7 +440,7 @@ function sandbox_widgets_init() {
 load_theme_textdomain('erudite', get_template_directory() . '/translation');
 
 // Runs our code at the end to check that everything needed has loaded
-add_action( 'init', 'sandbox_widgets_init' );
+add_action( 'init', 'erdt_widgets_init' );
 
 // Adds filters for the description/meta content in archives.php
 add_filter( 'archive_meta', 'wptexturize' );
