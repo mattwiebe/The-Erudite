@@ -70,7 +70,7 @@ $erdt_options = array (
 			"options" => array(	"rows" => "6",
 								"cols" => "70") ),
 
-		  );
+);
 		
 $erdt_options = apply_filters('erdt_options', $erdt_options);
 

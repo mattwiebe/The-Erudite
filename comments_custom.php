@@ -12,7 +12,7 @@ $GLOBALS['comment'] = $comment; ?>
 			<em><?php _e('Your comment is awaiting moderation.') ?></em>
 			<br />
 			<?php endif; ?>
-			<div class="comment-meta commentmetadata"><a href="<?php echo esc_html( get_comment_link( $comment->comment_ID ) ) ?>"><?php printf(__('%1$s at %2$s'), get_comment_date(), get_comment_time()) ?></a><?php edit_comment_link(__('(Edit)'),' ','') ?></div>
+			<div class="comment-meta commentmetadata"><a href="<?php echo get_comment_link( $comment->comment_ID ); ?>"><?php printf(__('%1$s at %2$s'), get_comment_date(), get_comment_time()) ?></a><?php edit_comment_link(__('(Edit)'),' ','') ?></div>
 		</div>
 		<?php comment_text() ?>
 	<div class="reply">

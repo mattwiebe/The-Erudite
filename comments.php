@@ -47,7 +47,7 @@ endif;
 <?php if ( $user_ID ) : ?>
 							<p id="login"><?php printf( __( '<span class="loggedin">Logged in as <a href="%1$s" title="Logged in as %2$s">%2$s</a>.</span> <span class="logout"><a href="%3$s" title="Log out of this account">Log out?</a></span>', 'erudite' ),
 								get_bloginfo('wpurl') . '/wp-admin/profile.php',
-								esc_html( $user_identity, 1 ),
+								esc_attr( $user_identity ),
 								wp_logout_url(get_permalink())
 								) ?></p>
 
