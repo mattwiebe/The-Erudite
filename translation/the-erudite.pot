@@ -1,4 +1,4 @@
-# Translation of the WordPress theme The Erudite 2.7 by Matt Wiebe.
+# Translation of the WordPress theme The Erudite 2.7.2 by Matt Wiebe.
 # Copyright (C) 2010 Matt Wiebe
 # This file is distributed under the same license as the The Erudite package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2010.
@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: The Erudite 2.7\n"
+"Project-Id-Version: The Erudite 2.7.2\n"
 "Report-Msgid-Bugs-To: http://wordpress.org/tag/the-erudite\n"
-"POT-Creation-Date: 2010-06-25 00:37-0500\n"
+"POT-Creation-Date: 2010-07-08 14:17-0500\n"
 "PO-Revision-Date: 2010-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -282,7 +282,7 @@ msgstr ""
 msgid "The Erudite theme for WordPress"
 msgstr ""
 
-#. #-#-#-#-#  the-erudite.pot (The Erudite 2.7)  #-#-#-#-#
+#. #-#-#-#-#  the-erudite.pot (The Erudite 2.7.2)  #-#-#-#-#
 #. Theme Name of the plugin/theme
 #: footer.php:6
 msgid "The Erudite"
@@ -317,17 +317,17 @@ msgstr ""
 msgid "<span>↑</span> Hide Menu"
 msgstr ""
 
-#: header.php:31 sidebar.php:67
+#: header.php:32 sidebar.php:67
 #, php-format
 msgid "%s latest posts"
 msgstr ""
 
-#: header.php:32 sidebar.php:68
+#: header.php:33 sidebar.php:68
 #, php-format
 msgid "%s latest comments"
 msgstr ""
 
-#: header.php:46
+#: header.php:47
 msgid "Skip to content"
 msgstr ""
 
@@ -340,87 +340,86 @@ msgstr ""
 msgid "Pages:"
 msgstr ""
 
-#: library/epigraph.php:34 library/epigraph.php:39
+#: library/epigraph.php:35 library/epigraph.php:40
 msgid "Epigraph"
 msgstr ""
 
-#: library/epigraph.php:41
+#: library/epigraph.php:42
 msgid "Citation (optional)"
 msgstr ""
 
-#: library/theme-options.php:13
+#: library/theme-options.php:16
 msgid "Dark Colour Scheme"
 msgstr ""
 
-#: library/theme-options.php:14
+#: library/theme-options.php:17
 msgid "For all the dark colour lovers out there"
 msgstr ""
 
-#: library/theme-options.php:19
+#: library/theme-options.php:23
 msgid "Use Categories in Menu"
 msgstr ""
 
-#: library/theme-options.php:20
+#: library/theme-options.php:24
 msgid ""
 "Use categories rather than pages for your top menu. Caution: this only works "
 "with a small number of categories"
 msgstr ""
 
-#: library/theme-options.php:25
-msgid "Footer &lsquo;About&lsquo; Blurb"
+#: library/theme-options.php:30
+msgid "Footer &lsquo;About&rsquo; Blurb"
 msgstr ""
 
-#: library/theme-options.php:26
+#: library/theme-options.php:31
 msgid ""
 "The following text will appear in the footer for &lsquo;About&lsquo;. <br /"
 "><em>Note:</em> This will only appear if you have not enabled a widget for "
 "<strong>Erudite Widget 1</strong>"
 msgstr ""
 
-#: library/theme-options.php:28
+#: library/theme-options.php:33
 #, php-format
 msgid ""
 "This is an example of an &ldquo;About&rdquo; blurb. I&rsquo;m sure that the "
 "author of this blog is highly intelligent, witty and even <em>possibly</em> "
-"socially competent.\n"
-"\n"
-"It can be modified from this theme&rsquo;s <strong>options panel</strong> in "
-"the admin area (Appearance &rarr; %s Options)"
+"socially competent.\\n\\nIt can be modified from this theme&rsquo;s "
+"<strong>options panel</strong> in the admin area (Appearance &rarr; %s "
+"Options)"
 msgstr ""
 
-#: library/theme-options.php:33
+#: library/theme-options.php:38
 msgid "Disable &lsquo;Keep Reading&rsquo;"
 msgstr ""
 
-#: library/theme-options.php:34
+#: library/theme-options.php:39
 msgid ""
 "Turns off the dynamic <em>Keep Reading</em> / <em>Put Away</em> "
 "functionality on the homepage if it doesn't suit your fancy"
 msgstr ""
 
-#: library/theme-options.php:39
+#: library/theme-options.php:45
 msgid "Disable Header/Footer Hiding"
 msgstr ""
 
-#: library/theme-options.php:40
+#: library/theme-options.php:46
 msgid "Turns off the dynamic show/hide functionality of the header and footer"
 msgstr ""
 
-#: library/theme-options.php:45
+#: library/theme-options.php:51
 msgid "Disable footer credit"
 msgstr ""
 
-#: library/theme-options.php:46
+#: library/theme-options.php:52
 msgid ""
 "Removes the link to the theme's author in the footer. Leave it in to say "
 "&ldquo;thanks for the hard work.&rdquo;"
 msgstr ""
 
-#: library/theme-options.php:51
+#: library/theme-options.php:57
 msgid "Enable comment threading"
 msgstr ""
 
-#: library/theme-options.php:52
+#: library/theme-options.php:58
 msgid ""
 "Allow comment threading. (Global <a href='options-discussion.php' "
 "title='Discussion settings'>discussion settings</a> have no effect unless "
@@ -429,46 +428,42 @@ msgid ""
 "2 levels deep."
 msgstr ""
 
-#: library/theme-options.php:57
+#: library/theme-options.php:63
 msgid "Disable editor style"
 msgstr ""
 
-#: library/theme-options.php:58
+#: library/theme-options.php:64
 msgid "Turn off the Visual editor styling"
 msgstr ""
 
-#: library/theme-options.php:63
+#: library/theme-options.php:69
 msgid "Google Analytics code"
 msgstr ""
 
-#: library/theme-options.php:64
+#: library/theme-options.php:70
 msgid ""
-"Enter your <a href=\"http://www.google.com/analytics\">Google Analytics</a> "
+"Enter your <a href='http://www.google.com/analytics'>Google Analytics</a> "
 "(or other service) tracking code here, and it will automatically be placed "
 "just before the <code>&lt;body&gt;</code> tag."
 msgstr ""
 
-#: library/theme-options.php:108 library/theme-options.php:123
+#: library/theme-options.php:106 library/theme-options.php:120
 msgid "Options"
 msgstr ""
 
-#: library/theme-options.php:116
+#: library/theme-options.php:114
 msgid "settings saved."
 msgstr ""
 
-#: library/theme-options.php:117
+#: library/theme-options.php:115
 msgid "settings reset."
 msgstr ""
 
-#: library/theme-options.php:118
-msgid "widgets reset."
-msgstr ""
-
-#: library/theme-options.php:234
+#: library/theme-options.php:231
 msgid "Save changes"
 msgstr ""
 
-#: library/theme-options.php:240
+#: library/theme-options.php:238
 msgid "Reset"
 msgstr ""
 
