@@ -51,7 +51,7 @@
 	<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar(3) ) : // begin secondary sidebar widgets ?>
 				<li id="search">
 					<h3><label for="s"><?php _e( 'Search', 'erudite' ) ?></label></h3>
-					<form id="searchform" class="blog-search" method="get" action="<?php bloginfo('home') ?>">
+					<form id="searchform" class="blog-search" method="get" action="<?php echo get_option('home') ?>">
 						<div>
 							<input id="s" name="s" type="text" class="text" value="<?php the_search_query() ?>" size="10" tabindex="1" />
 							<input type="submit" class="button" value="<?php _e( 'Find', 'erudite' ) ?>" tabindex="2" />
@@ -64,8 +64,8 @@
 				<li id="rss-links">
 					<h3><?php _e( 'RSS Feeds', 'erudite' ) ?></h3>
 					<ul>
-						<li><a href="<?php bloginfo('rss2_url') ?>" title="<?php printf( __( '%s latest posts', 'erudite' ), esc_attr( get_bloginfo('name') ) ) ?>" rel="alternate" type="application/rss+xml"><?php _e( 'All posts', 'erudite' ) ?></a></li>
-						<li><a href="<?php bloginfo('comments_rss2_url') ?>" title="<?php printf( __( '%s latest comments', 'erudite' ), esc_attr( get_bloginfo('name') ) ) ?>" rel="alternate" type="application/rss+xml"><?php _e( 'All comments', 'erudite' ) ?></a></li>
+						<li><a href="<?php bloginfo('rss2_url') ?>" title="<?php printf( __( '%s latest posts', 'erudite' ), esc_attr( get_option('name') ) ) ?>" rel="alternate" type="application/rss+xml"><?php _e( 'All posts', 'erudite' ) ?></a></li>
+						<li><a href="<?php bloginfo('comments_rss2_url') ?>" title="<?php printf( __( '%s latest comments', 'erudite' ), esc_attr( get_option('name') ) ) ?>" rel="alternate" type="application/rss+xml"><?php _e( 'All comments', 'erudite' ) ?></a></li>
 					</ul>
 				</li>
 
