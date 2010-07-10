@@ -64,8 +64,8 @@
 				<li id="rss-links">
 					<h3><?php _e( 'RSS Feeds', 'erudite' ) ?></h3>
 					<ul>
-						<li><a href="<?php bloginfo('rss2_url') ?>" title="<?php printf( __( '%s latest posts', 'erudite' ), esc_attr( get_option('name') ) ) ?>" rel="alternate" type="application/rss+xml"><?php _e( 'All posts', 'erudite' ) ?></a></li>
-						<li><a href="<?php bloginfo('comments_rss2_url') ?>" title="<?php printf( __( '%s latest comments', 'erudite' ), esc_attr( get_option('name') ) ) ?>" rel="alternate" type="application/rss+xml"><?php _e( 'All comments', 'erudite' ) ?></a></li>
+						<li><a href="<?php bloginfo('rss2_url') ?>" title="<?php printf( __( '%s latest posts', 'erudite' ), esc_attr( get_option('blogname') ) ) ?>" rel="alternate" type="application/rss+xml"><?php _e( 'All posts', 'erudite' ) ?></a></li>
+						<li><a href="<?php bloginfo('comments_rss2_url') ?>" title="<?php printf( __( '%s latest comments', 'erudite' ), esc_attr( get_option('blogname') ) ) ?>" rel="alternate" type="application/rss+xml"><?php _e( 'All comments', 'erudite' ) ?></a></li>
 					</ul>
 				</li>
 

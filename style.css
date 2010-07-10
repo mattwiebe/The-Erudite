@@ -2,14 +2,18 @@
 THEME NAME: The Erudite
 THEME URI: http://somadesign.ca/projects/the-erudite
 DESCRIPTION: A theme for writers who want readers, not visitors, traffic, click-throughs, CPMs or what-have-you. Carefully crafted typography and generous use of whitespace lets your writing shine. Version 2 includes a dark theme option.
-VERSION: 2.7.2
+VERSION: 2.7.3
 AUTHOR: Matt Wiebe
 AUTHOR URI: http://somadesign.ca/
-TAGS: white, dark, one-column, fixed-width, theme-options, editor-style, translation-ready
+TAGS: white, dark, one-column, fixed-width, theme-options, editor-style, translation-ready, custom-menu
 */
 
 /* File here for WP identification purposes only. This CSS file is not loaded by the theme at all. See css directory for theme CSS */
 
+/* 
+	These classes are useless, but necessary for submission to 
+	the wordpress.org themes directory.
+*/
 .aligncenter {
 	display: block;
 	margin-left: auto;

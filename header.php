@@ -3,7 +3,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml" <?php language_attributes() ?> class="no-js">
 <head profile="http://gmpg.org/xfn/11">
-	<title><?php wp_title( '-', true, 'right' ); echo get_option('name'); ?></title>
+	<title><?php wp_title( '-', true, 'right' ); echo get_option('blogname'); ?></title>
 	<meta http-equiv="content-type" content="<?php bloginfo('html_type') ?>; charset=<?php bloginfo('charset') ?>" />
 	<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory') ?>/css/erudite.css" />
 	<!--[if lte IE 6]> <link rel="stylesheet" href="<?php bloginfo('template_directory') ?>/css/ie6.css" type="text/css"> 
@@ -29,8 +29,8 @@
 	
 <?php	if (is_singular() ) { wp_enqueue_script('comment-reply'); } ?>
 <?php wp_head() // For plugins ?>
-	<link rel="alternate" type="application/rss+xml" href="<?php bloginfo('rss2_url') ?>" title="<?php printf( __( '%s latest posts', 'erudite' ), esc_attr( get_option('name') ) ) ?>" />
-	<link rel="alternate" type="application/rss+xml" href="<?php bloginfo('comments_rss2_url') ?>" title="<?php printf( __( '%s latest comments', 'erudite' ), esc_attr( get_option('name') ) ) ?>" />
+	<link rel="alternate" type="application/rss+xml" href="<?php bloginfo('rss2_url') ?>" title="<?php printf( __( '%s latest posts', 'erudite' ), esc_attr( get_option('blogname') ) ) ?>" />
+	<link rel="alternate" type="application/rss+xml" href="<?php bloginfo('comments_rss2_url') ?>" title="<?php printf( __( '%s latest comments', 'erudite' ), esc_attr( get_option('blogname') ) ) ?>" />
 	<link rel="pingback" href="<?php bloginfo('pingback_url') ?>" />
 </head>
 <body <?php body_class() ?>>
@@ -39,7 +39,7 @@
 	
 	<div id="header-wrap">
 		<div id="header" role="banner">
-			<h1 id="blog-title"><span><a href="<?php get_option('home') ?>/" title="<?php echo esc_attr( get_option('name') ) ?>" rel="home"><?php echo get_option('name') ?></a></span></h1>
+			<h1 id="blog-title"><span><a href="<?php get_option('home') ?>/" title="<?php echo esc_attr( get_option('blogname') ) ?>" rel="home"><?php echo get_option('blogname') ?></a></span></h1>
 			<div id="blog-description"><?php bloginfo('description') ?></div>
 		</div><!--  #header -->
 
