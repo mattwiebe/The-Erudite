@@ -10,9 +10,9 @@ function erdt_epigraph($post_id = null, $return = false ) {
 	
 	$epigraph = get_post_meta($post_id, 'epigraph', true);
 	
-	if (strlen($epigraph) > 1 ) {
+	if (strlen(trim($epigraph)) > 1 ) {
 		
-		$epigraph = apply_filters('the_content', $epigraph);
+		$epigraph = apply_filters('erdt_formatting', $epigraph);
 		$epigraph = "<blockquote class='epigraph'>{$epigraph}</blockquote>";
 		
 		$cite = get_post_meta($post_id, 'epigraph_citation', true);
@@ -20,13 +20,10 @@ function erdt_epigraph($post_id = null, $return = false ) {
 			$epigraph = str_replace( '</blockquote>',"\n<cite>&ndash;{$cite}</cite>\n</blockquote>", $epigraph );
 		}
 		
-		if ($return) {
-			return $epigraph;
-		}
-		else {
+		if ( ! $return) {
 			echo $epigraph;
 		}
-		
+		return $epigraph;
 	}
 }
 
@@ -46,7 +43,7 @@ function erdt_epigraph_meta_box_contents() {
 
 add_action('save_post', 'erdt_epigraph_save');
 function erdt_epigraph_save($post_id) {
-	if ( wp_verify_nonce( $_POST['erdt_epigraph_nonce'], 'erdt_epigraph' ) ) {
+	if ( isset( $_POST['erdt_epigraph_nonce'] ) && wp_verify_nonce( $_POST['erdt_epigraph_nonce'], 'erdt_epigraph' ) ) {
 		if ( strlen( $_POST['epigraph'] ) > 0 ) :
 			update_post_meta( $post_id, 'epigraph', stripslashes( $_POST['epigraph'] ) );
 		else :

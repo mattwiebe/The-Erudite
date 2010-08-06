@@ -13,12 +13,16 @@ if(false !== strpos(site_url(), 'http://wp-themes.com')) {
 	wp_redirect('http://erudite.somadesign.ca/');
 	exit();
 }
-
 // theme options page
 include "library/theme-options.php";
 
 // epigraphs
 include_once "library/epigraph.php";
+
+// my own filter for formatting
+foreach ( array( 'wptexturize', 'convert_chars' 'wpautop' ) as $filter ) {
+	add_filter( 'erdt_formatting', $filter );
+}
 
 // style visual editor
 add_filter('mce_css', 'erudite_editor_style');
@@ -70,7 +74,7 @@ function get_the_theme_option( $id, $format = false ) {
 	}
 	$return = stripslashes($$id);
 	if ($format) {
-		$return = wptexturize( wpautop( $return ) );
+		$return = apply_filters( 'erdt_formatting' $return );
 	}
 	return $return;
 }
