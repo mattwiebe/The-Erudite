@@ -1,0 +1,602 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Перевод темы the-erudite\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/tag/the-erudite\n"
+"POT-Creation-Date: 2010-06-25 00:37-0500\n"
+"PO-Revision-Date: \n"
+"Last-Translator: S.Argo <admin@isape.ru>\n"
+"Language-Team: Chumakov <chumakov@gmail.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: Russian\n"
+"X-Poedit-Country: UKRAINE\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-Basepath: /home/hdad\n"
+
+#: 404.php:7
+msgid "Not Found"
+msgstr "Не найдено"
+
+#: 404.php:9
+msgid "Apologies, but we were unable to find what you were looking for. Perhaps searching will help."
+msgstr "Извините, но мы не смогли найти то, что Вы искали. Возможно, надо воспользоваться поиском"
+
+#: 404.php:14
+#: search.php:52
+#: sidebar.php:57
+msgid "Find"
+msgstr "Найти"
+
+#: archive.php:9
+#, php-format
+msgid "Daily Archives: <span>%s</span>"
+msgstr "Архив по дням: <span>%s</span>"
+
+#: archive.php:11
+#, php-format
+msgid "Monthly Archives: <span>%s</span>"
+msgstr "Архив по месяца: <span>%s</span>"
+
+#: archive.php:13
+#, php-format
+msgid "Yearly Archives: <span>%s</span>"
+msgstr "Архив по годам: <span>%s</span>"
+
+#: archive.php:15
+msgid "Blog Archives"
+msgstr "Архив блога"
+
+#: archive.php:23
+#: author.php:16
+#: category.php:12
+#: home.php:13
+#: home.php:21
+#: index.php:9
+#: search.php:13
+#: tag.php:11
+#, php-format
+msgid "Permalink to %s"
+msgstr "Постоянная ссылка к %s"
+
+#: archive.php:25
+#: author.php:18
+#: category.php:14
+#: home.php:16
+#: home.php:24
+#: index.php:12
+#: search.php:15
+#: tag.php:13
+msgid "Read More <span class=\"meta-nav\">&rarr;</span>"
+msgstr "Читать далее <span class=\"meta-nav\">&rarr;</span>"
+
+#: archive.php:29
+#: author.php:22
+#: category.php:18
+#: home.php:30
+#: index.php:17
+#: search.php:21
+#: single.php:16
+#: tag.php:17
+#, php-format
+msgid "%1$s &#8211; %2$s"
+msgstr ""
+
+#: archive.php:31
+#: author.php:24
+#: category.php:20
+#: home.php:32
+#: index.php:19
+#: search.php:23
+#: single.php:18
+#: tag.php:19
+#, php-format
+msgid "By %s"
+msgstr "Автор %s"
+
+#: archive.php:33
+#: author.php:26
+#: category.php:22
+#: home.php:34
+#: index.php:21
+#: search.php:25
+#: single.php:20
+#: tag.php:21
+#, php-format
+msgid "Posted in %s"
+msgstr "Опубликовано в  %s"
+
+#: archive.php:35
+#: author.php:28
+#: category.php:24
+#: home.php:36
+#: index.php:23
+#: search.php:27
+#: single.php:22
+#: tag.php:23
+msgid "<span class=\"tag-links\">Tagged "
+msgstr ""
+
+#: archive.php:36
+#: archives.php:32
+#: attachment.php:38
+#: author.php:29
+#: category.php:25
+#: home.php:37
+#: image.php:39
+#: index.php:24
+#: links.php:22
+#: page.php:15
+#: search.php:28
+#: single.php:23
+#: tag.php:24
+msgid "Edit"
+msgstr "Редактирование"
+
+#: archive.php:37
+#: author.php:30
+#: category.php:26
+#: home.php:38
+#: index.php:25
+#: search.php:29
+#: single.php:24
+#: tag.php:25
+msgid "Comments (0)"
+msgstr "Комментарии  (0)"
+
+#: archive.php:37
+#: author.php:30
+#: category.php:26
+#: home.php:38
+#: index.php:25
+#: search.php:29
+#: single.php:24
+#: tag.php:25
+msgid "Comments (1)"
+msgstr "Комментарии  (1)"
+
+#: archive.php:37
+#: author.php:30
+#: category.php:26
+#: home.php:38
+#: index.php:25
+#: search.php:29
+#: single.php:24
+#: tag.php:25
+msgid "Comments (%)"
+msgstr "Комментарии  (%)"
+
+#: archive.php:44
+#: author.php:37
+#: category.php:33
+#: home.php:47
+#: index.php:34
+#: tag.php:32
+msgid "<span class=\"meta-nav\">&larr;</span> Older posts"
+msgstr "<span class=\"meta-nav\">&larr;</span> Предыдущие записи"
+
+#: archive.php:45
+#: author.php:38
+#: category.php:34
+#: home.php:48
+#: index.php:35
+#: tag.php:33
+msgid "Newer posts <span class=\"meta-nav\">&rarr;</span>"
+msgstr "Новые записи <span class=\"meta-nav\">&rarr;</span>"
+
+#: archives.php:20
+msgid "Archives by Category"
+msgstr "Архив категорий"
+
+#: archives.php:26
+msgid "Archives by Month"
+msgstr "Архив по месяцам"
+
+#: attachment.php:8
+#: image.php:8
+#, php-format
+msgid "Return to %s"
+msgstr "Возврат к %s"
+
+#: attachment.php:19
+#: image.php:20
+#, php-format
+msgid "Posted by %1$s on <abbr class=\"published\" title=\"%2$sT%3$s\">%4$s at %5$s</abbr>. Bookmark the <a href=\"%6$s\" title=\"Permalink to %7$s\" rel=\"bookmark\">permalink</a>. Follow any comments here with the <a href=\"%8$s\" title=\"Comments RSS to %7$s\" rel=\"alternate\" type=\"application/rss+xml\">RSS feed for this post</a>."
+msgstr "Опубликовано %1$s в<abbr class=\"published\" title=\"%2$sT%3$s\">%4$s at %5$s</abbr>. Закладки<a href=\"%6$s\" title=\"Permalink to %7$s\" rel=\"bookmark\">permalink</a>. Посмотрите комментарии <a href=\"%8$s\" title=\"Comments RSS to %7$s\" rel=\"alternate\" type=\"application/rss+xml\">Подпишитесь на RSS к данной записи</a>."
+
+#: attachment.php:20
+#: image.php:21
+#, php-format
+msgid "View all posts by %s"
+msgstr "Посмотреть все записи за  %s"
+
+#: attachment.php:30
+#: image.php:31
+#, php-format
+msgid "<a class=\"comment-link\" href=\"#respond\" title=\"Post a comment\">Post a comment</a> or leave a trackback: <a class=\"trackback-link\" href=\"%s\" title=\"Trackback URL for your post\" rel=\"trackback\">Trackback URL</a>."
+msgstr ""
+
+#: attachment.php:32
+#: image.php:33
+#, php-format
+msgid "Comments are closed, but you can leave a trackback: <a class=\"trackback-link\" href=\"%s\" title=\"Trackback URL for your post\" rel=\"trackback\">Trackback URL</a>."
+msgstr "Комментарии закрыты, но вы можете оставить trackback: <a class=\"trackback-link\" href=\"%s\" title=\"Trackback URL для Вашего сообщенияt\" rel=\"trackback\">Trackback URL</a>."
+
+#: attachment.php:34
+#: image.php:35
+msgid "Trackbacks are closed, but you can <a class=\"comment-link\" href=\"#respond\" title=\"Post a comment\">post a comment</a>."
+msgstr "Trackbacks закрыты, но вы можете <a class=\"comment-link\" href=\"#respond\" title=\"Post a comment\">оставить комментарий</a>."
+
+#: attachment.php:36
+#: image.php:37
+msgid "Both comments and trackbacks are currently closed."
+msgstr "Комментарии  и уведомлений в настоящее время закрыты."
+
+#: author.php:8
+#, php-format
+msgid "Author Archives: <span class=\"vcard\">%s</span>"
+msgstr "Архив автора: <span class=\"vcard\">%s</span>"
+
+#: category.php:6
+msgid "Category Archives:"
+msgstr "Архив категорий:"
+
+#: comments.php:10
+msgid "This post is protected. Enter the password to view any comments."
+msgstr "Это сообщение защищено. Введите пароль для просмотра комментариев."
+
+#: comments.php:17
+msgid "No Comments"
+msgstr "Комментариев нет"
+
+#: comments.php:17
+msgid "One Comment"
+msgstr "Один комментарий"
+
+#: comments.php:17
+msgid "% Comments"
+msgstr "% комментариев"
+
+#: comments.php:22
+msgid "Respond to this"
+msgstr "Ответить на этот"
+
+#: comments.php:34
+msgid "Post a Comment"
+msgstr "Оставить комментарий"
+
+#: comments.php:34
+#, php-format
+msgid "Respond to %s"
+msgstr "Ответ на  %s"
+
+#: comments.php:36
+msgid "Cancel this response"
+msgstr "Отменить этот ответ"
+
+#: comments.php:39
+#, php-format
+msgid "You must be <a href=\"%s\" title=\"Log in\">logged in</a> to post a comment."
+msgstr "Вы должны были <a href=\"%s\" title=\"Log in\"> войти в систему </ A>, чтобы оставить комментарий."
+
+#: comments.php:48
+#, php-format
+msgid "<span class=\"loggedin\">Logged in as <a href=\"%1$s\" title=\"Logged in as %2$s\">%2$s</a>.</span> <span class=\"logout\"><a href=\"%3$s\" title=\"Log out of this account\">Log out?</a></span>"
+msgstr ""
+
+#: comments.php:56
+msgid "Your email is <em>never</em> shared."
+msgstr ""
+
+#: comments.php:56
+msgid "Required fields are marked <span class=\"required\">*</span>"
+msgstr "Обязательные для заполнения поля отмечены <span class=\"required\">*</span>"
+
+#: comments.php:59
+msgid "Name"
+msgstr "Имя"
+
+#: comments.php:59
+#: comments.php:62
+msgid "<span class=\"required\">*</span>"
+msgstr ""
+
+#: comments.php:62
+msgid "Email"
+msgstr ""
+
+#: comments.php:65
+msgid "Website"
+msgstr ""
+
+#: comments.php:72
+msgid "Comment"
+msgstr "Комментарий"
+
+#: comments.php:75
+msgid "Post Comment"
+msgstr "Добавить комментарий"
+
+#: comments_custom.php:9
+#, php-format
+msgid "<cite class=\"fn\">%s</cite> <span class=\"says\">wrote:</span>"
+msgstr ""
+
+#: comments_custom.php:12
+msgid "Your comment is awaiting moderation."
+msgstr "Ваш комментарий ожидает модерации."
+
+#: comments_custom.php:15
+#, php-format
+msgid "%1$s at %2$s"
+msgstr ""
+
+#: comments_custom.php:15
+msgid "(Edit)"
+msgstr "(Редактировать)"
+
+#: footer.php:3
+msgid "WordPress"
+msgstr ""
+
+#: footer.php:6
+msgid "The Erudite theme for WordPress"
+msgstr ""
+
+#. #-#-#-#-#  the-erudite.pot (The Erudite 2.7)  #-#-#-#-#
+#. Theme Name of the plugin/theme
+#: footer.php:6
+msgid "The Erudite"
+msgstr ""
+
+#: functions.php:111
+msgid "Header Menu"
+msgstr "Главное меню"
+
+#: functions.php:157
+#, php-format
+msgid "Posts by %s"
+msgstr "Опубликовано  %s"
+
+#: header.php:18
+msgid "<span>↓</span> Keep Reading"
+msgstr "<span>↓</span> Продолжить чтение"
+
+#: header.php:19
+msgid "<span>↑</span> Put Away"
+msgstr "<span>↑</span> Отложить чтение"
+
+#: header.php:20
+msgid "&#x2193; Further Information"
+msgstr "&#x2193;  Дополнительная информация"
+
+#: header.php:21
+msgid "<span>↓</span> Show Menu"
+msgstr "<span> ↓ </ span> Показать меню"
+
+#: header.php:22
+msgid "<span>↑</span> Hide Menu"
+msgstr "<span> ↑ </ span> Скрыть меню"
+
+#: header.php:31
+#: sidebar.php:67
+#, php-format
+msgid "%s latest posts"
+msgstr "%s последние сообщения"
+
+#: header.php:32
+#: sidebar.php:68
+#, php-format
+msgid "%s latest comments"
+msgstr "%s Последние комментарии"
+
+#: header.php:46
+msgid "Skip to content"
+msgstr "Перейти к содержимому"
+
+#: home.php:24
+#, php-format
+msgid "Keep reading &lsquo;%s&rsquo;"
+msgstr "Продолжить чтение &lsquo;%s&rsquo;"
+
+#: home.php:27
+#: index.php:14
+#: page.php:13
+#: single.php:13
+msgid "Pages:"
+msgstr ""
+
+#: library/epigraph.php:34
+#: library/epigraph.php:39
+msgid "Epigraph"
+msgstr ""
+
+#: library/epigraph.php:41
+msgid "Citation (optional)"
+msgstr "Цитирование (опционально)"
+
+#: library/theme-options.php:13
+msgid "Dark Colour Scheme"
+msgstr ""
+
+#: library/theme-options.php:14
+msgid "For all the dark colour lovers out there"
+msgstr "Для всех любителей темного цвета"
+
+#: library/theme-options.php:19
+msgid "Use Categories in Menu"
+msgstr "Использование категорий в меню"
+
+#: library/theme-options.php:20
+msgid "Use categories rather than pages for your top menu. Caution: this only works with a small number of categories"
+msgstr "Используйте категории, а не страниц для верхнего меню. Внимание: это работает только с небольшим числом категорий"
+
+#: library/theme-options.php:25
+msgid "Footer &lsquo;About&lsquo; Blurb"
+msgstr ""
+
+#: library/theme-options.php:26
+msgid "The following text will appear in the footer for &lsquo;About&lsquo;. <br /><em>Note:</em> This will only appear if you have not enabled a widget for <strong>Erudite Widget 1</strong>"
+msgstr "Следующий текст появится в нижнем колонтитуле для &lsquo;About&lsquo;.  <br /> <em> Примечание: </em>  Эта надпись не появляется, если вы не включили виджет для <strong> Erudite Widget 1</strong>"
+
+#: library/theme-options.php:28
+#, php-format
+msgid ""
+"This is an example of an &ldquo;About&rdquo; blurb. I&rsquo;m sure that the author of this blog is highly intelligent, witty and even <em>possibly</em> socially competent.\n"
+"\n"
+"It can be modified from this theme&rsquo;s <strong>options panel</strong> in the admin area (Appearance &rarr; %s Options)"
+msgstr ""
+
+#: library/theme-options.php:33
+msgid "Disable &lsquo;Keep Reading&rsquo;"
+msgstr "Отключить &lsquo; Продолжить чтение &rsquo;"
+
+#: library/theme-options.php:34
+msgid "Turns off the dynamic <em>Keep Reading</em> / <em>Put Away</em> functionality on the homepage if it doesn't suit your fancy"
+msgstr ""
+
+#: library/theme-options.php:39
+msgid "Disable Header/Footer Hiding"
+msgstr "Отключить Header/Footer Hiding"
+
+#: library/theme-options.php:40
+msgid "Turns off the dynamic show/hide functionality of the header and footer"
+msgstr ""
+
+#: library/theme-options.php:45
+msgid "Disable footer credit"
+msgstr ""
+
+#: library/theme-options.php:46
+msgid "Removes the link to the theme's author in the footer. Leave it in to say &ldquo;thanks for the hard work.&rdquo;"
+msgstr "Удаляет ссылку на автора темы в конце страницы. Оставьте его, чтобы сказать &ldquo;thanks for the hard work.&rdquo;"
+
+#: library/theme-options.php:51
+msgid "Enable comment threading"
+msgstr "Включить комментарии"
+
+#: library/theme-options.php:52
+msgid "Allow comment threading. (Global <a href='options-discussion.php' title='Discussion settings'>discussion settings</a> have no effect unless this is checked first)<br /> This is <strong>off</strong> by default because threaded comments are rubbish. Turn on at your peril, and don't go more than 2 levels deep."
+msgstr ""
+
+#: library/theme-options.php:57
+msgid "Disable editor style"
+msgstr "Отключить стили редактора"
+
+#: library/theme-options.php:58
+msgid "Turn off the Visual editor styling"
+msgstr "Выключите the Visual editor styling"
+
+#: library/theme-options.php:63
+msgid "Google Analytics code"
+msgstr ""
+
+#: library/theme-options.php:64
+msgid "Enter your <a href=\"http://www.google.com/analytics\">Google Analytics</a> (or other service) tracking code here, and it will automatically be placed just before the <code>&lt;body&gt;</code> tag."
+msgstr ""
+
+#: library/theme-options.php:108
+#: library/theme-options.php:123
+msgid "Options"
+msgstr "Опции"
+
+#: library/theme-options.php:116
+msgid "settings saved."
+msgstr "Настройки сохранены."
+
+#: library/theme-options.php:117
+msgid "settings reset."
+msgstr "Сбросить настройки"
+
+#: library/theme-options.php:118
+msgid "widgets reset."
+msgstr "Сбросить widgets "
+
+#: library/theme-options.php:234
+msgid "Save changes"
+msgstr "Записать изменения"
+
+#: library/theme-options.php:240
+msgid "Reset"
+msgstr "Сброс"
+
+#: search.php:8
+msgid "Search Results for:"
+msgstr "Результаты поиска:"
+
+#: search.php:38
+msgid "<span class=\"meta-nav\">&larr;</span> Older results"
+msgstr ""
+
+#: search.php:39
+msgid "Newer results <span class=\"meta-nav\">&rarr;</span>"
+msgstr ""
+
+#: search.php:45
+msgid "Nothing Found"
+msgstr ""
+
+#: search.php:47
+msgid "Sorry, but nothing matched your search criteria. Please try again with some different keywords."
+msgstr ""
+
+#: sidebar.php:9
+msgid "About"
+msgstr ""
+
+#: sidebar.php:16
+msgid "Pages"
+msgstr "Страницы"
+
+#: sidebar.php:31
+msgid "Categories"
+msgstr "Категории"
+
+#: sidebar.php:39
+msgid "Archives"
+msgstr "Архивы"
+
+#: sidebar.php:53
+msgid "Search"
+msgstr "Поиск"
+
+#: sidebar.php:65
+msgid "RSS Feeds"
+msgstr ""
+
+#: sidebar.php:67
+msgid "All posts"
+msgstr "Все записи"
+
+#: sidebar.php:68
+msgid "All comments"
+msgstr "Все комментарии"
+
+#: sidebar.php:73
+msgid "Meta"
+msgstr "Управление"
+
+#: tag.php:6
+msgid "Tag Archives:"
+msgstr "Архив меток"
+
+#. Theme URI of the plugin/theme
+msgid "http://somadesign.ca/projects/the-erudite"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "A theme for writers who want readers, not visitors, traffic, click-throughs, CPMs or what-have-you. Carefully crafted typography and generous use of whitespace lets your writing shine. Version 2 includes a dark theme option."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Matt Wiebe"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "http://somadesign.ca/"
+msgstr ""
+
+#. Tags of the plugin/theme
+msgid "white, dark, one-column, fixed-width, theme-options, editor-style, translation-ready"
+msgstr ""
+
