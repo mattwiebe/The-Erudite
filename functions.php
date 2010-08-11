@@ -20,7 +20,7 @@ include "library/theme-options.php";
 include_once "library/epigraph.php";
 
 // my own filter for formatting
-foreach ( array( 'wptexturize', 'convert_chars' 'wpautop' ) as $filter ) {
+foreach ( array( 'wptexturize', 'convert_chars', 'wpautop' ) as $filter ) {
 	add_filter( 'erdt_formatting', $filter );
 }
 
@@ -42,17 +42,21 @@ function erudite_editor_style($url) {
 
 function erudite_body_class($classes) {
 	// for theme colors
-	if ( get_the_theme_option('erdt_color_dark') === 'true' ) {
+	if ( get_the_theme_option('erdt_color_dark') === 'true' )
 		$classes[] = 'dark';
-	}
+
 	// proper first-page class
-	if( is_home() && !is_paged() ) { 
-		$classes[] = "first-page"; 
-	}
+	if ( is_home() && !is_paged() )
+		$classes[] = "first-page";
+
 	// show/hide functionality
-	if( get_the_theme_option("erdt_hide_disable") == "false" ) {
+	if ( get_the_theme_option("erdt_hide_disable") == "false" )
 		$classes[] = "hiding";
-	}
+
+	// WP-Typography?
+	if ( class_exists('wpTypography') )
+		$classes[] = 'hypenation';
+	
 	return $classes;
 }
 
@@ -74,7 +78,7 @@ function get_the_theme_option( $id, $format = false ) {
 	}
 	$return = stripslashes($$id);
 	if ($format) {
-		$return = apply_filters( 'erdt_formatting' $return );
+		$return = apply_filters( 'erdt_formatting', $return );
 	}
 	return $return;
 }

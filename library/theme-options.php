@@ -82,7 +82,7 @@ function erdt_add_admin() {
 
     global $themename, $shortname, $erdt_options, $erdt_nonce;
 
-	if ( isset($_GET['page']) $_GET['page'] == basename(__FILE__) && isset($_POST[$erdt_nonce]) && wp_verify_nonce($_POST[$erdt_nonce], $erdt_nonce ) && isset($_REQUEST['action']) ) {
+	if ( isset($_GET['page']) && $_GET['page'] == basename(__FILE__) && isset($_POST[$erdt_nonce]) && wp_verify_nonce($_POST[$erdt_nonce], $erdt_nonce ) && isset($_REQUEST['action']) ) {
 
 		if ( 'save' == $_REQUEST['action'] ) {
 			foreach ( $erdt_options as $value ) {

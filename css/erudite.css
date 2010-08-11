@@ -28,13 +28,16 @@ body.single #content, body.page #content {overflow:visible;}
 /* Typography Base */
 body {font: normal normal normal 10px/1.5 constantia,'hoefler text','palatino linotype',serif; background:#fafafa; color:#333; }
 textarea, select, input {font-size:12px;}
-h1,h2,h3,h4,h5,h6 {font-family:'gill sans','gill sans mt','gill sans mt pro','century gothic',corbel,sans-serif; font-weight:normal; text-transform:uppercase; letter-spacing:.05em;}
-h1 {font-size:3.6em; line-height:1.333; margin-top:1.333em;}
-h2 {font-size:2.4em; line-height:1; margin-top:1em;}
-h3 {font-size:2.1em; line-height:1.143; margin-top:1.143em;}
-h4 {font-size:1.8em; line-height:1.333; margin-top:1.333em;}
-h5 {font-size:1.6em; margin-top:1.5em;}
+h1,h2,h3,h4,h5,h6 {font-family:'gill sans','gill sans mt','gill sans mt pro','century gothic',corbel,sans-serif; font-weight:normal; text-transform:uppercase; letter-spacing:.05em; text-rendering: optimizeLegibility}
+h1 {font-size:3.6em; line-height:1.333; margin:1.333em 0 .333em;}
+h2 {font-size:2.4em; line-height:1; margin:1em 0 .25em;}
+h3 {font-size:2.1em; line-height:1.143; margin:1.143em 0 .286em;}
+h4 {font-size:1.8em; line-height:1.333; margin:1.333em 0 .333em;}
+h5 {font-size:1.6em; margin-top:1.5em 0 .375em;}
 h4, h5 {letter-spacing:.1em;}
+h1 + h2, h1 + h3, h1 + h4, h1 + h5, h1 + h6, h2 + h3, h2 + h4, h2 + h5, h2 + h6, h3 + h4, h3 + h5, h3 + h6, h4 + h5, h4 + h5, h5 + h6 {
+	margin-top:0;
+}
 .amp {font-size:1.1em; font-style:italic; line-height:1.363;}
 pre, code {font-family:consolas,'deja vu sans mono','lucida sans typewriter',monaco,monospace;}
 
@@ -47,7 +50,7 @@ a:active {color:#55f;}
 
 /* Header */
 #header-wrap {background:#333 url(../images/stripes.png) repeat; margin-bottom:2em; padding:1em 0;}
-#header h1, #header h1 a {color:#fff; text-decoration:none; line-height:1; margin-top:0;}
+#header h1, #header h1 a {color:#fff; text-decoration:none; line-height:1; margin:0;}
 #blog-description {font-size:1.4em; color:#fff;}
 
 /* Menu */
@@ -112,7 +115,7 @@ a:active {color:#55f;}
 
 /* Posts */
 div.post, div.page {position:relative; margin:0 0 3.2em; min-height:21.6em; clear:both;}
-.post .hidden {overflow:hidden !important;}
+.post .shortened {overflow:hidden !important;}
 .entry-content hr, .hr {height:4.8em; background:url(../images/fleuron.png) center 1em no-repeat; margin:0 0 2.4em; display:block; border-width:0px; border-style: none !important;}
 .entry-title, .entry-title a {color:#555; text-decoration:none;}
 .entry-title a:hover {text-decoration:underline;}
@@ -125,7 +128,9 @@ h3.entry-title {margin-bottom:.857em;}
 .entry-content td, .entry-content th {padding:.125em .5em; text-align:left;}
 .entry-content pre {font-size:1.4em;}
 .entry-content legend {font-size:1.4em; text-align:center; text-indent:0;}
-.entry-content p {text-indent:1em; text-align:justify;}
+.entry-content p {text-indent:1em;}
+.hypenation .entry-content p {text-align:justify;}
+.entry-content h1 + p, .entry-content h2 + p, .entry-content h3 + p, .entry-content h4 + p, .entry-content h5 + p, .entry-content h6 + p, .entry-content hr + p, .entry-content .hr + p {text-indent:0;}
 .entry-content blockquote {padding-left:3em; position:relative;}
 .entry-content blockquote::before {content:"\201C"; position:absolute; font-size:4.8em; line-height:1; left:.1em; top:0; color:#999;}
 .entry-content blockquote::after {content:"\201D"; position:absolute; font-size:4.8em; line-height:1; right:-.5em; bottom:-.55em; color:#999;}
@@ -155,7 +160,7 @@ blockquote.epigraph em, blockquote.epigraph cite {font-style:normal;}
 blockquote.epigraph cite {text-align:right; font-size:1.2em; display:block; font-variant:small-caps;}
 
 /* Pullquotes */
-.hidden .pullquote-display {display:none;}
+.shortened .pullquote-display {display:none;}
 .pullquote-display {position:absolute; width:29.8em; right:-36em; border:.1em solid #d6d6d6; background:#f3f3f3;}
 .pullquote-display p {padding:1.3em 1.6em; margin:0; font-variant: small-caps; font-size:1.8em; font-style:italic; line-height:1.333; text-indent:0; text-align:left;}
 

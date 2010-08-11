@@ -14,7 +14,7 @@ jQuery(document).ready(function($) {
 	//set .entry-content to height of first paragraph, add view more link
 	// only do this if there are more than 2 elements, and the user hasn't disabled in the control panel
 	if (entryHide.find("p").size() > 2 && erdt.DisableKeepReading == false) {
-		entryHide.css({height: entryHeight}).after("<div class='reveal'><p>"+erdt.More+"</p></div>").addClass("hidden");
+		entryHide.css({height: entryHeight}).after("<div class='reveal'><p>"+erdt.More+"</p></div>").addClass("shortened");
 	}
 
 	//show/hide animation
@@ -27,7 +27,7 @@ jQuery(document).ready(function($) {
 			$(this).addClass('hide').html(erdt.Less);
 			entryHide.animate({height: contentHeight}, animLength);
 		}
-		entryHide.toggleClass("hidden");
+		entryHide.toggleClass("shortened");
 	});
 
 // header & footer show/hide functionality
