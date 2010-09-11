@@ -16,7 +16,7 @@ endif;
 
 if ( ! comments_open() ) {
 	echo '<p class="disabled">' . __('Comments are disabled for this post', 'erudite' ) . '</p>';
-	echo '</div>';
+	echo '</div><!-- .comments -->';
 	return;
 }
 
