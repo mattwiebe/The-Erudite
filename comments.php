@@ -7,12 +7,19 @@
 	if ( !empty($post->post_password) ) :
 		if ( $_COOKIE['wp-postpass_' . COOKIEHASH] != $post->post_password ) :
 ?>
-				<div class="nopassword"><?php _e( 'This post is protected. Enter the password to view any comments.', 'erudite' ) ?></div>
+				<div class="nopassword disabled"><?php _e( 'This post is protected. Enter the password to view any comments.', 'erudite' ) ?></div>
 			</div><!-- .comments -->
 <?php
 		return;
 	endif;
 endif;
+
+if ( ! comments_open() ) {
+	echo '<p class="disabled">' . __('Comments are disabled for this post', 'erudite' ) . '</p>';
+	echo '</div>';
+	return;
+}
+
 ?>
 	<h4><?php comments_number(__('No Comments', 'erudite'), __('One Comment', 'erudite'), __('% Comments', 'erudite') );?></h4>
 <?php if (get_the_theme_option('erdt_comment_threading') == "false" ) {$max_threading = "&max_depth=1"; } // check for theme option to possibly allow threaded comments for those insane enough to really want them ?>
