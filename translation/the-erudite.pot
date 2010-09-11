@@ -1,4 +1,4 @@
-# Translation of the WordPress theme The Erudite 2.7.2 by Matt Wiebe.
+# Translation of the WordPress theme The Erudite 2.7.5 by Matt Wiebe.
 # Copyright (C) 2010 Matt Wiebe
 # This file is distributed under the same license as the The Erudite package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2010.
@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: The Erudite 2.7.2\n"
+"Project-Id-Version: The Erudite 2.7.5\n"
 "Report-Msgid-Bugs-To: http://wordpress.org/tag/the-erudite\n"
-"POT-Creation-Date: 2010-07-08 14:17-0500\n"
+"POT-Creation-Date: 2010-09-11 18:01-0500\n"
 "PO-Revision-Date: 2010-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -60,47 +60,47 @@ msgstr ""
 msgid "Read More <span class=\"meta-nav\">&rarr;</span>"
 msgstr ""
 
-#: archive.php:29 author.php:22 category.php:18 home.php:30 index.php:17
-#: search.php:21 single.php:16 tag.php:17
+#: archive.php:29 attachment.php:19 author.php:22 category.php:18 home.php:30
+#: image.php:20 index.php:17 search.php:21 single.php:16 tag.php:17
 #, php-format
 msgid "%1$s &#8211; %2$s"
 msgstr ""
 
-#: archive.php:31 author.php:24 category.php:20 home.php:32 index.php:19
-#: search.php:23 single.php:18 tag.php:19
+#: archive.php:31 attachment.php:21 author.php:24 category.php:20 home.php:32
+#: image.php:22 index.php:19 search.php:23 single.php:18 tag.php:19
 #, php-format
 msgid "By %s"
 msgstr ""
 
-#: archive.php:33 author.php:26 category.php:22 home.php:34 index.php:21
-#: search.php:25 single.php:20 tag.php:21
+#: archive.php:33 attachment.php:23 author.php:26 category.php:22 home.php:34
+#: index.php:21 search.php:25 single.php:20 tag.php:21
 #, php-format
 msgid "Posted in %s"
 msgstr ""
 
-#: archive.php:35 author.php:28 category.php:24 home.php:36 index.php:23
-#: search.php:27 single.php:22 tag.php:23
+#: archive.php:35 attachment.php:25 author.php:28 category.php:24 home.php:36
+#: image.php:24 index.php:23 search.php:27 single.php:22 tag.php:23
 msgid "<span class=\"tag-links\">Tagged "
 msgstr ""
 
-#: archive.php:36 archives.php:32 attachment.php:38 author.php:29
-#: category.php:25 home.php:37 image.php:39 index.php:24 links.php:22
+#: archive.php:36 archives.php:32 attachment.php:26 author.php:29
+#: category.php:25 home.php:37 image.php:25 index.php:24 links.php:22
 #: page.php:15 search.php:28 single.php:23 tag.php:24
 msgid "Edit"
 msgstr ""
 
-#: archive.php:37 author.php:30 category.php:26 home.php:38 index.php:25
-#: search.php:29 single.php:24 tag.php:25
+#: archive.php:37 attachment.php:27 author.php:30 category.php:26 home.php:38
+#: image.php:26 index.php:25 search.php:29 single.php:24 tag.php:25
 msgid "Comments (0)"
 msgstr ""
 
-#: archive.php:37 author.php:30 category.php:26 home.php:38 index.php:25
-#: search.php:29 single.php:24 tag.php:25
+#: archive.php:37 attachment.php:27 author.php:30 category.php:26 home.php:38
+#: image.php:26 index.php:25 search.php:29 single.php:24 tag.php:25
 msgid "Comments (1)"
 msgstr ""
 
-#: archive.php:37 author.php:30 category.php:26 home.php:38 index.php:25
-#: search.php:29 single.php:24 tag.php:25
+#: archive.php:37 attachment.php:27 author.php:30 category.php:26 home.php:38
+#: image.php:26 index.php:25 search.php:29 single.php:24 tag.php:25
 msgid "Comments (%)"
 msgstr ""
 
@@ -125,47 +125,6 @@ msgstr ""
 #: attachment.php:8 image.php:8
 #, php-format
 msgid "Return to %s"
-msgstr ""
-
-#: attachment.php:19 image.php:20
-#, php-format
-msgid ""
-"Posted by %1$s on <abbr class=\"published\" title=\"%2$sT%3$s\">%4$s at %5"
-"$s</abbr>. Bookmark the <a href=\"%6$s\" title=\"Permalink to %7$s\" rel="
-"\"bookmark\">permalink</a>. Follow any comments here with the <a href=\"%8$s"
-"\" title=\"Comments RSS to %7$s\" rel=\"alternate\" type=\"application/rss"
-"+xml\">RSS feed for this post</a>."
-msgstr ""
-
-#: attachment.php:20 image.php:21
-#, php-format
-msgid "View all posts by %s"
-msgstr ""
-
-#: attachment.php:30 image.php:31
-#, php-format
-msgid ""
-"<a class=\"comment-link\" href=\"#respond\" title=\"Post a comment\">Post a "
-"comment</a> or leave a trackback: <a class=\"trackback-link\" href=\"%s\" "
-"title=\"Trackback URL for your post\" rel=\"trackback\">Trackback URL</a>."
-msgstr ""
-
-#: attachment.php:32 image.php:33
-#, php-format
-msgid ""
-"Comments are closed, but you can leave a trackback: <a class=\"trackback-link"
-"\" href=\"%s\" title=\"Trackback URL for your post\" rel=\"trackback"
-"\">Trackback URL</a>."
-msgstr ""
-
-#: attachment.php:34 image.php:35
-msgid ""
-"Trackbacks are closed, but you can <a class=\"comment-link\" href=\"#respond"
-"\" title=\"Post a comment\">post a comment</a>."
-msgstr ""
-
-#: attachment.php:36 image.php:37
-msgid "Both comments and trackbacks are currently closed."
 msgstr ""
 
 #: author.php:8
@@ -282,17 +241,21 @@ msgstr ""
 msgid "The Erudite theme for WordPress"
 msgstr ""
 
-#. #-#-#-#-#  the-erudite.pot (The Erudite 2.7.2)  #-#-#-#-#
+#. #-#-#-#-#  the-erudite.pot (The Erudite 2.7.5)  #-#-#-#-#
 #. Theme Name of the plugin/theme
 #: footer.php:6
 msgid "The Erudite"
 msgstr ""
 
-#: functions.php:111
+#: functions.php:31
+msgid "[No Title]"
+msgstr ""
+
+#: functions.php:134
 msgid "Header Menu"
 msgstr ""
 
-#: functions.php:157
+#: functions.php:180
 #, php-format
 msgid "Posts by %s"
 msgstr ""
@@ -317,17 +280,7 @@ msgstr ""
 msgid "<span>↑</span> Hide Menu"
 msgstr ""
 
-#: header.php:32 sidebar.php:67
-#, php-format
-msgid "%s latest posts"
-msgstr ""
-
-#: header.php:33 sidebar.php:68
-#, php-format
-msgid "%s latest comments"
-msgstr ""
-
-#: header.php:47
+#: header.php:44
 msgid "Skip to content"
 msgstr ""
 
@@ -340,11 +293,11 @@ msgstr ""
 msgid "Pages:"
 msgstr ""
 
-#: library/epigraph.php:35 library/epigraph.php:40
+#: library/epigraph.php:32 library/epigraph.php:37
 msgid "Epigraph"
 msgstr ""
 
-#: library/epigraph.php:42
+#: library/epigraph.php:39
 msgid "Citation (optional)"
 msgstr ""
 
@@ -459,11 +412,11 @@ msgstr ""
 msgid "settings reset."
 msgstr ""
 
-#: library/theme-options.php:231
+#: library/theme-options.php:219
 msgid "Save changes"
 msgstr ""
 
-#: library/theme-options.php:238
+#: library/theme-options.php:226
 msgid "Reset"
 msgstr ""
 
@@ -514,7 +467,17 @@ msgid "RSS Feeds"
 msgstr ""
 
 #: sidebar.php:67
+#, php-format
+msgid "%s latest posts"
+msgstr ""
+
+#: sidebar.php:67
 msgid "All posts"
+msgstr ""
+
+#: sidebar.php:68
+#, php-format
+msgid "%s latest comments"
 msgstr ""
 
 #: sidebar.php:68
@@ -537,7 +500,7 @@ msgstr ""
 msgid ""
 "A theme for writers who want readers, not visitors, traffic, click-throughs, "
 "CPMs or what-have-you. Carefully crafted typography and generous use of "
-"whitespace lets your writing shine. Version 2 includes a dark theme option."
+"whitespace lets your writing shine."
 msgstr ""
 
 #. Author of the plugin/theme
@@ -551,5 +514,5 @@ msgstr ""
 #. Tags of the plugin/theme
 msgid ""
 "white, dark, one-column, fixed-width, theme-options, editor-style, "
-"translation-ready"
+"translation-ready, custom-menu"
 msgstr ""

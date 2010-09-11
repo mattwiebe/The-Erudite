@@ -24,7 +24,7 @@ if ($first == 1 && !is_paged() ) { //this is for the first post on the homepage 
 			<p class="more-link"><a href="<?php the_permalink() ?>" title="<?php printf(__('Keep reading &lsquo;%s&rsquo;', 'erudite' ), the_title_attribute('echo=0') ) ?>"><?php _e('Read More <span class="meta-nav">&rarr;</span>', 'erudite' ) ?></a></p>
 <?php } ?>
 			<hr />
-				<?php wp_link_pages('before=<div class="page-link">' . __( 'Pages:', 'erudite' ) . '&after=</div>') ?>
+				<?php wp_link_pages('before=<p class="page-link">' . __( 'Pages:', 'erudite' ) . '&after=</p>&link_before=<span>&link_after=</span>') ?>
 				</div>
 				<div class="entry-meta">
 					<span class="entry-date"><abbr class="published" title="<?php the_time('Y-m-d\TH:i:sO') ?>"><?php unset($previousday); printf( __( '%1$s &#8211; %2$s', 'erudite' ), the_date( '', '', '', false ), get_the_time() ) ?></abbr></span>

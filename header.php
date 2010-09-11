@@ -26,12 +26,9 @@
 		(function(H){H.className=H.className.replace(/\bno-js\b/,'js')})(document.documentElement)
 // ]]>
 	</script>
-	
+	<link rel="pingback" href="<?php bloginfo('pingback_url') ?>" />
 <?php	if (is_singular() ) { wp_enqueue_script('comment-reply'); } ?>
 <?php wp_head() // For plugins ?>
-	<link rel="alternate" type="application/rss+xml" href="<?php bloginfo('rss2_url') ?>" title="<?php printf( __( '%s latest posts', 'erudite' ), esc_attr( get_bloginfo('name') ) ) ?>" />
-	<link rel="alternate" type="application/rss+xml" href="<?php bloginfo('comments_rss2_url') ?>" title="<?php printf( __( '%s latest comments', 'erudite' ), esc_attr( get_bloginfo('name') ) ) ?>" />
-	<link rel="pingback" href="<?php bloginfo('pingback_url') ?>" />
 </head>
 <body <?php body_class() ?>>
 

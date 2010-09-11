@@ -114,7 +114,8 @@ a:active {color:#55f;}
 .footer table tfoot td {padding:1em 0 0;}
 
 /* Posts */
-div.post, div.page {position:relative; margin:0 0 3.2em; min-height:21.6em; clear:both;}
+div.post, div.page, div.attachment {position:relative; margin:0 0 3.2em; min-height:21.6em; clear:both;}
+div.post:after, div.page:after {clear:both;content:' ';display:block;font-size:0;line-height:0;visibility:hidden;width:0;height:0}/*clearfix*/
 .post .shortened {overflow:hidden !important;}
 .entry-content hr, .hr {height:4.8em; background:url(../images/fleuron.png) center 1em no-repeat; margin:0 0 2.4em; display:block; border-width:0px; border-style: none !important;}
 .entry-title, .entry-title a {color:#555; text-decoration:none;}
@@ -149,8 +150,11 @@ body.single .entry-content > p:first-child:first-letter, .first-post .entry-cont
 /* Webkit + Hoefler = Odd leading. Or at least different. */
 body.webkit.set-in-hoeflertext .entry-content > p:first-child:first-letter {padding:.2em .1em 0;}
 
-.more-link, .entry-content p.more-link, .home-post .entry-content p.more-link {display:block; text-indent:0 !important; font-size:1.2em; line-height:2;}
+.more-link, .entry-content p.more-link, .home-post .entry-content p.more-link {display:block; text-indent:0 !important; font-size:1.2em; line-height:2; clear:both;}
 .more-link a {text-decoration:none; font-style:italic;}
+.page-link { font-size:1.4em; }
+.page-link span { padding:0 .33em; }
+.entry-content .page-link a { border-bottom-width:0; font-weight:bold; }
 
 /* Epigraph */
 blockquote.epigraph {font-style:italic; margin:0 6em 2em; text-align:justify;}
@@ -240,13 +244,15 @@ ul#links-page > li > ul, ul#archives-page > li > ul {margin:1em;}
 
 
 /* Image Layout */
-.entry-content img {border:1px solid #aaa; padding:4px; margin-bottom:6px;}
+.entry-content img {border:1px solid #aaa; padding:4px; margin-bottom:6px; max-width:100%;}
+.entry-content img.wp-smiley {border:0 none; padding:0; margin:0;}
 .centered, .aligncenter {display:block; margin:16px auto;}
 .alignright {float:right; margin: 6px 0 3px 15px;}
 .alignleft {float:left; margin:6px 15px 3px 0;}
 .wp-caption {border:1px solid #aaa; text-align:center; padding-top:5px; margin-bottom:6px;}
 .wp-caption a, .wp-caption img {border:0 none; padding:0;}
 .wp-caption p.wp-caption-text {text-align:center; margin:5px; text-indent:0; font-size:1.3em;}
+.entry-content .gallery a {border-width:0;}
 
 /* Dark Scheme */
 body.dark {

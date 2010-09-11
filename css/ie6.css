@@ -15,3 +15,4 @@ body #header-wrap {background-image:none;}
 
 .paged #content {padding-bottom:9.6em;}
 div#menu {margin-bottom:0;}
+div.post, div.page {zoom:1;}

@@ -17,3 +17,5 @@ body.home div.home-post {padding-bottom:4.8em; margin-bottom:0;}
 /* apparently a position:relative will extend an element outside of its parent overflow:hidden container. stupid. */
 .post .hidden blockquote {position:static;}
 .post .hidden blockquote .quote {display:none;}
+
+div.post, div.page {zoom:1;}

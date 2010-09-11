@@ -10,7 +10,7 @@
 				<div class="entry-content">
 <?php the_content() ?>
 
-<?php wp_link_pages('before=<div class="page-link">' . __( 'Pages:', 'erudite' ) . '&after=</div>') ?>
+<?php wp_link_pages('before=<p class="page-link">' . __( 'Pages:', 'erudite' ) . '&after=</p>&link_before=<span>&link_after=</span>') ?>
 
 <?php edit_post_link( __( 'Edit', 'erudite' ), '<span class="edit-link">', '</span>' ) ?>
 

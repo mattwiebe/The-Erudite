@@ -10,9 +10,7 @@
 	</div><!-- #footer-wrap -->
 
 </div><!-- #wrapper .hfeed -->
-
-<?php wp_footer() ?>
 <?php the_theme_option( 'erdt_analytics' ); ?>
-
+<?php wp_footer() ?>
 </body>
 </html>

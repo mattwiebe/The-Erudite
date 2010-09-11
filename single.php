@@ -10,7 +10,7 @@
 				<div class="entry-content">
 <?php the_content() ?>
 
-<?php wp_link_pages('before=<div class="page-link">' . __( 'Pages:', 'erudite' ) . '&after=</div>') ?>
+<?php wp_link_pages('before=<p class="page-link">' . __( 'Pages:', 'erudite' ) . '&after=</p>&link_before=<span>&link_after=</span>') ?>
 				</div>
 				<div class="entry-meta">
 					<span class="entry-date"><abbr class="published" title="<?php the_time('Y-m-d\TH:i:sO') ?>"><?php unset($previousday); printf( __( '%1$s &#8211; %2$s', 'erudite' ), the_date( '', '', '', false ), get_the_time() ) ?></abbr></span>

@@ -24,6 +24,15 @@ foreach ( array( 'wptexturize', 'convert_chars', 'wpautop' ) as $filter ) {
 	add_filter( 'erdt_formatting', $filter );
 }
 
+// empty titles
+add_filter( 'the_title', 'erdt_empty_title' );
+function erdt_empty_title( $title ) {
+	if ( '' == $title )
+		$title = __('[No Title]', 'erudite');
+	
+	return $title;
+}
+
 // style visual editor
 add_filter('mce_css', 'erudite_editor_style');
 function erudite_editor_style($url) {
@@ -104,7 +113,6 @@ function custom_excerpt($text) {
 }
 add_filter('the_excerpt', 'custom_excerpt');
 
-
 // custom comments loop for wp_list_comments
 include "comments_custom.php";
 
@@ -119,7 +127,7 @@ if (!is_admin() ) { //only load on non-admin pages
 }
 
 if ( function_exists('add_theme_support') ) {
-	add_theme_support('nav-menus');
+	add_theme_support('automatic-feed-links');
 }
 
 if ( function_exists('register_nav_menus') ) {
