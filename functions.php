@@ -13,6 +13,10 @@ if(false !== strpos(site_url(), 'http://wp-themes.com')) {
 	wp_redirect('http://erudite.somadesign.ca/');
 	exit();
 }
+
+if ( ! isset( $content_width ) )
+	$content_width = 540;
+
 // theme options page
 include "library/theme-options.php";
 
