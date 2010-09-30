@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: The Erudite 2.7.5\n"
 "Report-Msgid-Bugs-To: http://wordpress.org/tag/the-erudite\n"
-"POT-Creation-Date: 2010-09-11 18:01-0500\n"
+"POT-Creation-Date: 2010-09-30 11:26-0500\n"
 "PO-Revision-Date: 2010-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -140,79 +140,44 @@ msgstr ""
 msgid "This post is protected. Enter the password to view any comments."
 msgstr ""
 
-#: comments.php:17
+#: comments.php:18
+msgid "Comments are disabled for this post"
+msgstr ""
+
+#: comments.php:24
 msgid "No Comments"
 msgstr ""
 
-#: comments.php:17
+#: comments.php:24
 msgid "One Comment"
 msgstr ""
 
-#: comments.php:17
+#: comments.php:24
 msgid "% Comments"
 msgstr ""
 
-#: comments.php:22
+#: comments.php:29
 msgid "Respond to this"
 msgstr ""
 
-#: comments.php:34
-msgid "Post a Comment"
-msgstr ""
-
-#: comments.php:34
-#, php-format
-msgid "Respond to %s"
-msgstr ""
-
-#: comments.php:36
-msgid "Cancel this response"
-msgstr ""
-
-#: comments.php:39
-#, php-format
-msgid ""
-"You must be <a href=\"%s\" title=\"Log in\">logged in</a> to post a comment."
-msgstr ""
-
-#: comments.php:48
-#, php-format
-msgid ""
-"<span class=\"loggedin\">Logged in as <a href=\"%1$s\" title=\"Logged in as %"
-"2$s\">%2$s</a>.</span> <span class=\"logout\"><a href=\"%3$s\" title=\"Log "
-"out of this account\">Log out?</a></span>"
-msgstr ""
-
-#: comments.php:56
-msgid "Your email is <em>never</em> shared."
-msgstr ""
-
-#: comments.php:56
-msgid "Required fields are marked <span class=\"required\">*</span>"
-msgstr ""
-
-#: comments.php:59
+#: comments.php:47 library/3.0.compat.php:86
 msgid "Name"
 msgstr ""
 
-#: comments.php:59 comments.php:62
-msgid "<span class=\"required\">*</span>"
-msgstr ""
-
-#: comments.php:62
+#: comments.php:48 library/3.0.compat.php:88
 msgid "Email"
 msgstr ""
 
-#: comments.php:65
+#: comments.php:49 library/3.0.compat.php:90
 msgid "Website"
 msgstr ""
 
-#: comments.php:72
-msgid "Comment"
+#: comments.php:57
+msgid "Your email is <em>never</em> shared."
 msgstr ""
 
-#: comments.php:75
-msgid "Post Comment"
+#: comments.php:57
+msgid "Required fields are marked <span class=\"required\">*</span>"
 msgstr ""
 
 #: comments_custom.php:9
@@ -247,15 +212,15 @@ msgstr ""
 msgid "The Erudite"
 msgstr ""
 
-#: functions.php:31
+#: functions.php:35
 msgid "[No Title]"
 msgstr ""
 
-#: functions.php:134
+#: functions.php:138
 msgid "Header Menu"
 msgstr ""
 
-#: functions.php:180
+#: functions.php:184
 #, php-format
 msgid "Posts by %s"
 msgstr ""
@@ -291,6 +256,56 @@ msgstr ""
 
 #: home.php:27 index.php:14 page.php:13 single.php:13
 msgid "Pages:"
+msgstr ""
+
+#: library/3.0.compat.php:94
+#, php-format
+msgid "Required fields are marked %s"
+msgstr ""
+
+#: library/3.0.compat.php:97
+msgctxt "noun"
+msgid "Comment"
+msgstr ""
+
+#: library/3.0.compat.php:98
+#, php-format
+msgid "You must be <a href=\"%s\">logged in</a> to post a comment."
+msgstr ""
+
+#: library/3.0.compat.php:99
+#, php-format
+msgid ""
+"Logged in as <a href=\"%1$s\">%2$s</a>. <a href=\"%3$s\" title=\"Log out of "
+"this account\">Log out?</a>"
+msgstr ""
+
+#: library/3.0.compat.php:100
+msgid "Your email address will not be published."
+msgstr ""
+
+#: library/3.0.compat.php:101
+#, php-format
+msgid ""
+"You may use these <abbr title=\"HyperText Markup Language\">HTML</abbr> tags "
+"and attributes: %s"
+msgstr ""
+
+#: library/3.0.compat.php:104
+msgid "Leave a Reply"
+msgstr ""
+
+#: library/3.0.compat.php:105
+#, php-format
+msgid "Leave a Reply to %s"
+msgstr ""
+
+#: library/3.0.compat.php:106
+msgid "Cancel reply"
+msgstr ""
+
+#: library/3.0.compat.php:107
+msgid "Post Comment"
 msgstr ""
 
 #: library/epigraph.php:32 library/epigraph.php:37

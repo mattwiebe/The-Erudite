@@ -7,7 +7,7 @@ THE ERUDITE is free software: you can redistribute it and/or modify it under the
 THE ERUDITE is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details: http://www.gnu.org/licenses/gpl-2.0.html
 */
 
-// I hate for it to come to this, but wp-theme.com preview is AWFUL for my theme.
+// I hate for it to come to this, but wp-themes.com preview is AWFUL for my theme.
 // Redirect to my demo site
 if(false !== strpos(site_url(), 'http://wp-themes.com')) {
 	wp_redirect('http://erudite.somadesign.ca/');
@@ -18,6 +18,10 @@ include "library/theme-options.php";
 
 // epigraphs
 include_once "library/epigraph.php";
+
+// 3.0 compat. Because WP.org themes directory are a pain in the ass.
+if ( version_compare( $wp_version, '3.0', '<' ) )
+	require_once('library/3.0.compat.php');
 
 // my own filter for formatting
 foreach ( array( 'wptexturize', 'convert_chars', 'wpautop' ) as $filter ) {

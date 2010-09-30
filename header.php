@@ -36,7 +36,7 @@
 	
 	<div id="header-wrap">
 		<div id="header" role="banner">
-			<h1 id="blog-title"><span><a href="<?php get_option('home') ?>/" title="<?php echo esc_attr( get_bloginfo('name') ) ?>" rel="home"><?php bloginfo('name') ?></a></span></h1>
+			<h1 id="blog-title"><span><a href="<?php echo home_url('/') ?>" title="<?php echo esc_attr( get_bloginfo('name') ) ?>" rel="home"><?php bloginfo('name') ?></a></span></h1>
 			<div id="blog-description"><?php bloginfo('description') ?></div>
 		</div><!--  #header -->
 

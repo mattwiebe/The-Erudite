@@ -4,8 +4,8 @@
 ?>
 			<div id="comments">
 <?php
-	if ( !empty($post->post_password) ) :
-		if ( $_COOKIE['wp-postpass_' . COOKIEHASH] != $post->post_password ) :
+	if ( ! empty($post->post_password) ) :
+		if ( ! ( isset($_COOKIE['wp-postpass_' . COOKIEHASH]) && $_COOKIE['wp-postpass_' . COOKIEHASH] == $post->post_password ) ) :
 ?>
 				<div class="nopassword disabled"><?php _e( 'This post is protected. Enter the password to view any comments.', 'erudite' ) ?></div>
 			</div><!-- .comments -->
@@ -32,63 +32,31 @@ if ( ! comments_open() ) {
 		<div class="alignleft"><?php previous_comments_link() ?></div>
 		<div class="alignright"><?php next_comments_link() ?></div>
 	</div>
-<?php endif; ?>
+<?php endif;
 
-<?php if ( 'open' == $post->comment_status ) : ?>
-<?php $req = get_option('require_name_email'); // Checks if fields are required. Thanks, Adam. ;-) ?>
+if ( 'open' == $post->comment_status ) :
 
-				<div id="respond">
-					<h3><?php comment_form_title( __( 'Post a Comment', 'erudite' ), __('Respond to %s', 'erudite' ) ); ?></h3>
-					
-					<div id="cancel-comment-reply"><?php cancel_comment_reply_link(__('Cancel this response', 'erudite')); ?></div>
+	$req = get_option( 'require_name_email' );
+	
+	add_filter('comment_form_default_fields', 'erdt_default_fields', 1);
+	function erdt_default_fields($fields) {
+		$req = get_option( 'require_name_email' );
+		$reqtext = $req ? ' <span class="required">*</span>' : '';
+		extract( wp_get_current_commenter() );
+		return array(
+			'author' => '<div class="form-label"><label for="author">' . __( 'Name', 'erudite' ) . '</label>' .  $reqtext . '</div><div class="form-input"><input id="author" name="author" class="text" type="text" value="' . $comment_author . '" size="30" /></div>',
+			'email' => '<div class="form-label"><label for="email">' . __( 'Email', 'erudite' ) . '</label>' . $reqtext . '</div><div class="form-input"><input id="email" name="email" class="text" type="text" value="' . $comment_author_email . '" size="30" /></div>',
+			'url' => '<div class="form-label"><label for="url">' . __( 'Website', 'erudite' ) . '</label></div><div class="form-input"><input id="url" name="url" class="text" type="text" value="' . $comment_author_url . '" size="30" /></div>'
+		);
+	}
+	
+	add_action('comment_form_before_fields', create_function('', 'echo \'<div class="user-info">\';') );
+	add_action('comment_form_after_fields', create_function('', 'echo "</div>";') );
 
-<?php if ( get_option('comment_registration') && !$user_ID ) : ?>
-					<p id="login-req"><?php printf(__('You must be <a href="%s" title="Log in">logged in</a> to post a comment.', 'erudite'),
-					get_bloginfo('wpurl') . '/wp-login.php?redirect_to=' . get_permalink() ) ?></p>
-
-<?php else : ?>
-					<div class="formcontainer">	
-						<form id="commentform" action="<?php bloginfo('wpurl') ?>/wp-comments-post.php" method="post">
-<?php comment_id_fields(); ?>
-
-<?php if ( $user_ID ) : ?>
-							<p id="login"><?php printf( __( '<span class="loggedin">Logged in as <a href="%1$s" title="Logged in as %2$s">%2$s</a>.</span> <span class="logout"><a href="%3$s" title="Log out of this account">Log out?</a></span>', 'erudite' ),
-								get_bloginfo('wpurl') . '/wp-admin/profile.php',
-								esc_attr( $user_identity ),
-								wp_logout_url(get_permalink())
-								) ?></p>
-
-<?php else : ?>
-
-							<p id="comment-notes"><?php _e( 'Your email is <em>never</em> shared.', 'erudite' ) ?> <?php if ($req) _e( 'Required fields are marked <span class="required">*</span>', 'erudite' ) ?></p>
-
-							<div class="user-info">
-								<div class="form-label"><label for="author"><?php _e( 'Name', 'erudite' ) ?></label> <?php if ($req) _e( '<span class="required">*</span>', 'erudite' ) ?></div>
-								<div class="form-input"><input id="author" name="author" class="text<?php if ($req) echo ' required'; ?>" type="text" value="<?php echo $comment_author ?>" size="30" maxlength="50" tabindex="3" /></div>
-
-								<div class="form-label"><label for="email"><?php _e( 'Email', 'erudite' ) ?></label> <?php if ($req) _e( '<span class="required">*</span>', 'erudite' ) ?></div>
-								<div class="form-input"><input id="email" name="email" class="text<?php if ($req) echo ' required'; ?>" type="text" value="<?php echo $comment_author_email ?>" size="30" maxlength="50" tabindex="4" /></div>
-
-								<div class="form-label"><label for="url"><?php _e( 'Website', 'erudite' ) ?></label></div>
-								<div class="form-input"><input id="url" name="url" class="text" type="text" value="<?php echo $comment_author_url ?>" size="30" maxlength="50" tabindex="5" /></div>
-							</div>
-
-<?php endif // REFERENCE: * if ( $user_ID ) ?>
-
-							<div class="user-comment">
-								<div class="form-label"><label for="comment"><?php _e( 'Comment', 'erudite' ) ?></label></div>
-								<div class="form-textarea"><textarea id="comment" name="comment" class="text required" cols="45" rows="8" tabindex="6"></textarea></div>
-
-								<div class="form-submit"><input id="submit" name="submit" class="button" type="submit" value="<?php _e( 'Post Comment', 'erudite' ) ?>" tabindex="7" /><input type="hidden" name="comment_post_ID" value="<?php echo $id ?>" /></div>
-
-								<div class="form-option"><?php do_action( 'comment_form', $post->ID ) ?></div>
-							</div>
-
-						</form><!-- #commentform -->
-					</div><!-- .formcontainer -->
-<?php endif // REFERENCE: if ( get_option('comment_registration') && !$user_ID ) ?>
-
-				</div><!-- #respond -->
-<?php endif // REFERENCE: if ( 'open' == $post->comment_status ) ?>
+	comment_form( array(
+		'comment_notes_before' => '<p id="comment-notes">' . __( 'Your email is <em>never</em> shared.', 'erudite' ) . ( $req ? __( 'Required fields are marked <span class="required">*</span>', 'erudite' ) : '' ) . '</p>',
+		'comment_notes_after' => ''
+	));
+endif // REFERENCE: if ( 'open' == $post->comment_status ) ?>
 
 			</div><!-- #comments -->

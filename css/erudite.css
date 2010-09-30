@@ -77,7 +77,7 @@ a:active {color:#55f;}
 #nav-below {clear:both; width:54em; height:2.7em; position:absolute; left:6em; bottom:0.1em; z-index:5;}
 .hiding #nav-below {bottom:-3.5em;}
 .paged #nav-below {}
-#nav-below div {background:#666; height:100%;}
+#nav-below div {background:#666; height:100%; max-width:49.9%; overflow:hidden;}
 .nav-previous {float:left;}
 .nav-next {float:right;}
 #nav-below a {color:#fff; padding:0 1em; line-height:2; height:100%; font-size:1.2em; display:block;}
@@ -226,13 +226,13 @@ a.comment-edit-link:hover {text-decoration:underline;}
 form#commentform {overflow:hidden; padding:2.4em 0;}
 form p {font-size:1.4em; margin:0 0 .5em;}
 span.required, label .required {color:#900; font-weight:bold; font-size:1.25em;}
-.user-comment {width:33em; float:left;}
-.user-comment textarea {width:95%; font-size:1.2em; height:12em; padding:.5em; margin:0 0 1em; overflow:auto;}
+.comment-form-comment {width:24em; float:left;}
+.comment-form-comment textarea {width:95%; height:12em; padding:.5em; margin:0 0 1em; overflow:auto;}
 .user-info {float:right; width:18em;}
 .user-info input {width:95%;}
 .form-label {font-size:1.2em; margin:.5em 0 0;}
-.user-comment .form-label {margin-bottom:.5em;}
-.comment #respond div {float:none;}
+.comment-form-comment label {font-size:.9em; display:block; margin:.75em 0 0;}
+form p.form-submit {clear:both;}
 
 /* Archives */
 .page-title {margin-bottom:1em;}
