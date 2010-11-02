@@ -1,4 +1,4 @@
-# Translation of the WordPress theme The Erudite 2.7.5 by Matt Wiebe.
+# Translation of the WordPress theme The Erudite 2.7.6 by Matt Wiebe.
 # Copyright (C) 2010 Matt Wiebe
 # This file is distributed under the same license as the The Erudite package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2010.
@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: The Erudite 2.7.5\n"
+"Project-Id-Version: The Erudite 2.7.6\n"
 "Report-Msgid-Bugs-To: http://wordpress.org/tag/the-erudite\n"
-"POT-Creation-Date: 2010-09-30 11:26-0500\n"
+"POT-Creation-Date: 2010-11-01 23:14-0500\n"
 "PO-Revision-Date: 2010-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -206,21 +206,21 @@ msgstr ""
 msgid "The Erudite theme for WordPress"
 msgstr ""
 
-#. #-#-#-#-#  the-erudite.pot (The Erudite 2.7.5)  #-#-#-#-#
+#. #-#-#-#-#  the-erudite.pot (The Erudite 2.7.6)  #-#-#-#-#
 #. Theme Name of the plugin/theme
 #: footer.php:6
 msgid "The Erudite"
 msgstr ""
 
-#: functions.php:35
+#: functions.php:45
 msgid "[No Title]"
 msgstr ""
 
-#: functions.php:138
+#: functions.php:148
 msgid "Header Menu"
 msgstr ""
 
-#: functions.php:184
+#: functions.php:194
 #, php-format
 msgid "Posts by %s"
 msgstr ""
@@ -374,20 +374,30 @@ msgid "Turns off the dynamic show/hide functionality of the header and footer"
 msgstr ""
 
 #: library/theme-options.php:51
-msgid "Disable footer credit"
+msgid "Enable Page Comments"
 msgstr ""
 
 #: library/theme-options.php:52
+msgid ""
+"WordPress thinks you should have comments on pages, which The Erudite thinks "
+"is a misunderstanding of what pages are. Check this to disagree."
+msgstr ""
+
+#: library/theme-options.php:57
+msgid "Disable footer credit"
+msgstr ""
+
+#: library/theme-options.php:58
 msgid ""
 "Removes the link to the theme's author in the footer. Leave it in to say "
 "&ldquo;thanks for the hard work.&rdquo;"
 msgstr ""
 
-#: library/theme-options.php:57
+#: library/theme-options.php:63
 msgid "Enable comment threading"
 msgstr ""
 
-#: library/theme-options.php:58
+#: library/theme-options.php:64
 msgid ""
 "Allow comment threading. (Global <a href='options-discussion.php' "
 "title='Discussion settings'>discussion settings</a> have no effect unless "
@@ -396,42 +406,42 @@ msgid ""
 "2 levels deep."
 msgstr ""
 
-#: library/theme-options.php:63
+#: library/theme-options.php:69
 msgid "Disable editor style"
 msgstr ""
 
-#: library/theme-options.php:64
+#: library/theme-options.php:70
 msgid "Turn off the Visual editor styling"
 msgstr ""
 
-#: library/theme-options.php:69
+#: library/theme-options.php:75
 msgid "Google Analytics code"
 msgstr ""
 
-#: library/theme-options.php:70
+#: library/theme-options.php:76
 msgid ""
 "Enter your <a href='http://www.google.com/analytics'>Google Analytics</a> "
 "(or other service) tracking code here, and it will automatically be placed "
 "just before the <code>&lt;body&gt;</code> tag."
 msgstr ""
 
-#: library/theme-options.php:106 library/theme-options.php:120
+#: library/theme-options.php:112 library/theme-options.php:126
 msgid "Options"
 msgstr ""
 
-#: library/theme-options.php:114
+#: library/theme-options.php:120
 msgid "settings saved."
 msgstr ""
 
-#: library/theme-options.php:115
+#: library/theme-options.php:121
 msgid "settings reset."
 msgstr ""
 
-#: library/theme-options.php:219
+#: library/theme-options.php:225
 msgid "Save changes"
 msgstr ""
 
-#: library/theme-options.php:226
+#: library/theme-options.php:232
 msgid "Reset"
 msgstr ""
 
