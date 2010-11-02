@@ -22,7 +22,7 @@ if ( ! comments_open() ) {
 
 ?>
 	<h4><?php comments_number(__('No Comments', 'erudite'), __('One Comment', 'erudite'), __('% Comments', 'erudite') );?></h4>
-<?php if (get_the_theme_option('erdt_comment_threading') == "false" ) {$max_threading = "&max_depth=1"; } // check for theme option to possibly allow threaded comments for those insane enough to really want them ?>
+<?php $max_threading = ( get_the_theme_option('erdt_comment_threading') == "false" ) ? '&max_depth=1' : ''; // check for theme option to possibly allow threaded comments for those insane enough to really want them ?>
 <?php if ( have_comments() ) : // show the comments ?>
 
 	<ul class="commentlist" id="singlecomments">

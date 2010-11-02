@@ -48,6 +48,12 @@ $erdt_options = array (
 		'std' => 'false',
 		'type' => 'checkbox'),
 	array(
+		'name' => __('Enable Page Comments','erudite'),
+		'desc' => __('WordPress thinks you should have comments on pages, which The Erudite thinks is a misunderstanding of what pages are. Check this to disagree.','erudite'),
+		'id' => $shortname.'allow_page_comments',
+		'std' => false,
+		'type' => 'checkbox'),
+	array(
 		'name' => __('Disable footer credit','erudite'),
 		'desc' => __('Removes the link to the theme\'s author in the footer. Leave it in to say &ldquo;thanks for the hard work.&rdquo;','erudite'),
 		'id' => $shortname.'credit_disable',

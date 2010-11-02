@@ -32,6 +32,12 @@ foreach ( array( 'wptexturize', 'convert_chars', 'wpautop' ) as $filter ) {
 	add_filter( 'erdt_formatting', $filter );
 }
 
+add_action('init', 'erdt_go_away_page_comments');
+function erdt_go_away_page_comments() {
+	if ( ! get_the_theme_option('erdt_allow_page_comments') )
+		remove_post_type_support('page', 'comments');
+}
+
 // empty titles
 add_filter( 'the_title', 'erdt_empty_title' );
 function erdt_empty_title( $title ) {

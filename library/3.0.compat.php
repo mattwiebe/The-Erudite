@@ -149,3 +149,23 @@ function comment_form( $args = array(), $post_id = null ) {
 		<?php endif; ?>
 	<?php
 }
+
+/**
+ * This is a dummy function so that WP < 3.0 doesn't shit its pants
+ */
+
+function remove_post_type_support( $post_type, $feature ) {
+	// a pony
+}
+
+/**
+ * Also a dummy. For the page/comments combo, where it's used.
+ * 
+ */
+function post_type_supports( $post_type, $feature ) {
+	// we'll just go on the basis of our option here
+	if ( 'page' == $post_type && 'comments' == $feature )
+		return (bool) get_the_theme_option('erdt_allow_page_comments');
+
+	return true;
+}

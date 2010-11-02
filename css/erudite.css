@@ -179,7 +179,7 @@ blockquote.epigraph cite {text-align:right; font-size:1.2em; display:block; font
 .first-page #content {width:auto;}
 .first-page .first-post, .paged div.post {width:54em; margin-bottom:9.2em;}
 .paged div.post {margin-bottom:4.8em;}
-.home-post .entry-meta {position:static; border:0; padding:0; width:100%;}
+.home-post .entry-meta {position:static; border:0; padding:0; width:100%; clear:both;}
 .home-post .entry-meta span {display:none; position:absolute;}
 .home-post .entry-meta span.entry-date {top:4.8em; display:block; left:0;}
 .home-post .entry-meta span.author {display:block; bottom:-1.273em; right:0;}
