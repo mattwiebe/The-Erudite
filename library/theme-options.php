@@ -49,7 +49,7 @@ $erdt_options = array (
 		'type' => 'checkbox'),
 	array(
 		'name' => __('Enable Page Comments','erudite'),
-		'desc' => __('WordPress thinks you should have comments on pages, which The Erudite thinks is a misunderstanding of what pages are. Check this to disagree.','erudite'),
+		'desc' => __('WordPress thinks you should have comments on pages, which The Erudite thinks is a misunderstanding of what pages are. Check this to disagree and allow comments on pages.','erudite'),
 		'id' => $shortname.'allow_page_comments',
 		'std' => false,
 		'type' => 'checkbox'),

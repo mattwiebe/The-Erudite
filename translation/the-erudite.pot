@@ -1,4 +1,4 @@
-# Translation of the WordPress theme The Erudite 2.7.6 by Matt Wiebe.
+# Translation of the WordPress theme The Erudite 2.7.7 by Matt Wiebe.
 # Copyright (C) 2010 Matt Wiebe
 # This file is distributed under the same license as the The Erudite package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2010.
@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: The Erudite 2.7.6\n"
+"Project-Id-Version: The Erudite 2.7.7\n"
 "Report-Msgid-Bugs-To: http://wordpress.org/tag/the-erudite\n"
-"POT-Creation-Date: 2010-11-01 23:14-0500\n"
+"POT-Creation-Date: 2010-11-01 23:20-0500\n"
 "PO-Revision-Date: 2010-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -206,7 +206,7 @@ msgstr ""
 msgid "The Erudite theme for WordPress"
 msgstr ""
 
-#. #-#-#-#-#  the-erudite.pot (The Erudite 2.7.6)  #-#-#-#-#
+#. #-#-#-#-#  the-erudite.pot (The Erudite 2.7.7)  #-#-#-#-#
 #. Theme Name of the plugin/theme
 #: footer.php:6
 msgid "The Erudite"
@@ -380,7 +380,8 @@ msgstr ""
 #: library/theme-options.php:52
 msgid ""
 "WordPress thinks you should have comments on pages, which The Erudite thinks "
-"is a misunderstanding of what pages are. Check this to disagree."
+"is a misunderstanding of what pages are. Check this to disagree and allow "
+"comments on pages."
 msgstr ""
 
 #: library/theme-options.php:57
