@@ -1,0 +1,608 @@
+# Translation of the WordPress theme The Erudite 2.7 by Matt Wiebe.
+# Copyright (C) 2010 Matt Wiebe
+# This file is distributed under the same license as the The Erudite package.
+# FIRST AUTHOR <juanjo@normalflow.com>, 2010.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: The Erudite 2.7\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/tag/the-erudite\n"
+"POT-Creation-Date: 2010-06-25 00:37-0500\n"
+"PO-Revision-Date: 2010-10-16 00:42+0100\n"
+"Last-Translator: Juanjo <juanjo@normaflow.com>\n"
+"Language-Team: ES <info@normalflow.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: Spanish\n"
+"X-Poedit-Country: SPAIN\n"
+"X-Poedit-SourceCharset: utf-8\n"
+
+#: 404.php:7
+msgid "Not Found"
+msgstr "No encontrado"
+
+#: 404.php:9
+msgid "Apologies, but we were unable to find what you were looking for. Perhaps searching will help."
+msgstr "Disculpa, pero no hemos sido capaces de encontrar lo que estabas buscando. Quizá hacer una búsqueda ayudaría."
+
+#: 404.php:14
+#: search.php:52
+#: sidebar.php:57
+msgid "Find"
+msgstr "Buscar"
+
+#: archive.php:9
+#, php-format
+msgid "Daily Archives: <span>%s</span>"
+msgstr "Archivos diarios: <span>%s</span>"
+
+#: archive.php:11
+#, php-format
+msgid "Monthly Archives: <span>%s</span>"
+msgstr "Archivos mensuales: <span>%s</span>"
+
+#: archive.php:13
+#, php-format
+msgid "Yearly Archives: <span>%s</span>"
+msgstr "Archivos anuales: <span>%s</span>"
+
+#: archive.php:15
+msgid "Blog Archives"
+msgstr "Archivos del blog"
+
+#: archive.php:23
+#: author.php:16
+#: category.php:12
+#: home.php:13
+#: home.php:21
+#: index.php:9
+#: search.php:13
+#: tag.php:11
+#, php-format
+msgid "Permalink to %s"
+msgstr "Enlace permanente a %s"
+
+#: archive.php:25
+#: author.php:18
+#: category.php:14
+#: home.php:16
+#: home.php:24
+#: index.php:12
+#: search.php:15
+#: tag.php:13
+msgid "Read More <span class=\"meta-nav\">&rarr;</span>"
+msgstr "Leer más <span class=\"meta-nav\">&rarr;</span>"
+
+#: archive.php:29
+#: author.php:22
+#: category.php:18
+#: home.php:30
+#: index.php:17
+#: search.php:21
+#: single.php:16
+#: tag.php:17
+#, php-format
+msgid "%1$s &#8211; %2$s"
+msgstr "%1$s &#8211; %2$s"
+
+#: archive.php:31
+#: author.php:24
+#: category.php:20
+#: home.php:32
+#: index.php:19
+#: search.php:23
+#: single.php:18
+#: tag.php:19
+#, php-format
+msgid "By %s"
+msgstr "Por %s"
+
+#: archive.php:33
+#: author.php:26
+#: category.php:22
+#: home.php:34
+#: index.php:21
+#: search.php:25
+#: single.php:20
+#: tag.php:21
+#, php-format
+msgid "Posted in %s"
+msgstr "Archivado en %s"
+
+#: archive.php:35
+#: author.php:28
+#: category.php:24
+#: home.php:36
+#: index.php:23
+#: search.php:27
+#: single.php:22
+#: tag.php:23
+msgid "<span class=\"tag-links\">Tagged "
+msgstr "<span class=\"tag-llinks\">Etiquetado"
+
+#: archive.php:36
+#: archives.php:32
+#: attachment.php:38
+#: author.php:29
+#: category.php:25
+#: home.php:37
+#: image.php:39
+#: index.php:24
+#: links.php:22
+#: page.php:15
+#: search.php:28
+#: single.php:23
+#: tag.php:24
+msgid "Edit"
+msgstr "Editar"
+
+#: archive.php:37
+#: author.php:30
+#: category.php:26
+#: home.php:38
+#: index.php:25
+#: search.php:29
+#: single.php:24
+#: tag.php:25
+msgid "Comments (0)"
+msgstr "Comentarios (0)"
+
+#: archive.php:37
+#: author.php:30
+#: category.php:26
+#: home.php:38
+#: index.php:25
+#: search.php:29
+#: single.php:24
+#: tag.php:25
+msgid "Comments (1)"
+msgstr "Comentarios (1)"
+
+#: archive.php:37
+#: author.php:30
+#: category.php:26
+#: home.php:38
+#: index.php:25
+#: search.php:29
+#: single.php:24
+#: tag.php:25
+msgid "Comments (%)"
+msgstr "Comentarios (%)"
+
+#: archive.php:44
+#: author.php:37
+#: category.php:33
+#: home.php:47
+#: index.php:34
+#: tag.php:32
+msgid "<span class=\"meta-nav\">&larr;</span> Older posts"
+msgstr "<span class=\"meta-nav\">&larr;</span> Entradas anteriores"
+
+#: archive.php:45
+#: author.php:38
+#: category.php:34
+#: home.php:48
+#: index.php:35
+#: tag.php:33
+msgid "Newer posts <span class=\"meta-nav\">&rarr;</span>"
+msgstr "Entradas más recientes <span class=\"meta-nav\">&rarr;</span>"
+
+#: archives.php:20
+msgid "Archives by Category"
+msgstr "Archivos por Categoría"
+
+#: archives.php:26
+msgid "Archives by Month"
+msgstr "Archivos por mes"
+
+#: attachment.php:8
+#: image.php:8
+#, php-format
+msgid "Return to %s"
+msgstr "Volver a %s"
+
+#: attachment.php:19
+#: image.php:20
+#, php-format
+msgid "Posted by %1$s on <abbr class=\"published\" title=\"%2$sT%3$s\">%4$s at %5$s</abbr>. Bookmark the <a href=\"%6$s\" title=\"Permalink to %7$s\" rel=\"bookmark\">permalink</a>. Follow any comments here with the <a href=\"%8$s\" title=\"Comments RSS to %7$s\" rel=\"alternate\" type=\"application/rss+xml\">RSS feed for this post</a>."
+msgstr "Enviado por %1$s el <abbr class=\"published\" title=\"%2$sT%3$s\">%4$s a las %5$s</abbr>. Guarda el <a href=\"%6$s\" title=\"Enlace permanente a %7$s\" rel=\"bookmark\">enlace permanente</a>. Sigue los comentarios que se hagan en el <a href=\"%8$s\" title=\"RSS de comentarios para %7$s\" rel=\"alternate\" type=\"application/rss+xml\">RSS de los comentarios de esta entrada</a>."
+
+#: attachment.php:20
+#: image.php:21
+#, php-format
+msgid "View all posts by %s"
+msgstr "Ver todas las entradas de %s"
+
+#: attachment.php:30
+#: image.php:31
+#, php-format
+msgid "<a class=\"comment-link\" href=\"#respond\" title=\"Post a comment\">Post a comment</a> or leave a trackback: <a class=\"trackback-link\" href=\"%s\" title=\"Trackback URL for your post\" rel=\"trackback\">Trackback URL</a>."
+msgstr "<a class=\"comment-link\" href=\"#respond\" title=\"Envía un comentario\">Envía un comentario</a> o deja un Trackback: <a class=\"trackback-link\" href=\"%s\" title=\"URL del Trackback para tu entrada\" rel=\"trackback\">URL del Trackback</a>."
+
+#: attachment.php:32
+#: image.php:33
+#, php-format
+msgid "Comments are closed, but you can leave a trackback: <a class=\"trackback-link\" href=\"%s\" title=\"Trackback URL for your post\" rel=\"trackback\">Trackback URL</a>."
+msgstr "Los comentarios están cerrados, pero puedes dejar un trackback: <a class=\"trackback-link\" href=\"%s\" title=\"URL del Trackback para tu entrada\" rel=\"trackback\">URL del Trackback</a>."
+
+#: attachment.php:34
+#: image.php:35
+msgid "Trackbacks are closed, but you can <a class=\"comment-link\" href=\"#respond\" title=\"Post a comment\">post a comment</a>."
+msgstr "Los trackback no están permitidos, pero puedes <a class=\"comment-link\" href=\"#respond\" title=\"Dejar un comentario\">dejar un comentario</a>."
+
+#: attachment.php:36
+#: image.php:37
+msgid "Both comments and trackbacks are currently closed."
+msgstr "Tanto los comentarios como los trackback están cerrados actualmente."
+
+#: author.php:8
+#, php-format
+msgid "Author Archives: <span class=\"vcard\">%s</span>"
+msgstr "Archivos del autor: <span class=\"vcard\">%s</span>"
+
+#: category.php:6
+msgid "Category Archives:"
+msgstr "Archivos de la categoría:"
+
+#: comments.php:10
+msgid "This post is protected. Enter the password to view any comments."
+msgstr "Esta entrada está protegida. Introduce la contraseña para ver cualquier comentario."
+
+#: comments.php:17
+msgid "No Comments"
+msgstr "Sin comentarios"
+
+#: comments.php:17
+msgid "One Comment"
+msgstr "Un comentario"
+
+#: comments.php:17
+msgid "% Comments"
+msgstr "% comentarios"
+
+#: comments.php:22
+msgid "Respond to this"
+msgstr "Responde a esto"
+
+#: comments.php:34
+msgid "Post a Comment"
+msgstr "Envía un comentario"
+
+#: comments.php:34
+#, php-format
+msgid "Respond to %s"
+msgstr "Responde a %s"
+
+#: comments.php:36
+msgid "Cancel this response"
+msgstr "Cancela esta respuesta"
+
+#: comments.php:39
+#, php-format
+msgid "You must be <a href=\"%s\" title=\"Log in\">logged in</a> to post a comment."
+msgstr "Debes <a href=\"%s\" title=\"Log in\">identificarte</a> para enviar un comentario."
+
+#: comments.php:48
+#, php-format
+msgid "<span class=\"loggedin\">Logged in as <a href=\"%1$s\" title=\"Logged in as %2$s\">%2$s</a>.</span> <span class=\"logout\"><a href=\"%3$s\" title=\"Log out of this account\">Log out?</a></span>"
+msgstr "<span class=\"loggedin\">Identificado como <a href=\"%1$s\" title=\"Identificado como %2$s\">%2$s</a>.</span> <span class=\"logout\"><a href=\"%3$s\" title=\"Desconectar\">Desconectar?</a></span>"
+
+#: comments.php:56
+msgid "Your email is <em>never</em> shared."
+msgstr "Tu email <em>nunca</em> será compartido con nadie."
+
+#: comments.php:56
+msgid "Required fields are marked <span class=\"required\">*</span>"
+msgstr "Los campos obligatorios están marcados con <span class=\"required\">*</span>"
+
+#: comments.php:59
+msgid "Name"
+msgstr "Nombre"
+
+#: comments.php:59
+#: comments.php:62
+msgid "<span class=\"required\">*</span>"
+msgstr "<span class=\"required\">*</span>"
+
+#: comments.php:62
+msgid "Email"
+msgstr "Email"
+
+#: comments.php:65
+msgid "Website"
+msgstr "Página web"
+
+#: comments.php:72
+msgid "Comment"
+msgstr "Comentario"
+
+#: comments.php:75
+msgid "Post Comment"
+msgstr "Enviar un comentario"
+
+#: comments_custom.php:9
+#, php-format
+msgid "<cite class=\"fn\">%s</cite> <span class=\"says\">wrote:</span>"
+msgstr "<cite class=\"fn\">%s</cite> <span class=\"says\">dijo:</span>"
+
+#: comments_custom.php:12
+msgid "Your comment is awaiting moderation."
+msgstr "Tu comentario está esperando ser moderado."
+
+#: comments_custom.php:15
+msgid "(Edit)"
+msgstr "(Editar)"
+
+#: footer.php:3
+msgid "WordPress"
+msgstr "WordPress"
+
+#: footer.php:6
+msgid "The Erudite theme for WordPress"
+msgstr "El theme Erudite para Wordpress"
+
+#. #-#-#-#-#  the-erudite.pot (The Erudite 2.7)  #-#-#-#-#
+#. Theme Name of the plugin/theme
+#: footer.php:6
+msgid "The Erudite"
+msgstr "The Erudite"
+
+#: functions.php:111
+msgid "Header Menu"
+msgstr "Menú de cabecera"
+
+#: functions.php:157
+#, php-format
+msgid "Posts by %s"
+msgstr "Entradas por %s"
+
+#: header.php:18
+msgid "<span>↓</span> Keep Reading"
+msgstr "<span>↓</span> Sigue leyendo"
+
+#: header.php:19
+msgid "<span>↑</span> Put Away"
+msgstr "<span>↑</span> Quítalo de enmedio"
+
+#: header.php:20
+msgid "&#x2193; Further Information"
+msgstr "&#x2193; Más información"
+
+#: header.php:21
+msgid "<span>↓</span> Show Menu"
+msgstr "<span>↓</span> Desplegar Menú"
+
+#: header.php:22
+msgid "<span>↑</span> Hide Menu"
+msgstr "<span>↑</span> Ocultar Menú"
+
+#: header.php:31
+#: sidebar.php:67
+#, php-format
+msgid "%s latest posts"
+msgstr "%s últimas entradas"
+
+#: header.php:32
+#: sidebar.php:68
+#, php-format
+msgid "%s latest comments"
+msgstr "%s últimos comentarios"
+
+#: header.php:46
+msgid "Skip to content"
+msgstr "Salta al contenido"
+
+#: home.php:24
+#, php-format
+msgid "Keep reading &lsquo;%s&rsquo;"
+msgstr "Continúa leyendo &lsquo;%s&rsquo;"
+
+#: home.php:27
+#: index.php:14
+#: page.php:13
+#: single.php:13
+msgid "Pages:"
+msgstr "Páginas:"
+
+#: library/epigraph.php:34
+#: library/epigraph.php:39
+msgid "Epigraph"
+msgstr "Epígrafe"
+
+#: library/epigraph.php:41
+msgid "Citation (optional)"
+msgstr "Cita (opcional)"
+
+#: library/theme-options.php:13
+msgid "Dark Colour Scheme"
+msgstr "Esquema de color oscuro"
+
+#: library/theme-options.php:14
+msgid "For all the dark colour lovers out there"
+msgstr "Para todos los amantes del color oscuro ahí afuera"
+
+#: library/theme-options.php:19
+msgid "Use Categories in Menu"
+msgstr "Usar Categorías en Menú"
+
+#: library/theme-options.php:20
+msgid "Use categories rather than pages for your top menu. Caution: this only works with a small number of categories"
+msgstr "Usar categorías en lugar de páginas para el menú de arriba. Precaución: esto sólo funciona con un número pequeño de categorías"
+
+#: library/theme-options.php:25
+msgid "Footer &lsquo;About&lsquo; Blurb"
+msgstr "Nota &lsquo;Acerca de&lsquo; del pie de página"
+
+#: library/theme-options.php:26
+msgid "The following text will appear in the footer for &lsquo;About&lsquo;. <br /><em>Note:</em> This will only appear if you have not enabled a widget for <strong>Erudite Widget 1</strong>"
+msgstr "El siguiente texto aparecerá en el pie de página como &lsquo;Acerca de&lsquo;. <br /><em>Nota:</em> Esto sólo aparecerá si no tienes activado un widget para <strong>Erudite Widget 1</strong>"
+
+#: library/theme-options.php:28
+#, php-format
+msgid ""
+"This is an example of an &ldquo;About&rdquo; blurb. I&rsquo;m sure that the author of this blog is highly intelligent, witty and even <em>possibly</em> socially competent.\n"
+"\n"
+"It can be modified from this theme&rsquo;s <strong>options panel</strong> in the admin area (Appearance &rarr; %s Options)"
+msgstr ""
+"Este es un ejemplo de una nota &ldquo;Acerca de&rdquo;. Estoy seguro de que el autor de este blog es muy inteligente, ocurrente e incluso <em>posiblemente</em> competente socialmente.\n"
+"\n"
+"Puede ser modificado desde este <strong>panel de opciones</strong> del tema en el área de administración (Apariencia &rarr; %s Opciones)"
+
+#: library/theme-options.php:33
+msgid "Disable &lsquo;Keep Reading&rsquo;"
+msgstr "Deshabilitar &lsquo;Sigue leyendo&rsquo;"
+
+#: library/theme-options.php:34
+msgid "Turns off the dynamic <em>Keep Reading</em> / <em>Put Away</em> functionality on the homepage if it doesn't suit your fancy"
+msgstr "Deshabilita la funcionalidad dinámica <em>Sigue leyendo</em> / <em>Quítalo de enmedio</em> en la página principal si no te gusta"
+
+#: library/theme-options.php:39
+msgid "Disable Header/Footer Hiding"
+msgstr "Deshabilitar Ocultar Cabecera/Pie de página"
+
+#: library/theme-options.php:40
+msgid "Turns off the dynamic show/hide functionality of the header and footer"
+msgstr "Deshabilita la funcionalidad mostrar/ocultar dinámica de la cabecera y el pie de la página"
+
+#: library/theme-options.php:45
+msgid "Disable footer credit"
+msgstr "Deshabilitar"
+
+#: library/theme-options.php:46
+msgid "Removes the link to the theme's author in the footer. Leave it in to say &ldquo;thanks for the hard work.&rdquo;"
+msgstr "Elimina el enlace al autor del tema en el pie de página. Déjalo para darnos las &ldquo;gracias por el trabajo duro.&rdquo;"
+
+#: library/theme-options.php:51
+msgid "Enable comment threading"
+msgstr "Habilitar hilos en los comentarios"
+
+#: library/theme-options.php:52
+msgid "Allow comment threading. (Global <a href='options-discussion.php' title='Discussion settings'>discussion settings</a> have no effect unless this is checked first)<br /> This is <strong>off</strong> by default because threaded comments are rubbish. Turn on at your peril, and don't go more than 2 levels deep."
+msgstr "Permite los hilos en comentarios. (Los <a href='options-discussion.php' title='Ajustes de comentarios'>ajustes de comentarios</a> globales no tendrán efecto a menos que actives esto primero)<br /> Esto está <strong>deshabilitado</strong> por defecto porque los hilos en comentarios son una basura. Actívalos bajo tu propia responsabilidad, y no vayas más allá de 2 niveles de profundidad."
+
+#: library/theme-options.php:57
+msgid "Disable editor style"
+msgstr "Deshabilita estilos en editor"
+
+#: library/theme-options.php:58
+msgid "Turn off the Visual editor styling"
+msgstr "Quita el editor visual de estilos"
+
+#: library/theme-options.php:63
+msgid "Google Analytics code"
+msgstr "Código de Google Analytics"
+
+#: library/theme-options.php:64
+msgid "Enter your <a href=\"http://www.google.com/analytics\">Google Analytics</a> (or other service) tracking code here, and it will automatically be placed just before the <code>&lt;body&gt;</code> tag."
+msgstr "Introduce tu código de rastreo de <a href=\"http://www.google.com/analytics\">Google Analytics</a> (u otro servicio) aquí, y será colocado automáticamente justo antes de la etiqueta <code>&lt;body&gt;</code>."
+
+#: library/theme-options.php:108
+#: library/theme-options.php:123
+msgid "Options"
+msgstr "Opciones"
+
+#: library/theme-options.php:116
+msgid "settings saved."
+msgstr "opciones salvadas."
+
+#: library/theme-options.php:117
+msgid "settings reset."
+msgstr "opciones restituidas"
+
+#: library/theme-options.php:118
+msgid "widgets reset."
+msgstr "widgets restituidos."
+
+#: library/theme-options.php:234
+msgid "Save changes"
+msgstr "Salvar cambios"
+
+#: library/theme-options.php:240
+msgid "Reset"
+msgstr "Restituir"
+
+#: search.php:8
+msgid "Search Results for:"
+msgstr "Resultados de búsqueda para: "
+
+#: search.php:38
+msgid "<span class=\"meta-nav\">&larr;</span> Older results"
+msgstr "<span class=\"meta-nav\">&larr;</span> Resultados anteriores"
+
+#: search.php:39
+msgid "Newer results <span class=\"meta-nav\">&rarr;</span>"
+msgstr "Resultados más recientes <span class=\"meta-nav\">&rarr;</span>"
+
+#: search.php:45
+msgid "Nothing Found"
+msgstr "No se encontró nada"
+
+#: search.php:47
+msgid "Sorry, but nothing matched your search criteria. Please try again with some different keywords."
+msgstr "Disculpa, pero no hemos encontrado nada que se ajuste a tu búsqueda. Inténtalo de nuevo con otras palabras."
+
+#: sidebar.php:9
+msgid "About"
+msgstr "Acerca de"
+
+#: sidebar.php:16
+msgid "Pages"
+msgstr "Páginas"
+
+#: sidebar.php:31
+msgid "Categories"
+msgstr "Categorías"
+
+#: sidebar.php:39
+msgid "Archives"
+msgstr "Archivos"
+
+#: sidebar.php:53
+msgid "Search"
+msgstr "Buscar"
+
+#: sidebar.php:65
+msgid "RSS Feeds"
+msgstr "Noticias RSS"
+
+#: sidebar.php:67
+msgid "All posts"
+msgstr "Todas las entradas"
+
+#: sidebar.php:68
+msgid "All comments"
+msgstr "Todos los comentarios"
+
+#: sidebar.php:73
+msgid "Meta"
+msgstr "Meta"
+
+#: tag.php:6
+msgid "Tag Archives:"
+msgstr "Archivos por etiqueta:"
+
+#. Theme URI of the plugin/theme
+msgid "http://somadesign.ca/projects/the-erudite"
+msgstr "http://somadesign.ca/projects/the-erudite"
+
+#. Description of the plugin/theme
+msgid "A theme for writers who want readers, not visitors, traffic, click-throughs, CPMs or what-have-you. Carefully crafted typography and generous use of whitespace lets your writing shine. Version 2 includes a dark theme option."
+msgstr "Un tema para escritores que quieresn lectores, no visitantes, tráfico, conversión, chorradas de esas. Con una tipografía cuidadósamente escogida y un generoso uso de los espacios en blanco que permiten que tu escritura brille. La versión 2 incluye la opción del tema en oscuro."
+
+#. Author of the plugin/theme
+msgid "Matt Wiebe"
+msgstr "Matt Wiebe"
+
+#. Author URI of the plugin/theme
+msgid "http://somadesign.ca/"
+msgstr "http://somadesign.ca/"
+
+#. Tags of the plugin/theme
+msgid "white, dark, one-column, fixed-width, theme-options, editor-style, translation-ready"
+msgstr "blanco, oscuro, una-columna, ancho-fijo, opciones-de-tema, editor-de-estilos, listo-para-traducción"
+
+#: comments_custom.php:15
+#, php-format
+msgid "%1$s at %2$s"
+msgstr "%1$s a las %2$s"
