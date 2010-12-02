@@ -5,15 +5,14 @@
 	<meta http-equiv="content-type" content="<?php bloginfo('html_type') ?>; charset=<?php bloginfo('charset') ?>" />
 	<title><?php wp_title( '-', true, 'right' ); bloginfo('name'); ?></title>
 	<meta name="profile" content="http://gmpg.org/xfn/11" />
-	<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory') ?>/css/erudite.css" />
+	<link rel="stylesheet" href="<?php bloginfo('template_directory') ?>/css/erudite.css" />
 	<!--[if lte IE 6]> <link rel="stylesheet" href="<?php bloginfo('template_directory') ?>/css/ie6.css" type="text/css"> 
 	<style type="text/css" media="screen">
 		.hr {behavior: url(<?php bloginfo('template_directory') ?>/library/iepngfix.htc); }
 	</style> <![endif]-->
 	<!--[if lte IE 7 ]> <link rel="stylesheet" href="<?php bloginfo('template_directory') ?>/css/ie7.css" type="text/css"> <![endif]-->
 	<!--[if gte IE 8 ]> <link rel="stylesheet" href="<?php bloginfo('template_directory') ?>/css/ie8.css" type="text/css"> <![endif]-->
-	<script type="text/javascript">
-// <![CDATA[
+	<script>
 		var erdt = {
 			More: '<?php _e("<span>↓</span> Keep Reading", "erudite" ) ?>',
 			Less: '<?php _e("<span>↑</span> Put Away", "erudite" ) ?>',
@@ -23,8 +22,7 @@
 			DisableKeepReading: <?php the_theme_option("erdt_keepreading_disable") ?>,
 			DisableHide: <?php the_theme_option("erdt_hide_disable") ?> 
 		};
-		(function(H){H.className=H.className.replace(/\bno-js\b/,'js')})(document.documentElement)
-// ]]>
+		(function(H){H.className=H.className.replace(/\bno-js\b/,'js')})(document.documentElement);
 	</script>
 	<link rel="pingback" href="<?php bloginfo('pingback_url') ?>" />
 <?php	if (is_singular() ) { wp_enqueue_script('comment-reply'); } ?>
