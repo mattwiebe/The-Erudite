@@ -1,10 +1,10 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml" <?php language_attributes() ?> class="no-js">
-<head profile="http://gmpg.org/xfn/11">
-	<title><?php wp_title( '-', true, 'right' ); bloginfo('name'); ?></title>
+<html <?php language_attributes() ?> class="no-js">
+<head>
 	<meta http-equiv="content-type" content="<?php bloginfo('html_type') ?>; charset=<?php bloginfo('charset') ?>" />
+	<title><?php wp_title( '-', true, 'right' ); bloginfo('name'); ?></title>
+	<meta name="profile" content="http://gmpg.org/xfn/11" />
 	<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory') ?>/css/erudite.css" />
 	<!--[if lte IE 6]> <link rel="stylesheet" href="<?php bloginfo('template_directory') ?>/css/ie6.css" type="text/css"> 
 	<style type="text/css" media="screen">
