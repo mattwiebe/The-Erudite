@@ -7,13 +7,6 @@ THE ERUDITE is free software: you can redistribute it and/or modify it under the
 THE ERUDITE is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details: http://www.gnu.org/licenses/gpl-2.0.html
 */
 
-// I hate for it to come to this, but wp-themes.com preview is AWFUL for my theme.
-// Redirect to my demo site
-if(false !== strpos(site_url(), 'http://wp-themes.com')) {
-	wp_redirect('http://erudite.somadesign.ca/');
-	exit();
-}
-
 if ( ! isset( $content_width ) )
 	$content_width = 540;
 
