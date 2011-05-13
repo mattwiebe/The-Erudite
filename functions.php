@@ -16,10 +16,6 @@ include "library/theme-options.php";
 // epigraphs
 include_once "library/epigraph.php";
 
-// 3.0 compat. Because WP.org themes directory are a pain in the ass.
-if ( version_compare( $wp_version, '3.0', '<' ) )
-	require_once('library/3.0.compat.php');
-
 // my own filter for formatting
 foreach ( array( 'wptexturize', 'convert_chars', 'wpautop' ) as $filter ) {
 	add_filter( 'erdt_formatting', $filter );
