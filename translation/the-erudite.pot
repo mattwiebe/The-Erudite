@@ -1,15 +1,15 @@
-# Translation of the WordPress theme The Erudite 2.7.7 by Matt Wiebe.
-# Copyright (C) 2010 Matt Wiebe
+# Translation of the WordPress theme The Erudite 2.8 by Matt Wiebe.
+# Copyright (C) 2011 Matt Wiebe
 # This file is distributed under the same license as the The Erudite package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2010.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2011.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: The Erudite 2.7.7\n"
+"Project-Id-Version: The Erudite 2.8\n"
 "Report-Msgid-Bugs-To: http://wordpress.org/tag/the-erudite\n"
-"POT-Creation-Date: 2010-11-01 23:20-0500\n"
-"PO-Revision-Date: 2010-MO-DA HO:MI+ZONE\n"
+"POT-Creation-Date: 2011-07-26 16:30-0500\n"
+"PO-Revision-Date: 2011-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -160,15 +160,15 @@ msgstr ""
 msgid "Respond to this"
 msgstr ""
 
-#: comments.php:47 library/3.0.compat.php:86
+#: comments.php:47
 msgid "Name"
 msgstr ""
 
-#: comments.php:48 library/3.0.compat.php:88
+#: comments.php:48
 msgid "Email"
 msgstr ""
 
-#: comments.php:49 library/3.0.compat.php:90
+#: comments.php:49
 msgid "Website"
 msgstr ""
 
@@ -206,46 +206,46 @@ msgstr ""
 msgid "The Erudite theme for WordPress"
 msgstr ""
 
-#. #-#-#-#-#  the-erudite.pot (The Erudite 2.7.7)  #-#-#-#-#
+#. #-#-#-#-#  the-erudite.pot (The Erudite 2.8)  #-#-#-#-#
 #. Theme Name of the plugin/theme
 #: footer.php:6
 msgid "The Erudite"
 msgstr ""
 
-#: functions.php:45
+#: functions.php:34
 msgid "[No Title]"
 msgstr ""
 
-#: functions.php:148
+#: functions.php:137
 msgid "Header Menu"
 msgstr ""
 
-#: functions.php:194
+#: functions.php:183
 #, php-format
 msgid "Posts by %s"
 msgstr ""
 
-#: header.php:18
+#: header.php:16
 msgid "<span>↓</span> Keep Reading"
 msgstr ""
 
-#: header.php:19
+#: header.php:17
 msgid "<span>↑</span> Put Away"
 msgstr ""
 
-#: header.php:20
+#: header.php:18
 msgid "&#x2193; Further Information"
 msgstr ""
 
-#: header.php:21
+#: header.php:19
 msgid "<span>↓</span> Show Menu"
 msgstr ""
 
-#: header.php:22
+#: header.php:20
 msgid "<span>↑</span> Hide Menu"
 msgstr ""
 
-#: header.php:44
+#: header.php:41
 msgid "Skip to content"
 msgstr ""
 
@@ -256,56 +256,6 @@ msgstr ""
 
 #: home.php:27 index.php:14 page.php:13 single.php:13
 msgid "Pages:"
-msgstr ""
-
-#: library/3.0.compat.php:94
-#, php-format
-msgid "Required fields are marked %s"
-msgstr ""
-
-#: library/3.0.compat.php:97
-msgctxt "noun"
-msgid "Comment"
-msgstr ""
-
-#: library/3.0.compat.php:98
-#, php-format
-msgid "You must be <a href=\"%s\">logged in</a> to post a comment."
-msgstr ""
-
-#: library/3.0.compat.php:99
-#, php-format
-msgid ""
-"Logged in as <a href=\"%1$s\">%2$s</a>. <a href=\"%3$s\" title=\"Log out of "
-"this account\">Log out?</a>"
-msgstr ""
-
-#: library/3.0.compat.php:100
-msgid "Your email address will not be published."
-msgstr ""
-
-#: library/3.0.compat.php:101
-#, php-format
-msgid ""
-"You may use these <abbr title=\"HyperText Markup Language\">HTML</abbr> tags "
-"and attributes: %s"
-msgstr ""
-
-#: library/3.0.compat.php:104
-msgid "Leave a Reply"
-msgstr ""
-
-#: library/3.0.compat.php:105
-#, php-format
-msgid "Leave a Reply to %s"
-msgstr ""
-
-#: library/3.0.compat.php:106
-msgid "Cancel reply"
-msgstr ""
-
-#: library/3.0.compat.php:107
-msgid "Post Comment"
 msgstr ""
 
 #: library/epigraph.php:32 library/epigraph.php:37
@@ -350,9 +300,10 @@ msgstr ""
 msgid ""
 "This is an example of an &ldquo;About&rdquo; blurb. I&rsquo;m sure that the "
 "author of this blog is highly intelligent, witty and even <em>possibly</em> "
-"socially competent.\\n\\nIt can be modified from this theme&rsquo;s "
-"<strong>options panel</strong> in the admin area (Appearance &rarr; %s "
-"Options)"
+"socially competent.\n"
+"\n"
+"It can be modified from this theme&rsquo;s <strong>options panel</strong> in "
+"the admin area (Appearance &rarr; %s Options)"
 msgstr ""
 
 #: library/theme-options.php:38
@@ -426,23 +377,32 @@ msgid ""
 "just before the <code>&lt;body&gt;</code> tag."
 msgstr ""
 
-#: library/theme-options.php:112 library/theme-options.php:126
+#: library/theme-options.php:86
+msgid "Disable parent style"
+msgstr ""
+
+#: library/theme-options.php:87
+msgid ""
+"Don&rsquo;t include the parent theme&rsquo;s CSS. My own CSS will suffice."
+msgstr ""
+
+#: library/theme-options.php:122 library/theme-options.php:136
 msgid "Options"
 msgstr ""
 
-#: library/theme-options.php:120
+#: library/theme-options.php:130
 msgid "settings saved."
 msgstr ""
 
-#: library/theme-options.php:121
+#: library/theme-options.php:131
 msgid "settings reset."
 msgstr ""
 
-#: library/theme-options.php:225
+#: library/theme-options.php:235
 msgid "Save changes"
 msgstr ""
 
-#: library/theme-options.php:232
+#: library/theme-options.php:242
 msgid "Reset"
 msgstr ""
 
