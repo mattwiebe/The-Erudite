@@ -185,6 +185,7 @@ blockquote.epigraph cite {text-align:right; font-size:1.2em; display:block; font
 .home-post .entry-meta span.author {display:block; bottom:-1.273em; right:0;}
 .first-page div.home-post {width:24em; float:left; clear: none; margin:0 6em 7.2em 0;}
 .first-page div.home-post-4, .first-page div.home-post-7 {margin-right:0;}
+.first-page div.home-post-5, .first-page div.home-post-8 {clear:left;}
 .home-post h3.entry-title {font-size:1.8em; line-height:1.333; height:2.667em; margin-bottom:2.085em; overflow:hidden;}
 .home-post .entry-content p {font-size:1.4em; line-height:1.714;}
 .home-post hr, .home-post .hr {display:none;}
