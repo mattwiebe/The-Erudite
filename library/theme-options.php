@@ -79,8 +79,18 @@ $erdt_options = array (
 		'type' => 'textarea',
 		'options' => array( 'rows' => '6', 'cols' => '70')
 	)
-
 );
+
+if ( is_child_theme() ) {
+	$erdt_options[] = array(
+		'name' => __('Disable parent style','erudite'),
+		'desc' => __('Don&rsquo;t include the parent theme&rsquo;s CSS. My own CSS will suffice.','erudite'),
+		'id' => $shortname.'disable_parent_css',
+		'std' => 'false',
+		'type' => 'checkbox'
+	);
+}
+
 		
 $erdt_options = apply_filters('erdt_options', $erdt_options);
 
