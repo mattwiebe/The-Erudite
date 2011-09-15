@@ -1,4 +1,4 @@
-# Translation of the WordPress theme The Erudite 2.8 by Matt Wiebe.
+# Translation of the WordPress theme The Erudite 3.0 by Matt Wiebe.
 # Copyright (C) 2011 Matt Wiebe
 # This file is distributed under the same license as the The Erudite package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2011.
@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: The Erudite 2.8\n"
+"Project-Id-Version: The Erudite 3.0\n"
 "Report-Msgid-Bugs-To: http://wordpress.org/tag/the-erudite\n"
-"POT-Creation-Date: 2011-07-26 16:30-0500\n"
+"POT-Creation-Date: 2011-09-15 14:36-0500\n"
 "PO-Revision-Date: 2011-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -136,47 +136,47 @@ msgstr ""
 msgid "Category Archives:"
 msgstr ""
 
-#: comments.php:10
+#: comments.php:6
 msgid "This post is protected. Enter the password to view any comments."
 msgstr ""
 
-#: comments.php:18
+#: comments.php:14
 msgid "Comments are disabled for this post"
 msgstr ""
 
-#: comments.php:24
+#: comments.php:20
 msgid "No Comments"
 msgstr ""
 
-#: comments.php:24
+#: comments.php:20
 msgid "One Comment"
 msgstr ""
 
-#: comments.php:24
+#: comments.php:20
 msgid "% Comments"
 msgstr ""
 
-#: comments.php:29
+#: comments.php:25
 msgid "Respond to this"
 msgstr ""
 
-#: comments.php:47
+#: comments.php:43
 msgid "Name"
 msgstr ""
 
-#: comments.php:48
+#: comments.php:44
 msgid "Email"
 msgstr ""
 
-#: comments.php:49
+#: comments.php:45
 msgid "Website"
 msgstr ""
 
-#: comments.php:57
+#: comments.php:59
 msgid "Your email is <em>never</em> shared."
 msgstr ""
 
-#: comments.php:57
+#: comments.php:59
 msgid "Required fields are marked <span class=\"required\">*</span>"
 msgstr ""
 
@@ -206,46 +206,54 @@ msgstr ""
 msgid "The Erudite theme for WordPress"
 msgstr ""
 
-#. #-#-#-#-#  the-erudite.pot (The Erudite 2.8)  #-#-#-#-#
+#. #-#-#-#-#  the-erudite.pot (The Erudite 3.0)  #-#-#-#-#
 #. Theme Name of the plugin/theme
 #: footer.php:6
 msgid "The Erudite"
 msgstr ""
 
+#: functions.php:32
+msgid "<span>↓</span> Keep Reading"
+msgstr ""
+
+#: functions.php:33
+msgid "<span>↑</span> Put Away"
+msgstr ""
+
 #: functions.php:34
+msgid "&#x2193; Further Information"
+msgstr ""
+
+#: functions.php:35
+msgid "<span>↓</span> Show Menu"
+msgstr ""
+
+#: functions.php:36
+msgid "<span>↑</span> Hide Menu"
+msgstr ""
+
+#: functions.php:47
 msgid "[No Title]"
 msgstr ""
 
-#: functions.php:137
+#: functions.php:140
+#, php-format
+msgid ""
+"The Erudite now requires the <a href=\"%s\">Options Framework</a> plugin if "
+"you want to change theme options. (If you had previous theme options set, "
+"you will need to re-enter them. Some options have been removed.)"
+msgstr ""
+
+#: functions.php:198
 msgid "Header Menu"
 msgstr ""
 
-#: functions.php:183
+#: functions.php:244
 #, php-format
 msgid "Posts by %s"
 msgstr ""
 
-#: header.php:16
-msgid "<span>↓</span> Keep Reading"
-msgstr ""
-
-#: header.php:17
-msgid "<span>↑</span> Put Away"
-msgstr ""
-
-#: header.php:18
-msgid "&#x2193; Further Information"
-msgstr ""
-
-#: header.php:19
-msgid "<span>↓</span> Show Menu"
-msgstr ""
-
-#: header.php:20
-msgid "<span>↑</span> Hide Menu"
-msgstr ""
-
-#: header.php:41
+#: header.php:29
 msgid "Skip to content"
 msgstr ""
 
@@ -266,90 +274,90 @@ msgstr ""
 msgid "Citation (optional)"
 msgstr ""
 
-#: library/theme-options.php:16
+#: library/theme-options.php:15 options.php:29
 msgid "Dark Colour Scheme"
 msgstr ""
 
-#: library/theme-options.php:17
+#: library/theme-options.php:16 options.php:30
 msgid "For all the dark colour lovers out there"
 msgstr ""
 
-#: library/theme-options.php:23
+#: library/theme-options.php:22
 msgid "Use Categories in Menu"
 msgstr ""
 
-#: library/theme-options.php:24
+#: library/theme-options.php:23
 msgid ""
 "Use categories rather than pages for your top menu. Caution: this only works "
 "with a small number of categories"
 msgstr ""
 
-#: library/theme-options.php:30
+#: library/theme-options.php:29 options.php:36
 msgid "Footer &lsquo;About&rsquo; Blurb"
 msgstr ""
 
-#: library/theme-options.php:31
+#: library/theme-options.php:30 options.php:37
 msgid ""
 "The following text will appear in the footer for &lsquo;About&lsquo;. <br /"
 "><em>Note:</em> This will only appear if you have not enabled a widget for "
 "<strong>Erudite Widget 1</strong>"
 msgstr ""
 
-#: library/theme-options.php:33
+#: library/theme-options.php:32 options.php:39
 #, php-format
 msgid ""
-"This is an example of an &ldquo;About&rdquo; blurb. I&rsquo;m sure that the "
-"author of this blog is highly intelligent, witty and even <em>possibly</em> "
-"socially competent.\n"
+"This is an example of an ‘About’ blurb. I’m sure that the author of this "
+"blog is highly intelligent, witty and even <em>possibly</em> socially "
+"competent.\n"
 "\n"
-"It can be modified from this theme&rsquo;s <strong>options panel</strong> in "
-"the admin area (Appearance &rarr; %s Options)"
+"It can be modified from this theme‘s <strong>options panel</strong> in the "
+"admin area (Appearance –> %s Options)"
 msgstr ""
 
-#: library/theme-options.php:38
+#: library/theme-options.php:37 options.php:44
 msgid "Disable &lsquo;Keep Reading&rsquo;"
 msgstr ""
 
-#: library/theme-options.php:39
+#: library/theme-options.php:38 options.php:45
 msgid ""
 "Turns off the dynamic <em>Keep Reading</em> / <em>Put Away</em> "
 "functionality on the homepage if it doesn't suit your fancy"
 msgstr ""
 
-#: library/theme-options.php:45
+#: library/theme-options.php:44 options.php:51
 msgid "Disable Header/Footer Hiding"
 msgstr ""
 
-#: library/theme-options.php:46
+#: library/theme-options.php:45 options.php:52
 msgid "Turns off the dynamic show/hide functionality of the header and footer"
 msgstr ""
 
-#: library/theme-options.php:51
+#: library/theme-options.php:51 options.php:58
 msgid "Enable Page Comments"
 msgstr ""
 
-#: library/theme-options.php:52
+#: library/theme-options.php:52 options.php:59
 msgid ""
 "WordPress thinks you should have comments on pages, which The Erudite thinks "
 "is a misunderstanding of what pages are. Check this to disagree and allow "
 "comments on pages."
 msgstr ""
 
-#: library/theme-options.php:57
+#: library/theme-options.php:58 options.php:65
 msgid "Disable footer credit"
 msgstr ""
 
-#: library/theme-options.php:58
+#: library/theme-options.php:59 options.php:66
 msgid ""
 "Removes the link to the theme's author in the footer. Leave it in to say "
 "&ldquo;thanks for the hard work.&rdquo;"
 msgstr ""
 
-#: library/theme-options.php:63
+#: library/theme-options.php:65 options.php:72
 msgid "Enable comment threading"
 msgstr ""
 
-#: library/theme-options.php:64
+#: library/theme-options.php:66 options.php:73
 msgid ""
 "Allow comment threading. (Global <a href='options-discussion.php' "
 "title='Discussion settings'>discussion settings</a> have no effect unless "
@@ -358,52 +366,45 @@ msgid ""
 "2 levels deep."
 msgstr ""
 
-#: library/theme-options.php:69
+#: library/theme-options.php:72 options.php:79
 msgid "Disable editor style"
 msgstr ""
 
-#: library/theme-options.php:70
+#: library/theme-options.php:73 options.php:80
 msgid "Turn off the Visual editor styling"
 msgstr ""
 
-#: library/theme-options.php:75
-msgid "Google Analytics code"
-msgstr ""
-
-#: library/theme-options.php:76
-msgid ""
-"Enter your <a href='http://www.google.com/analytics'>Google Analytics</a> "
-"(or other service) tracking code here, and it will automatically be placed "
-"just before the <code>&lt;body&gt;</code> tag."
-msgstr ""
-
-#: library/theme-options.php:86
+#: library/theme-options.php:82 options.php:89
 msgid "Disable parent style"
 msgstr ""
 
-#: library/theme-options.php:87
+#: library/theme-options.php:83 options.php:90
 msgid ""
 "Don&rsquo;t include the parent theme&rsquo;s CSS. My own CSS will suffice."
 msgstr ""
 
-#: library/theme-options.php:122 library/theme-options.php:136
+#: library/theme-options.php:95 library/theme-options.php:156
 msgid "Options"
 msgstr ""
 
-#: library/theme-options.php:130
+#: library/theme-options.php:150
 msgid "settings saved."
 msgstr ""
 
-#: library/theme-options.php:131
+#: library/theme-options.php:151
 msgid "settings reset."
 msgstr ""
 
-#: library/theme-options.php:235
+#: library/theme-options.php:234
 msgid "Save changes"
 msgstr ""
 
-#: library/theme-options.php:242
+#: library/theme-options.php:241
 msgid "Reset"
+msgstr ""
+
+#: options.php:25
+msgid "The Erudite Settings"
 msgstr ""
 
 #: search.php:8

@@ -153,7 +153,7 @@ body.webkit.set-in-hoeflertext .entry-content > p:first-child:first-letter {padd
 
 .more-link, .entry-content p.more-link, .home-post .entry-content p.more-link {display:block; text-indent:0 !important; font-size:1.2em; line-height:2; clear:both;}
 .more-link a {text-decoration:none; font-style:italic;}
-.page-link { font-size:1.4em; }
+.page-link { font-size:1.4em; clear:both; }
 .page-link span { padding:0 .33em; }
 .entry-content .page-link a { border-bottom-width:0; font-weight:bold; }
 

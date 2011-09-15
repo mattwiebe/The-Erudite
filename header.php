@@ -1,26 +1,13 @@
 <!DOCTYPE html>
-
 <html <?php language_attributes() ?> class="no-js">
 <head>
-	<meta http-equiv="content-type" content="<?php bloginfo('html_type') ?>; charset=<?php bloginfo('charset') ?>" />
+	<meta charset="<?php bloginfo('charset') ?>" />
 	<title><?php wp_title( '-', true, 'right' ); bloginfo('name'); ?></title>
 	<meta name="profile" content="http://gmpg.org/xfn/11" />
-	<!--[if lte IE 6]> <link rel="stylesheet" href="<?php bloginfo('template_directory') ?>/css/ie6.css" type="text/css"> 
-	<style type="text/css" media="screen">
-		.hr {behavior: url(<?php bloginfo('template_directory') ?>/library/iepngfix.htc); }
-	</style> <![endif]-->
 	<!--[if lte IE 7 ]> <link rel="stylesheet" href="<?php bloginfo('template_directory') ?>/css/ie7.css" type="text/css"> <![endif]-->
 	<!--[if IE 8 ]> <link rel="stylesheet" href="<?php bloginfo('template_directory') ?>/css/ie8.css" type="text/css"> <![endif]-->
 	<script>
-		var erdt = {
-			More: '<?php _e("<span>↓</span> Keep Reading", "erudite" ) ?>',
-			Less: '<?php _e("<span>↑</span> Put Away", "erudite" ) ?>',
-			Info: '<?php _e("&#x2193; Further Information", "erudite" ) ?>',
-			MenuShow: '<?php _e("<span>↓</span> Show Menu", "erudite" ) ?>',
-			MenuHide: '<?php _e("<span>↑</span> Hide Menu", "erudite" ) ?>',
-			DisableKeepReading: <?php the_theme_option("erdt_keepreading_disable") ?>,
-			DisableHide: <?php the_theme_option("erdt_hide_disable") ?> 
-		};
+		var erdt = <?php echo erdt_js_options() ?>;
 		(function(H){H.className=H.className.replace(/\bno-js\b/,'js')})(document.documentElement);
 	</script>
 	<link rel="pingback" href="<?php bloginfo('pingback_url') ?>" />

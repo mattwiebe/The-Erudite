@@ -7,11 +7,11 @@ THE ERUDITE is free software: you can redistribute it and/or modify it under the
 THE ERUDITE is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details: http://www.gnu.org/licenses/gpl-2.0.html
 */
 
+// Translate, if applicable
+load_theme_textdomain('erudite', get_template_directory() . '/translation');
+
 if ( ! isset( $content_width ) )
 	$content_width = 540;
-
-// theme options page
-include "library/theme-options.php";
 
 // epigraphs
 include_once "library/epigraph.php";
@@ -23,8 +23,21 @@ foreach ( array( 'wptexturize', 'convert_chars', 'wpautop' ) as $filter ) {
 
 add_action('init', 'erdt_go_away_page_comments');
 function erdt_go_away_page_comments() {
-	if ( ! get_the_theme_option('erdt_allow_page_comments') )
+	if ( ! erdt_get_option('allow_page_comments') )
 		remove_post_type_support('page', 'comments');
+}
+
+function erdt_js_options() {
+	$js = array(
+		'More' => __("<span>↓</span> Keep Reading", "erudite"),
+		'Less' => __('<span>↑</span> Put Away', 'erudite' ),
+		'Info' => __('&#x2193; Further Information', 'erudite' ),
+		'MenuShow' => __('<span>↓</span> Show Menu', 'erudite' ),
+		'MenuHide' => __('<span>↑</span> Hide Menu', 'erudite' ),
+		'DisableKeepReading' => erdt_get_option( 'keepreading_disable' ),
+		'DisableHide' => erdt_get_option( 'hide_disable' )
+	);
+	return json_encode( $js );
 }
 
 // empty titles
@@ -36,10 +49,9 @@ function erdt_empty_title( $title ) {
 	return $title;
 }
 
-// style visual editor
 add_filter('mce_css', 'erudite_editor_style');
 function erudite_editor_style($url) {
-	if ( get_the_theme_option('erdt_editor_style_disable') != 'false' )
+	if ( erdt_get_option('editor_style_disable') )
 		return $url;
 
 	if ( !empty($url) )
@@ -54,7 +66,7 @@ function erudite_editor_style($url) {
 add_filter('body_class', 'erudite_body_class');
 function erudite_body_class($classes) {
 	// for theme colors
-	if ( get_the_theme_option('erdt_color_dark') === 'true' )
+	if ( erdt_get_option('color_dark') )
 		$classes[] = 'dark';
 
 	// proper first-page class
@@ -62,7 +74,7 @@ function erudite_body_class($classes) {
 		$classes[] = "first-page";
 
 	// show/hide functionality
-	if ( get_the_theme_option("erdt_hide_disable") == "false" )
+	if ( ! erdt_get_option('hide_disable') )
 		$classes[] = "hiding";
 
 	// WP-Typography?
@@ -72,35 +84,85 @@ function erudite_body_class($classes) {
 	return $classes;
 }
 
-// generic theme option function. set second parameter to TRUE to add content formatting
-function get_the_theme_option( $id, $format = false ) {
-	global $erdt_options;
-	$return = false;
-	foreach ($erdt_options as $value) {
-		if (get_option( $value['id'] ) === false) { 
-			$$value['id'] = $value['std']; 
-		} 
-		else { 
-			$$value['id'] = get_option( $value['id'] ); 
+/* 
+ * Helper function to return the theme option value. If no value has been saved, it returns $default.
+ * Needed because options are saved as serialized strings.
+ *
+ * This code allows the theme to work without errors if the Options Framework plugin has been disabled.
+ */
+if ( ! function_exists( 'of_get_option' ) ) {
+
+	add_action( 'admin_notices', 'erdt_prompt_options_framework' );
+
+	function of_get_option($name, $default = false) {
+		$optionsframework_settings = get_option('optionsframework');
+		// Gets the unique option id
+		$option_name = $optionsframework_settings['id'];
+	
+		if ( get_option($option_name) ) {
+			$options = get_option($option_name);
 		}
+		else {
+			return of_get_option_fallback($name, $default);
+		}
+	
+		return ( isset($options[$name]) ) ? $options[$name] : $default;
 	}
-	$return = stripslashes($$id);
-	if ($format) {
-		$return = apply_filters( 'erdt_formatting', $return );
+	
+	// If Options Framework hasn't been installed, fall back to defaults
+	function of_get_option_fallback($id, $default = false) {
+		include_once 'options.php';
+		$options = optionsframework_options();
+		$found_option = array();
+		foreach ( $options as $opt ) {
+			if ( $opt['id'] === $id ) {
+				$found_option = $opt;
+				break;
+			}
+		}
+		return isset( $found_option['std'] ) ? $found_option['std'] : $default;
 	}
-	if ( empty($return) ) {
+}
+
+function erdt_prompt_options_framework() {
+	global $pagenow;
+	$pages = array( 'index.php', 'themes.php', 'plugins.php' );
+
+	if ( ! current_user_can( 'install_plugins' ) || ! in_array($pagenow, $pages ) ) {
+		return;
+	}
+	$base = is_multisite() ? network_admin_url('plugin-install.php') : admin_url('plugin-install.php');
+	$url = add_query_arg( array(
+		'tab' => 'search',
+		'type' => 'term',
+		's' => 'Options Framework'
+	), $base );
+	$text = sprintf( __('The Erudite now requires the <a href="%s">Options Framework</a> plugin if you want to change theme options. (If you had previous theme options set, you will need to re-enter them. Some options have been removed.)'), $url );
+	echo "<div class='updated'><p>{$text}</p></div>";
+}
+
+// generic theme option function. set second parameter to TRUE to add content formatting
+function erdt_get_option( $id, $format = false ) {
+	$return = of_get_option( $id );
+
+	if ( empty( $return ) ) {
 		$return = false;
 	}
+
+	if ( $format ) {
+		$return = apply_filters( 'erdt_formatting', $return );
+	}
+
 	return $return;
 }
 
-function the_theme_option( $id, $format = false ) {
-	echo get_the_theme_option( $id, $format );
+function erdt_the_option( $id, $format = false ) {
+	echo erdt_get_option( $id, $format );
 }
 
 // filter the_excerpt to give a proper ellipsis.
-add_filter('the_excerpt', 'custom_excerpt');
-function custom_excerpt($text) {
+add_filter('the_excerpt', 'erdt_custom_excerpt');
+function erdt_custom_excerpt($text) {
 	return str_replace('[...]', '<span class="excerpt-more">&hellip;</span>', $text);
 }
 
@@ -114,7 +176,7 @@ function erdt_frontend_scripts_and_styles() {
 	$themes = get_themes();
 	$current_theme = get_current_theme();
 	$ver = $themes[$current_theme]['Version'];
-	$disable_parent = is_child_theme() && 'true' === get_the_theme_option('erdt_disable_parent_css');
+	$disable_parent = is_child_theme() && erdt_get_option('disable_parent_css');
 	$template_url = trailingslashit(get_template_directory_uri());
 	
 	if ( ! $disable_parent ) {
@@ -124,8 +186,7 @@ function erdt_frontend_scripts_and_styles() {
 		wp_enqueue_style('the-erudite-child', get_bloginfo('stylesheet_url') );
 	}
 
-	wp_enqueue_script( 'scrollTo', $template_url.'js/jquery.scrollTo-min.js', array('jquery'), '1.4.2', true);
-	wp_enqueue_script('erudite', $template_url.'js/common.js', array('jquery', 'scrollTo'), $ver, true);
+	wp_enqueue_script('erudite', $template_url.'js/common.js', array('jquery'), $ver, true);
 }
 
 
@@ -134,7 +195,7 @@ if ( function_exists('add_theme_support') ) {
 }
 
 if ( function_exists('register_nav_menus') ) {
-	register_nav_menus( array('header-menu' => __('Header Menu') ) );
+	register_nav_menus( array('header-menu' => __('Header Menu', 'erudite') ) );
 }
 
 // call wp_nav_menu, but fallback to old_erdt_globalnav otherwise
@@ -159,7 +220,7 @@ function erdt_globalnav() {
 // Produces a list of pages in the header without whitespace
 function old_erdt_globalnav() {
 	
-	if (get_the_theme_option('erdt_category_nav') === 'true') {
+	if ( erdt_get_option('category_nav') ) {
 		$menu = wp_list_categories('title_li=&echo=0');
 	} else {
 		$menu = wp_list_pages('title_li=&sort_column=menu_order&echo=0');
@@ -180,7 +241,7 @@ function erdt_get_author_posts_link() {
 	return sprintf(
 		'<a href="%1$s" title="%2$s">%3$s</a>',
 		get_author_posts_url( $authordata->ID, $authordata->user_nicename ),
-		esc_attr( sprintf( __( 'Posts by %s' ), get_the_author() ) ),
+		esc_attr( sprintf( __( 'Posts by %s', 'erudite' ), get_the_author() ) ),
 		get_the_author()
 	);
 }
@@ -202,9 +263,6 @@ function erdt_widgets_init() {
 	// Table for how many? Two? This way, please.
 	register_sidebars( 3, $p );
 }
-
-// Translate, if applicable
-load_theme_textdomain('erudite', get_template_directory() . '/translation');
 
 // Runs our code at the end to check that everything needed has loaded
 add_action( 'init', 'erdt_widgets_init' );

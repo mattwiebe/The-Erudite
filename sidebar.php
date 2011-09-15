@@ -8,7 +8,7 @@
 					<li id="about-sidebar">
 						<h3><?php _e( 'About', 'erudite' ) ?></h3>
 						<div>
-						<?php the_theme_option("erdt_footer_about", true) ?>
+						<?php erdt_the_option('footer_about', true) ?>
 						</div>
 					</li>
 					

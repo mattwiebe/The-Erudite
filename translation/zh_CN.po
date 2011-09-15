@@ -1,0 +1,610 @@
+# Translation of the WordPress theme The Erudite 2.7.7 by Matt Wiebe.
+# Copyright (C) 2010 Matt Wiebe
+# This file is distributed under the same license as the The Erudite package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2010.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: The Erudite 2.7.7\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/tag/the-erudite\n"
+"POT-Creation-Date: 2010-11-01 23:20-0500\n"
+"PO-Revision-Date: 2011-08-11 08:09+0800\n"
+"Last-Translator: Zane <Zane.Chin@189.cn>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: Chinese\n"
+"X-Poedit-Country: CHINA\n"
+
+#: 404.php:7
+msgid "Not Found"
+msgstr "未找到"
+
+#: 404.php:9
+msgid "Apologies, but we were unable to find what you were looking for. Perhaps searching will help."
+msgstr "对不起，我们未能找到您寻找的内容。搜索也许可以帮到你。"
+
+#: 404.php:14
+#: search.php:52
+#: sidebar.php:57
+msgid "Find"
+msgstr "寻找"
+
+#: archive.php:9
+#, php-format
+msgid "Daily Archives: <span>%s</span>"
+msgstr "日存档：<span>%s</span>"
+
+#: archive.php:11
+#, php-format
+msgid "Monthly Archives: <span>%s</span>"
+msgstr "月存档：<span>%s</span>"
+
+#: archive.php:13
+#, php-format
+msgid "Yearly Archives: <span>%s</span>"
+msgstr "年存档：<span>%s</span>"
+
+#: archive.php:15
+msgid "Blog Archives"
+msgstr "博客："
+
+#: archive.php:23
+#: author.php:16
+#: category.php:12
+#: home.php:13
+#: home.php:21
+#: index.php:9
+#: search.php:13
+#: tag.php:11
+#, php-format
+msgid "Permalink to %s"
+msgstr "永久链接至%s"
+
+#: archive.php:25
+#: author.php:18
+#: category.php:14
+#: home.php:16
+#: home.php:24
+#: index.php:12
+#: search.php:15
+#: tag.php:13
+msgid "Read More <span class=\"meta-nav\">&rarr;</span>"
+msgstr "更多  <span class=\"meta-nav\">&rarr;</span>"
+
+#: archive.php:29
+#: attachment.php:19
+#: author.php:22
+#: category.php:18
+#: home.php:30
+#: image.php:20
+#: index.php:17
+#: search.php:21
+#: single.php:16
+#: tag.php:17
+#, php-format
+msgid "%1$s &#8211; %2$s"
+msgstr "%1$s &#8211; %2$s"
+
+#: archive.php:31
+#: attachment.php:21
+#: author.php:24
+#: category.php:20
+#: home.php:32
+#: image.php:22
+#: index.php:19
+#: search.php:23
+#: single.php:18
+#: tag.php:19
+#, php-format
+msgid "By %s"
+msgstr "作者 %s"
+
+#: archive.php:33
+#: attachment.php:23
+#: author.php:26
+#: category.php:22
+#: home.php:34
+#: index.php:21
+#: search.php:25
+#: single.php:20
+#: tag.php:21
+#, php-format
+msgid "Posted in %s"
+msgstr "发布于%s"
+
+#: archive.php:35
+#: attachment.php:25
+#: author.php:28
+#: category.php:24
+#: home.php:36
+#: image.php:24
+#: index.php:23
+#: search.php:27
+#: single.php:22
+#: tag.php:23
+msgid "<span class=\"tag-links\">Tagged "
+msgstr "<span class=\"tag-links\">Tagged "
+
+#: archive.php:36
+#: archives.php:32
+#: attachment.php:26
+#: author.php:29
+#: category.php:25
+#: home.php:37
+#: image.php:25
+#: index.php:24
+#: links.php:22
+#: page.php:15
+#: search.php:28
+#: single.php:23
+#: tag.php:24
+msgid "Edit"
+msgstr "编辑"
+
+#: archive.php:37
+#: attachment.php:27
+#: author.php:30
+#: category.php:26
+#: home.php:38
+#: image.php:26
+#: index.php:25
+#: search.php:29
+#: single.php:24
+#: tag.php:25
+msgid "Comments (0)"
+msgstr "评论(0)"
+
+#: archive.php:37
+#: attachment.php:27
+#: author.php:30
+#: category.php:26
+#: home.php:38
+#: image.php:26
+#: index.php:25
+#: search.php:29
+#: single.php:24
+#: tag.php:25
+msgid "Comments (1)"
+msgstr "评论(1)"
+
+#: archive.php:37
+#: attachment.php:27
+#: author.php:30
+#: category.php:26
+#: home.php:38
+#: image.php:26
+#: index.php:25
+#: search.php:29
+#: single.php:24
+#: tag.php:25
+msgid "Comments (%)"
+msgstr "评论(%)"
+
+#: archive.php:44
+#: author.php:37
+#: category.php:33
+#: home.php:47
+#: index.php:34
+#: tag.php:32
+msgid "<span class=\"meta-nav\">&larr;</span> Older posts"
+msgstr "<span class=\"meta-nav\">&larr;</span>较早的文章"
+
+#: archive.php:45
+#: author.php:38
+#: category.php:34
+#: home.php:48
+#: index.php:35
+#: tag.php:33
+msgid "Newer posts <span class=\"meta-nav\">&rarr;</span>"
+msgstr "较新的文章<span class=\"meta-nav\">&rarr;</span>"
+
+#: archives.php:20
+msgid "Archives by Category"
+msgstr "分类存档"
+
+#: archives.php:26
+msgid "Archives by Month"
+msgstr "月存档"
+
+#: attachment.php:8
+#: image.php:8
+#, php-format
+msgid "Return to %s"
+msgstr "返回%s"
+
+#: author.php:8
+#, php-format
+msgid "Author Archives: <span class=\"vcard\">%s</span>"
+msgstr "作者：<span class=\"vcard\">%s</span>"
+
+#: category.php:6
+msgid "Category Archives:"
+msgstr "分类："
+
+#: comments.php:10
+msgid "This post is protected. Enter the password to view any comments."
+msgstr "本文章被保护。请输入密码以浏览评论。"
+
+#: comments.php:18
+msgid "Comments are disabled for this post"
+msgstr "本文章不可评论。"
+
+#: comments.php:24
+msgid "No Comments"
+msgstr "无评论"
+
+#: comments.php:24
+msgid "One Comment"
+msgstr "一条评论"
+
+#: comments.php:24
+msgid "% Comments"
+msgstr "%条评论"
+
+#: comments.php:29
+msgid "Respond to this"
+msgstr "回复"
+
+#: comments.php:47
+#: library/3.0.compat.php:86
+msgid "Name"
+msgstr "姓名"
+
+#: comments.php:48
+#: library/3.0.compat.php:88
+msgid "Email"
+msgstr "电邮"
+
+#: comments.php:49
+#: library/3.0.compat.php:90
+msgid "Website"
+msgstr "网站"
+
+#: comments.php:57
+msgid "Your email is <em>never</em> shared."
+msgstr "您的电邮<em>不会</em>被公开。"
+
+#: comments.php:57
+msgid "Required fields are marked <span class=\"required\">*</span>"
+msgstr "必填项目用<span class=\"required\">*</span>号标出"
+
+#: comments_custom.php:9
+#, php-format
+msgid "<cite class=\"fn\">%s</cite> <span class=\"says\">wrote:</span>"
+msgstr "<cite class=\"fn\">%s</cite> <span class=\"says\">写道：</span>"
+
+#: comments_custom.php:12
+msgid "Your comment is awaiting moderation."
+msgstr "您的评论正在等待缓和控制。"
+
+#: comments_custom.php:15
+#, php-format
+msgid "%1$s at %2$s"
+msgstr "%1$s在%2$s"
+
+#: comments_custom.php:15
+msgid "(Edit)"
+msgstr "(编辑)"
+
+#: footer.php:3
+msgid "WordPress"
+msgstr "WordPress"
+
+#: footer.php:6
+msgid "The Erudite theme for WordPress"
+msgstr "WordPress的The Erudite主题"
+
+#. #-#-#-#-#  the-erudite.pot (The Erudite 2.7.7)  #-#-#-#-#
+#. Theme Name of the plugin/theme
+#: footer.php:6
+msgid "The Erudite"
+msgstr "The Erudite"
+
+#: functions.php:45
+msgid "[No Title]"
+msgstr "[无标题]"
+
+#: functions.php:148
+msgid "Header Menu"
+msgstr "顶菜单"
+
+#: functions.php:194
+#, php-format
+msgid "Posts by %s"
+msgstr "由%s发布"
+
+#: header.php:18
+msgid "<span>↓</span> Keep Reading"
+msgstr "<span>↓</span>继续阅读"
+
+#: header.php:19
+msgid "<span>↑</span> Put Away"
+msgstr "<span>↑</span>收起"
+
+#: header.php:20
+msgid "&#x2193; Further Information"
+msgstr "&#x2193;更多信息"
+
+#: header.php:21
+msgid "<span>↓</span> Show Menu"
+msgstr "<span>↓</span>显示菜单"
+
+#: header.php:22
+msgid "<span>↑</span> Hide Menu"
+msgstr "<span>↑</span>隐藏菜单"
+
+#: header.php:44
+msgid "Skip to content"
+msgstr "跳到内容"
+
+#: home.php:24
+#, php-format
+msgid "Keep reading &lsquo;%s&rsquo;"
+msgstr "继续阅读&lsquo;%s&rsquo;"
+
+#: home.php:27
+#: index.php:14
+#: page.php:13
+#: single.php:13
+msgid "Pages:"
+msgstr "页面："
+
+#: library/3.0.compat.php:94
+#, php-format
+msgid "Required fields are marked %s"
+msgstr "必填项目已被标识为%s"
+
+#: library/3.0.compat.php:97
+msgctxt "noun"
+msgid "Comment"
+msgstr "评论"
+
+#: library/3.0.compat.php:98
+#, php-format
+msgid "You must be <a href=\"%s\">logged in</a> to post a comment."
+msgstr "您必需<a href=\"%s\">登录</a>以发表评论。"
+
+#: library/3.0.compat.php:99
+#, php-format
+msgid "Logged in as <a href=\"%1$s\">%2$s</a>. <a href=\"%3$s\" title=\"Log out of this account\">Log out?</a>"
+msgstr "<a href=\"%1$s\">%2$s</a>，您已登录。 <a href=\"%3$s\" title=\"Log out of this account\">注销？</a>"
+
+#: library/3.0.compat.php:100
+msgid "Your email address will not be published."
+msgstr "您的电邮地址将不会被公开。"
+
+#: library/3.0.compat.php:101
+#, php-format
+msgid "You may use these <abbr title=\"HyperText Markup Language\">HTML</abbr> tags and attributes: %s"
+msgstr "您可以使用这些<abbr title=\"HyperText Markup Language\">HTML</abbr>标签及属性：%s"
+
+#: library/3.0.compat.php:104
+msgid "Leave a Reply"
+msgstr "留下回复"
+
+#: library/3.0.compat.php:105
+#, php-format
+msgid "Leave a Reply to %s"
+msgstr "留下对%s的回复"
+
+#: library/3.0.compat.php:106
+msgid "Cancel reply"
+msgstr "取消回复"
+
+#: library/3.0.compat.php:107
+msgid "Post Comment"
+msgstr "发布评论"
+
+#: library/epigraph.php:32
+#: library/epigraph.php:37
+msgid "Epigraph"
+msgstr "题词"
+
+#: library/epigraph.php:39
+msgid "Citation (optional)"
+msgstr "引用（可选）"
+
+#: library/theme-options.php:16
+msgid "Dark Colour Scheme"
+msgstr "暗色主题"
+
+#: library/theme-options.php:17
+msgid "For all the dark colour lovers out there"
+msgstr "喜爱暗色调的用户可以使用"
+
+#: library/theme-options.php:23
+msgid "Use Categories in Menu"
+msgstr "在菜单中使用分类"
+
+#: library/theme-options.php:24
+msgid "Use categories rather than pages for your top menu. Caution: this only works with a small number of categories"
+msgstr "在顶菜单中列出分类而不是页面。注意：仅当分类不多时可用。"
+
+#: library/theme-options.php:30
+msgid "Footer &lsquo;About&rsquo; Blurb"
+msgstr "页脚&lsquo;关于&rsquo;信息"
+
+#: library/theme-options.php:31
+msgid "The following text will appear in the footer for &lsquo;About&lsquo;. <br /><em>Note:</em> This will only appear if you have not enabled a widget for <strong>Erudite Widget 1</strong>"
+msgstr "以下文字将在页脚中的&lsquo;关于&lsquo;中显示。<br /><em>提示：</em>仅当<strong>Erudite小工具1</strong>未被启用时才会显示。"
+
+#: library/theme-options.php:33
+#, php-format
+msgid ""
+"This is an example of an &ldquo;About&rdquo; blurb. I&rsquo;m sure that the author of this blog is highly intelligent, witty and even <em>possibly</em> socially competent.\\n"
+"\\n"
+"It can be modified from this theme&rsquo;s <strong>options panel</strong> in the admin area (Appearance &rarr; %s Options)"
+msgstr ""
+"这是&ldquo;关于&rdquo;信息的一个示例。我相信这个博客站点的作者一定很聪明、诙谐、甚至还<em>可能</em>不宅。\\n"
+"\\n"
+"这些内容可以在这个主题控制板中的 <strong>选项菜单</strong>中编辑 (外观 &rarr; %s 选项)"
+
+#: library/theme-options.php:38
+msgid "Disable &lsquo;Keep Reading&rsquo;"
+msgstr "停用&lsquo;继续阅读&rsquo;"
+
+#: library/theme-options.php:39
+msgid "Turns off the dynamic <em>Keep Reading</em> / <em>Put Away</em> functionality on the homepage if it doesn't suit your fancy"
+msgstr "如果您不喜欢，可以关闭主页上的动态<em>继续阅读</em> / <em>收起</em>功能"
+
+#: library/theme-options.php:45
+msgid "Disable Header/Footer Hiding"
+msgstr "停用隐藏页眉/页脚"
+
+#: library/theme-options.php:46
+msgid "Turns off the dynamic show/hide functionality of the header and footer"
+msgstr "关闭页眉与页脚的动态显示/隐藏功能"
+
+#: library/theme-options.php:51
+msgid "Enable Page Comments"
+msgstr "启用页面评论"
+
+#: library/theme-options.php:52
+msgid "WordPress thinks you should have comments on pages, which The Erudite thinks is a misunderstanding of what pages are. Check this to disagree and allow comments on pages."
+msgstr "WordPress认为页面上应该有评论，但The Erudite认为这是对页面这个概念的误解。如果您不同意The Erudite的观点，勾选此项以允许在页面中添加评论。"
+
+#: library/theme-options.php:57
+msgid "Disable footer credit"
+msgstr "停用页脚作者信息"
+
+#: library/theme-options.php:58
+msgid "Removes the link to the theme's author in the footer. Leave it in to say &ldquo;thanks for the hard work.&rdquo;"
+msgstr "移除页脚中本主题作者的链接。如果您想表示对我们工作的感谢，请保留。"
+
+#: library/theme-options.php:63
+msgid "Enable comment threading"
+msgstr "启用评论交叉引用"
+
+#: library/theme-options.php:64
+msgid "Allow comment threading. (Global <a href='options-discussion.php' title='Discussion settings'>discussion settings</a> have no effect unless this is checked first)<br /> This is <strong>off</strong> by default because threaded comments are rubbish. Turn on at your peril, and don't go more than 2 levels deep."
+msgstr "允许评论交叉引用。(通用设置中的<a href='options-discussion.php' title='Discussion settings'>讨论设置</a>只有在本选框被勾选的情况下有效)<br /> 本选项默认为<strong>关闭</strong>因为讨论的交叉引用功能是垃圾。如果您愿意冒这个风险，可以打开，但不要允许嵌套超过2层。"
+
+#: library/theme-options.php:69
+msgid "Disable editor style"
+msgstr "停用编辑风格"
+
+#: library/theme-options.php:70
+msgid "Turn off the Visual editor styling"
+msgstr "关闭可视化编辑风格"
+
+#: library/theme-options.php:75
+msgid "Google Analytics code"
+msgstr "Google Analytics代码"
+
+#: library/theme-options.php:76
+msgid "Enter your <a href='http://www.google.com/analytics'>Google Analytics</a> (or other service) tracking code here, and it will automatically be placed just before the <code>&lt;body&gt;</code> tag."
+msgstr "在这里键入您的<a href='http://www.google.com/analytics'>Google Analytics</a>（或者其他服务）的代码，它会被自动放在<code>&lt;body&gt;</code>标签前。"
+
+#: library/theme-options.php:112
+#: library/theme-options.php:126
+msgid "Options"
+msgstr "选项"
+
+#: library/theme-options.php:120
+msgid "settings saved."
+msgstr "设置已保存。"
+
+#: library/theme-options.php:121
+msgid "settings reset."
+msgstr "设置已重置。"
+
+#: library/theme-options.php:225
+msgid "Save changes"
+msgstr "保存变更"
+
+#: library/theme-options.php:232
+msgid "Reset"
+msgstr "重置"
+
+#: search.php:8
+msgid "Search Results for:"
+msgstr "搜索："
+
+#: search.php:38
+msgid "<span class=\"meta-nav\">&larr;</span> Older results"
+msgstr "<span class=\"meta-nav\">&larr;</span>较早的结果"
+
+#: search.php:39
+msgid "Newer results <span class=\"meta-nav\">&rarr;</span>"
+msgstr "较新的结果<span class=\"meta-nav\">&rarr;</span>"
+
+#: search.php:45
+msgid "Nothing Found"
+msgstr "无结果"
+
+#: search.php:47
+msgid "Sorry, but nothing matched your search criteria. Please try again with some different keywords."
+msgstr "对不起，没有结果符合您的搜索条件。请更换关键词重试。"
+
+#: sidebar.php:9
+msgid "About"
+msgstr "关于"
+
+#: sidebar.php:16
+msgid "Pages"
+msgstr "页面"
+
+#: sidebar.php:31
+msgid "Categories"
+msgstr "分类"
+
+#: sidebar.php:39
+msgid "Archives"
+msgstr "存档"
+
+#: sidebar.php:53
+msgid "Search"
+msgstr "搜索"
+
+#: sidebar.php:65
+msgid "RSS Feeds"
+msgstr "RSS反馈"
+
+#: sidebar.php:67
+#, php-format
+msgid "%s latest posts"
+msgstr "%s最新文章"
+
+#: sidebar.php:67
+msgid "All posts"
+msgstr "所有文章"
+
+#: sidebar.php:68
+#, php-format
+msgid "%s latest comments"
+msgstr "%s最新评论"
+
+#: sidebar.php:68
+msgid "All comments"
+msgstr "所有评论"
+
+#: sidebar.php:73
+msgid "Meta"
+msgstr "杂项"
+
+#: tag.php:6
+msgid "Tag Archives:"
+msgstr "标签存档："
+
+#. Theme URI of the plugin/theme
+msgid "http://somadesign.ca/projects/the-erudite"
+msgstr "http://somadesign.ca/projects/the-erudite"
+
+#. Description of the plugin/theme
+msgid "A theme for writers who want readers, not visitors, traffic, click-throughs, CPMs or what-have-you. Carefully crafted typography and generous use of whitespace lets your writing shine."
+msgstr "一个作家的主题，只为读者，而不是访客、流量、点击、CPM或者作者的情况。精心排版及大量留白让你的作品更加闪亮。"
+
+#. Author of the plugin/theme
+msgid "Matt Wiebe"
+msgstr "Matt Wiebe"
+
+#. Author URI of the plugin/theme
+msgid "http://somadesign.ca/"
+msgstr "http://somadesign.ca/"
+
+#. Tags of the plugin/theme
+msgid "white, dark, one-column, fixed-width, theme-options, editor-style, translation-ready, custom-menu"
+msgstr "白色、暗色、一栏、固定宽度、主题选项、编辑风格、可翻译、自定义菜单"
+

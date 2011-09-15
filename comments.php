@@ -1,11 +1,7 @@
-<?php
-	if ( 'comments.php' == basename($_SERVER['SCRIPT_FILENAME']) )
-		die ( 'Please do not load this page directly. Thanks.' );
-?>
 			<div id="comments">
 <?php
 	if ( ! empty($post->post_password) ) :
-		if ( ! ( isset($_COOKIE['wp-postpass_' . COOKIEHASH]) && $_COOKIE['wp-postpass_' . COOKIEHASH] == $post->post_password ) ) :
+		if ( post_password_required() ) :
 ?>
 				<div class="nopassword disabled"><?php _e( 'This post is protected. Enter the password to view any comments.', 'erudite' ) ?></div>
 			</div><!-- .comments -->
@@ -22,7 +18,7 @@ if ( ! comments_open() ) {
 
 ?>
 	<h4><?php comments_number(__('No Comments', 'erudite'), __('One Comment', 'erudite'), __('% Comments', 'erudite') );?></h4>
-<?php $max_threading = ( get_the_theme_option('erdt_comment_threading') == "false" ) ? '&max_depth=1' : ''; // check for theme option to possibly allow threaded comments for those insane enough to really want them ?>
+<?php $max_threading = ( ! erdt_get_option('comment_threading') ) ? '&max_depth=1' : ''; // check for theme option to possibly allow threaded comments for those insane enough to really want them ?>
 <?php if ( have_comments() ) : // show the comments ?>
 
 	<ul class="commentlist" id="singlecomments">
@@ -50,8 +46,14 @@ if ( 'open' == $post->comment_status ) :
 		);
 	}
 	
-	add_action('comment_form_before_fields', create_function('', 'echo \'<div class="user-info">\';') );
-	add_action('comment_form_after_fields', create_function('', 'echo "</div>";') );
+	add_action('comment_form_before_fields', 'erdt_comment_form_before_fields' );
+	function erdt_comment_form_before_fields() {
+		echo '<div class="user-info">';
+	}
+	add_action('comment_form_after_fields', 'erdt_comment_form_after_fields' );
+	function erdt_comment_form_after_fields() {
+		echo "</div>";
+	}
 
 	comment_form( array(
 		'comment_notes_before' => '<p id="comment-notes">' . __( 'Your email is <em>never</em> shared.', 'erudite' ) . ( $req ? __( 'Required fields are marked <span class="required">*</span>', 'erudite' ) : '' ) . '</p>',
