@@ -111,7 +111,7 @@ if ( ! function_exists( 'of_get_option' ) ) {
 	
 	// If Options Framework hasn't been installed, fall back to defaults
 	function of_get_option_fallback($id, $default = false) {
-		include_once 'options.php';
+		include_once TEMPLATEPATH . '/options.php';
 		$options = optionsframework_options();
 		$found_option = array();
 		foreach ( $options as $opt ) {
