@@ -115,7 +115,7 @@ if ( ! function_exists( 'of_get_option' ) ) {
 		$options = optionsframework_options();
 		$found_option = array();
 		foreach ( $options as $opt ) {
-			if ( $opt['id'] === $id ) {
+			if ( isset($opt['id'] ) && $opt['id'] === $id ) {
 				$found_option = $opt;
 				break;
 			}

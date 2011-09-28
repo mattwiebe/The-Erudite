@@ -36,7 +36,7 @@ function optionsframework_options() {
 			'name' => __('Footer &lsquo;About&rsquo; Blurb','erudite'),
 			'desc' => __('The following text will appear in the footer for &lsquo;About&lsquo;. <br /><em>Note:</em> This will only appear if you have not enabled a widget for <strong>Erudite Widget 1</strong>','erudite'),
 			'id' => 'footer_about',
-			'std' => sprintf(__("This is an example of an ‘About’ blurb. I’m sure that the author of this blog is highly intelligent, witty and even <em>possibly</em> socially competent.\n\nIt can be modified from this theme‘s <strong>options panel</strong> in the admin area (Appearance –> %s Options)", 'erudite'), $erdt_themename),
+			'std' => sprintf(__("This is an example of an ‘About’ blurb. I’m sure that the author of this blog is highly intelligent, witty and even <em>possibly</em> socially competent.\n\nIt can be modified from this theme‘s <strong>options panel</strong> in the admin area (Appearance → Theme Options)", 'erudite') ),
 			'type' => 'textarea',
 			'options' => array( 'rows' => '6', 'cols' => '70')
 		),
