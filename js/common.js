@@ -99,8 +99,8 @@ jQuery(document).ready(function($) {
 	
 
 	
-	// blockquote enhancemnet for browsers that don't support ::before and ::after pseudo-classes
-	$(".entry-content blockquote").append("<span class='before quote'>&ldquo;</span><span class='after quote'>&rdquo;</span>");
+	// blockquote enhancemnet for browsers that don't support the ::before pseudo-class
+	$(".entry-content blockquote").append("<span class='before quote'>&ldquo;</span>");
 	
 	// IE6 doesn't play well with the blockquote enhancement, nor do ie6-specific stylesheets work. using deprecated $.browser
 	if ($.browser.msie && $.browser.version == 6.0) {$("blockquote .quote").remove(); }
