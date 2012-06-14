@@ -27,6 +27,34 @@ function erdt_go_away_page_comments() {
 		remove_post_type_support('page', 'comments');
 }
 
+// Customizer integration
+add_action( 'customize_register', 'erdt_customize_register' );
+function erdt_customize_register( $wp_customize ) {
+	$wp_customize->get_setting('blogname')->transport='postMessage';
+	$wp_customize->get_setting('blogdescription')->transport='postMessage';
+	if ( $wp_customize->is_preview() && ! is_admin() ) {
+		add_action( 'wp_footer', 'erdt_customize_preview', 21 );
+	}
+}
+function erdt_customize_preview() {
+?>
+<script>
+(function($){
+	wp.customize('blogname',function( value ) {
+		value.bind(function(to) {
+			$('#blog-title a').text( to );
+		});
+	});
+	wp.customize('blogdescription',function( value ) {
+		value.bind(function(to) {
+			$('#blog-description').text( to );
+		});
+	});
+})(jQuery);
+</script>
+<?php
+}
+
 function erdt_js_options() {
 	$js = array(
 		'More' => __("<span>↓</span> Keep Reading", "erudite"),
@@ -45,7 +73,7 @@ add_filter( 'the_title', 'erdt_empty_title' );
 function erdt_empty_title( $title ) {
 	if ( '' == $title )
 		$title = __('[No Title]', 'erudite');
-	
+
 	return $title;
 }
 
@@ -80,11 +108,11 @@ function erudite_body_class($classes) {
 	// WP-Typography?
 	if ( class_exists('wpTypography') )
 		$classes[] = 'hypenation';
-	
+
 	return $classes;
 }
 
-/* 
+/*
  * Helper function to return the theme option value. If no value has been saved, it returns $default.
  * Needed because options are saved as serialized strings.
  *
@@ -98,17 +126,17 @@ if ( ! function_exists( 'of_get_option' ) ) {
 		$optionsframework_settings = get_option('optionsframework');
 		// Gets the unique option id
 		$option_name = $optionsframework_settings['id'];
-	
+
 		if ( get_option($option_name) ) {
 			$options = get_option($option_name);
 		}
 		else {
 			return of_get_option_fallback($name, $default);
 		}
-	
+
 		return ( isset($options[$name]) ) ? $options[$name] : $default;
 	}
-	
+
 	// If Options Framework hasn't been installed, fall back to defaults
 	function of_get_option_fallback($id, $default = false) {
 		include_once TEMPLATEPATH . '/options.php';
@@ -178,7 +206,7 @@ function erdt_frontend_scripts_and_styles() {
 	$ver = $themes[$current_theme]['Version'];
 	$disable_parent = is_child_theme() && erdt_get_option('disable_parent_css');
 	$template_url = trailingslashit(get_template_directory_uri());
-	
+
 	if ( ! $disable_parent ) {
 		wp_enqueue_style('the-erudite', $template_url.'css/erudite.css');
 	}
@@ -208,7 +236,7 @@ function erdt_globalnav() {
 			'echo' => false
 		));
 		$menu = str_replace( array( "\r", "\n", "\t" ), '', trim($menu) );
-		
+
 		if ( ! empty( $menu) ) {
 			echo '<div id="menu">' . $menu . "</div>\n";
 		}
@@ -219,13 +247,13 @@ function erdt_globalnav() {
 }
 // Produces a list of pages in the header without whitespace
 function old_erdt_globalnav() {
-	
+
 	if ( erdt_get_option('category_nav') ) {
 		$menu = wp_list_categories('title_li=&echo=0');
 	} else {
 		$menu = wp_list_pages('title_li=&sort_column=menu_order&echo=0');
 	}
-	
+
 	$menu = str_replace( array( "\r", "\n", "\t" ), '', trim($menu) );
 	$menu = '<ul>' . $menu . '</ul>';
 	echo '<div id="menu">' . $menu . "</div>\n";
